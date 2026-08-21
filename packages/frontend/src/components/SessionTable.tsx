@@ -43,11 +43,15 @@ export function SessionTable({ sessions }: { sessions: Session[] }) {
             <td>{session.eventName}</td>
             <td>{session.sessionType}</td>
             <td>
-              {session.broadcasters.length === 0
-                ? '—'
-                : session.broadcasters.map((b) => b.name).join(', ')}
-              {isStale(session.broadcastersVerifiedAt) && (
-                <span title="Sender-Info seit über 60 Tagen nicht geprüft"> (ohne Gewähr)</span>
+              {session.broadcasters.length === 0 ? (
+                '—'
+              ) : (
+                <>
+                  {session.broadcasters.map((b) => b.name).join(', ')}
+                  {isStale(session.broadcastersVerifiedAt) && (
+                    <span title="Sender-Info seit über 60 Tagen nicht geprüft"> (ohne Gewähr)</span>
+                  )}
+                </>
               )}
             </td>
           </tr>

@@ -3,6 +3,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { adapters } from './adapters/index.js';
 import { loadBroadcasterConfig, resolveBroadcasters } from './broadcasters.js';
+import { deduplicateCrossSeries } from './dedup.js';
 import type { Session, SessionWithBroadcasters } from './types.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -48,8 +49,6 @@ async function main() {
     }
   }
 
-  // TODO: Deduplizierung IGTC <-> GTWC <-> NLS über (circuit, startUtc +/- 12h),
-  // sobald mehr als ein Adapter Daten liefert (s. CLAUDE.md, Konventionen).
   const allSessions = [...sessionsBySeries.values()].flat();
 
   // Zentral statt pro Adapter gefiltert, damit alle Quellen (echte API wie
@@ -62,7 +61,11 @@ async function main() {
     return new Date(reference).getTime() >= cutoff;
   });
 
-  const enriched: SessionWithBroadcasters[] = upcoming.map((session) => {
+  // IGTC <-> GTWC <-> NLS: dieselbe Veranstaltung kann in mehreren
+  // Meisterschaftskalendern auftauchen (s. CLAUDE.md, Konventionen).
+  const deduplicated = deduplicateCrossSeries(upcoming);
+
+  const enriched: SessionWithBroadcasters[] = deduplicated.map((session) => {
     const { broadcasters, verifiedAt } = resolveBroadcasters(broadcasterConfig, session);
     return { ...session, broadcasters, broadcastersVerifiedAt: verifiedAt };
   });

@@ -1,9 +1,28 @@
-import type { Adapter } from '../types.js';
+import type { Adapter, SeriesId } from '../types.js';
 import { formelEAdapter } from './formel-e.js';
-import { imsaAdapter } from './imsa.js';
-import { nlsAdapter } from './nls.js';
-import { wecAdapter } from './wec.js';
+import { createIcsAdapter } from './ics.js';
 
-// Weitere Adapter (GTWC, DTM, ...) kommen hier dazu,
-// sobald ICS-/Scraping-Anbindung gebaut ist (s. CLAUDE.md, Adapter-Prioritätsregel).
-export const adapters: Adapter[] = [formelEAdapter, wecAdapter, imsaAdapter, nlsAdapter];
+// Kalender-IDs s. CLAUDE.md, Abschnitt "ICS-Feeds (toomuchracing.com)".
+// Italian GT und China GT fehlen bewusst: laut CLAUDE.md gibt es dafür
+// keinen ICS-Feed, nur eine Website (bräuchte einen eigenen Scraper).
+const ICS_SERIES: [SeriesId, string][] = [
+  ['wec', '61jccgg4rshh1temqk0dj4lens'],
+  ['imsa', 'njulhksvo83qeoruc3nhend9js'],
+  ['nls', 'f7ubn1ltpc4p7amil7kefgj754'],
+  ['gtwc_europe', 'drne83rrmn7m9baje25qh2248s'],
+  ['gtwc_america', '1g47v5qu33g114060qa1ula9d0'],
+  ['gtwc_asia', 'plm3evhsd30l34r2tj68fh9mss'],
+  ['gtwc_australia', '31e7b509e16383e2c02a557c478ba3fe7cac843154c97ca5fbc77d69a578c253'],
+  ['igtc', 'kcelko7ictk6okcf4peougahlo'],
+  ['dtm', '0urnjij5qqj3ijoht52fdsqk18'],
+  ['adac_gt_masters', 'bo1ablitg2ecigfcdouq209vj0'],
+  ['british_gt', '6bh6kok6g3v97ogr2d1s2g1srs'],
+  ['gt_open', 'kug92q3u7fqcg2t0di3e2cklio'],
+  ['creventic_24h', '6rddivl20t6526fknlbhmhf6ps'],
+  ['super_gt', '5ni9rjbofnkfvmpidmjpep9ek0'],
+];
+
+export const adapters: Adapter[] = [
+  formelEAdapter,
+  ...ICS_SERIES.map(([series, calendarId]) => createIcsAdapter(series, calendarId)),
+];
