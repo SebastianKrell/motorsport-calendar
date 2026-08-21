@@ -31,7 +31,12 @@ jobs:
 
       - run: npm run collect
 
+      # Nur bei Cron/manuellem Trigger zurückcommitten. Bei normalen Pushes
+      # würde ein Bot-Commit den Remote-Branch weiterlaufen lassen und bei
+      # jedem lokalen `npm run collect` + push zu Merge-Konflikten in
+      # sessions.json führen (s. Vorfall vom 2026-08-21).
       - name: Commit updated data
+        if: github.event_name != 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
