@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T19:08:40.696Z",
+  "generatedAt": "2026-08-21T19:23:45.618Z",
   "sessions": [
     {
       "series": "fe",
@@ -1156,6 +1156,233 @@
           "name": "DF1",
           "type": "free-tv",
           "url": "https://df1.de"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "wec",
+      "eventName": "6 Hours of Barcelona",
+      "circuit": "Circuit de Barcelona",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-10-18T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "Eurosport",
+          "type": "pay-tv"
+        },
+        {
+          "name": "HBO Max / discovery+",
+          "type": "streaming"
+        },
+        {
+          "name": "FIAWEC+",
+          "type": "streaming-paid"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "wec",
+      "eventName": "Lone Star Le Mans (COTA)",
+      "circuit": "Circuit of the Americas",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-06T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "Eurosport",
+          "type": "pay-tv"
+        },
+        {
+          "name": "HBO Max / discovery+",
+          "type": "streaming"
+        },
+        {
+          "name": "FIAWEC+",
+          "type": "streaming-paid"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "wec",
+      "eventName": "6 Hours of Monza",
+      "circuit": "Autodromo Nazionale Monza",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-11-08T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "Eurosport",
+          "type": "pay-tv"
+        },
+        {
+          "name": "HBO Max / discovery+",
+          "type": "streaming"
+        },
+        {
+          "name": "FIAWEC+",
+          "type": "streaming-paid"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "wec",
+      "eventName": "6 Hours of Fuji",
+      "circuit": "Fuji International Speedway",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-27T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "Eurosport",
+          "type": "pay-tv"
+        },
+        {
+          "name": "HBO Max / discovery+",
+          "type": "streaming"
+        },
+        {
+          "name": "FIAWEC+",
+          "type": "streaming-paid"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Tirerack.com Battle on the Bricks | 2H40M | All Classes | Indianapolis",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-20T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Motul Petit Le Mans | 10H | All Classes",
+      "circuit": "Road Atlanta",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-10-03T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Michelin GT Challenge at VIR | 2H40M | GTD Pro, GTD",
+      "circuit": "VIRginia International Raceway",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-08-23T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "nls",
+      "eventName": "NLS10",
+      "circuit": "Nürburgring Nordschleife",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-10-10T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "vln.de",
+          "type": "free-stream",
+          "url": "https://www.vln.de"
+        },
+        {
+          "name": "YouTube (@VLNOFFICIAL)",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "nls",
+      "eventName": "NLS8",
+      "circuit": "Nürburgring Nordschleife",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-12T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "vln.de",
+          "type": "free-stream",
+          "url": "https://www.vln.de"
+        },
+        {
+          "name": "YouTube (@VLNOFFICIAL)",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "nls",
+      "eventName": "NLS9",
+      "circuit": "Nürburgring Nordschleife",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-13T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "vln.de",
+          "type": "free-stream",
+          "url": "https://www.vln.de"
+        },
+        {
+          "name": "YouTube (@VLNOFFICIAL)",
+          "type": "free-stream"
         }
       ],
       "broadcastersVerifiedAt": "2026-08-21"
