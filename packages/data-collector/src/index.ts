@@ -8,6 +8,7 @@ import type { Session, SessionWithBroadcasters } from './types.js';
 const here = dirname(fileURLToPath(import.meta.url));
 const BROADCASTERS_PATH = resolve(here, '../../../broadcasters.yaml');
 const OUTPUT_PATH = resolve(here, '../../frontend/public/data/sessions.json');
+const GRACE_PERIOD_MS = 24 * 60 * 60 * 1000;
 
 interface OutputFile {
   generatedAt: string;
@@ -51,7 +52,17 @@ async function main() {
   // sobald mehr als ein Adapter Daten liefert (s. CLAUDE.md, Konventionen).
   const allSessions = [...sessionsBySeries.values()].flat();
 
-  const enriched: SessionWithBroadcasters[] = allSessions.map((session) => {
+  // Zentral statt pro Adapter gefiltert, damit alle Quellen (echte API wie
+  // Formel E, ICS-Feeds, künftig Scraper) einheitlich behandelt werden.
+  // 24h Kulanz nach Sessionbeginn, da uns bei ICS-Einträgen kein endUtc
+  // vorliegt und Rennen über Mitternacht laufen können (Le Mans, N24, ...).
+  const cutoff = Date.now() - GRACE_PERIOD_MS;
+  const upcoming = allSessions.filter((session) => {
+    const reference = session.endUtc ?? session.startUtc;
+    return new Date(reference).getTime() >= cutoff;
+  });
+
+  const enriched: SessionWithBroadcasters[] = upcoming.map((session) => {
     const { broadcasters, verifiedAt } = resolveBroadcasters(broadcasterConfig, session);
     return { ...session, broadcasters, broadcastersVerifiedAt: verifiedAt };
   });

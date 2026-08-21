@@ -46,12 +46,12 @@ export function createIcsAdapter(series: SeriesId, calendarId: string): Adapter 
     series,
     async fetchSessions(): Promise<Session[]> {
       const data = await fetchIcs(url, { headers: { 'User-Agent': USER_AGENT } });
-      const now = new Date();
       const sessions: Session[] = [];
 
+      // Vergangene Termine werden nicht hier, sondern zentral in index.ts
+      // gefiltert (einheitliche Kulanzregel für alle Adapter-Quellen).
       for (const component of Object.values(data)) {
         if (!component || component.type !== 'VEVENT') continue;
-        if (component.start < now) continue;
 
         const summary = textValue(component.summary);
         if (summary.toLowerCase().includes('cancelled')) continue;
