@@ -1,0 +1,80 @@
+# Sender-Mapping Deutschland — handgepflegt, s. CLAUDE.md.
+# Struktur pro Serie: "default" gilt für alle Sessions, "events" erlaubt
+# Ausnahmen für einzelne Events (Teilstring-Match gegen eventName).
+# verifiedAt: Datum der letzten manuellen Prüfung (YYYY-MM-DD).
+# unverified: true markiert Einträge, die laut CLAUDE.md vor Saisonstart
+# noch bestätigt werden müssen.
+
+fe:
+  default:
+    broadcasters:
+      - name: DF1
+        type: free-tv
+        url: https://df1.de
+    verifiedAt: "2026-08-21"
+
+wec:
+  default:
+    broadcasters:
+      - name: Eurosport
+        type: pay-tv
+      - name: HBO Max / discovery+
+        type: streaming
+      - name: FIAWEC+
+        type: streaming-paid
+    verifiedAt: "2026-08-21"
+  events:
+    - match: "24 Heures du Mans"
+      broadcasters:
+        - name: Eurosport 1
+          type: free-tv
+        - name: RTL Nitro
+          type: free-tv
+        - name: RTL+
+          type: streaming
+        - name: ServusTV On
+          type: streaming
+        - name: FIAWEC+
+          type: streaming-paid
+      verifiedAt: "2026-08-21"
+
+imsa:
+  default:
+    broadcasters:
+      - name: "YouTube / IMSA TV (nur 'Available Globally'-Sessions)"
+        type: free-stream
+    verifiedAt: "2026-08-21"
+
+gtwc_europe:
+  default:
+    broadcasters:
+      - name: "GT World (YouTube, deutscher Kommentar)"
+        type: free-stream
+        url: https://www.youtube.com/@GTWorldChallenge
+    verifiedAt: "2026-08-21"
+
+nls:
+  default:
+    broadcasters:
+      - name: vln.de
+        type: free-stream
+        url: https://www.vln.de
+      - name: "YouTube (@VLNOFFICIAL)"
+        type: free-stream
+    verifiedAt: "2026-08-21"
+
+dtm:
+  default:
+    broadcasters:
+      - name: ProSieben / ran.de
+        type: free-tv
+    verifiedAt: "2026-08-21"
+    unverified: true
+
+adac_gt_masters:
+  default:
+    broadcasters:
+      - name: ProSieben / ran.de
+        type: free-tv
+    verifiedAt: "2026-08-21"
+    unverified: true

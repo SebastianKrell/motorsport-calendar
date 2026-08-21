@@ -1,0 +1,12 @@
+{
+  "name": "motorsport-calendar",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "collect": "npm run collect -w data-collector",
+    "dev": "npm run dev -w frontend",
+    "build": "npm run build -w frontend"
+  }
+}

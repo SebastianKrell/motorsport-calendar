@@ -22,9 +22,12 @@ TV-Markt zugeschnitten
 
 > \*\*Annahme — bitte anpassen, falls anders entschieden.\*\*
 
-* Frontend: React + TypeScript, Tabellenansicht, Filter nach Serie
-* Backend: Node/TypeScript, täglicher Cron-Job zum Einsammeln der Daten
-* Persistenz: SQLite (reicht völlig, Datenmenge ist winzig)
+* Frontend: React + TypeScript, Tabellenansicht, Filter nach Serie — liest
+eine statische JSON-Datei, kein Laufzeit-Backend
+* Datenerzeugung: Node/TypeScript-Skript, täglich per Cron (z. B. GitHub
+Actions) ausgeführt, schreibt eine statische JSON-Datei
+* Persistenz: keine Datenbank — die zuletzt erzeugte JSON-Datei ist der
+einzige State (kein SQLite, kein Server-Prozess nötig)
 * Zeitzonen: `luxon` oder `date-fns-tz` — **kein** manuelles Offset-Rechnen
 
 ## Kernarchitektur
@@ -33,16 +36,19 @@ Ein **Adapter pro Serie**, alle schreiben in ein gemeinsames Schema. Kein
 Versuch, eine einheitliche Quelle zu finden — die gibt es nicht.
 
 ```
-adapters/\*.ts  ──►  normalize()  ──►  SQLite  ──►  API  ──►  Frontend
+adapters/\*.ts  ──►  normalize()  ──►  JSON-Datei  ──►  Frontend (fetch)
                          ▲
                   broadcasters.yaml (handgepflegt)
 ```
+
+Die JSON-Datei wird täglich per Cron neu erzeugt und statisch ausgeliefert
+(z. B. neben dem Frontend-Build). Kein API-Server, keine Datenbank.
 
 ### Datenmodell
 
 ```ts
 type Session = {
-  series: SeriesId;        // 'f1' | 'fe' | 'wec' | ...
+  series: SeriesId;        // 'fe' | 'wec' | ...
   eventName: string;       // "24 Heures du Mans"
   circuit: string;
   round: number | null;
@@ -60,7 +66,7 @@ ohne Uhrzeit. Das Frontend muss solche Einträge sichtbar anders darstellen
 
 ### Adapter-Prioritätsregel
 
-1. Echte API, wenn vorhanden (nur F1, Formel E)
+1. Echte API, wenn vorhanden (nur Formel E)
 2. ICS-Feed als Gerüst (alles andere)
 3. Scraper nur dort, wo Uhrzeiten wirklich gebraucht werden
 4. Manuelle Overrides in YAML gewinnen immer
@@ -74,9 +80,7 @@ Bitte nicht danach suchen, das wurde geprüft.
 
 |Serie|Quelle|Hinweise|
 |-|-|-|
-|Formel 1|`https://api.jolpi.ca/ergast/f1`|Ergast-Nachfolger, kein API-Key, \~200 Req/h. Rate Limit respektieren, Ergebnisse cachen|
-|Formel 1|`https://openf1.org`|Session-Daten ab 2023, ergänzend|
-|Formel 1 / E|`github.com/sportstimes/f1` → `\_db/{f1,fe}/2026.json`|MIT-Lizenz, Sessions mit UTC-Zeitstempeln. Für Formel E die beste freie Quelle|
+|Formel E|`github.com/sportstimes/f1` → `\_db/fe/2026.json`|MIT-Lizenz, Sessions mit UTC-Zeitstempeln. Für Formel E die beste freie Quelle|
 
 ### ICS-Feeds (toomuchracing.com, CC BY-SA)
 
@@ -111,7 +115,6 @@ robuster als ein HTML-Scraper. Attribution im Footer nicht vergessen (CC BY-SA).
 |GT2 \& GT4 European Series|`pdbbgsms5dmvdhh6i4rucnlplg`|
 |GT America \& GT4 America|`eui5lon2nvcv1mbj1oj5cfle0c`|
 |Formel E (Fallback)|`vno0ntshopq0nmob26db2pcen8`|
-|Formel 1 (Fallback)|`fa9bjl6tu13dd10b066stoo5do`|
 
 ### Scraping (nur für Uhrzeiten)
 
@@ -137,7 +140,6 @@ existieren, sind aber kostenpflichtig und für dieses Hobbyprojekt Overkill.
 
 ### In Scope (Kern)
 
-* Formel 1
 * Formel E
 * Nürburgring Langstrecken-Serie (NLS, ehem. VLN)
 * FIA WEC
@@ -181,7 +183,6 @@ pro Serie plus Ausnahmen pro Event.
 
 |Serie|Wo in Deutschland|
 |-|-|
-|**Formel 1**|Sky Sport F1 / WOW — komplett, alle Sessions (Vertrag bis einschl. 2027). RTL zeigt 2026 fünf Rennwochenenden im Free-TV plus einzelne Qualifyings; Trainings/Quali bei RTL oft nur in RTL+ Premium. **F1 TV Pro ist für Neukunden in DE gesperrt** (Sky-Exklusivrechte)|
 |**Formel E**|DF1 (Free-TV) und Stream auf df1.de — alle Rennen und Qualifyings|
 |**WEC**|Eurosport (Vertrag bis mind. 2030, alle 8 Saisonrennen), HBO Max / discovery+. Kostenpflichtig: FIAWEC+. **Le Mans zusätzlich auf RTL Nitro (Free-TV) und RTL+**|
 |**IMSA**|Peacock/NBC/NBCSN sind **US-only, für uns irrelevant**. Relevant: die als *„Available Globally"* markierten Sessions auf YouTube und IMSA TV — diese Markierung beim Scrapen mit übernehmen und im Frontend als einzige IMSA-Option anzeigen|
@@ -228,7 +229,7 @@ NLS-Umfeld auf) über `(circuit, startUtc±12h)`.
 
 ## Realistischer Aufwand
 
-* F1 + Formel E: ein Abend (echte APIs)
+* Formel E: ein Abend (echte API)
 * WEC/IMSA/NLS über ICS: ein zweiter Abend
 * GTWC-Uhrzeiten und Sender-Pflege: dauerhaft ca. 10 Minuten pro Woche
 
