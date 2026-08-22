@@ -24,7 +24,9 @@ wec:
         type: streaming-paid
     verifiedAt: "2026-08-21"
   events:
-    - match: "24 Heures du Mans"
+    # Sprachunabhängiger Teilstring -- ICS lieferte "24 Heures du Mans"
+    # (franz.), der WEC-Scraper (fiawec.com) liefert "24 Hours of Le Mans".
+    - match: "Le Mans"
       broadcasters:
         - name: Eurosport 1
           type: free-tv
