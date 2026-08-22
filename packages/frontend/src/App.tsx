@@ -1,14 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
-import { SessionTable } from './components/SessionTable';
-import type { Session, SessionsFile, SessionType } from './types';
+import { MonthCalendar } from './components/MonthCalendar';
+import { MultiSelectDropdown } from './components/MultiSelectDropdown';
+import { SERIES_LABELS, SESSION_TYPE_LABELS } from './labels';
+import type { Session, SessionsFile, SessionType, SeriesId } from './types';
 
 const SESSION_TYPE_ORDER: SessionType[] = ['fp', 'quali', 'sprint', 'race'];
-const SESSION_TYPE_LABELS: Record<SessionType, string> = {
-  fp: 'Training',
-  quali: 'Qualifying',
-  sprint: 'Sprint',
-  race: 'Rennen',
-};
 // Standardmäßig nur Rennen anzeigen -- Trainings/Qualifyings sind für die
 // Sender-Frage meist irrelevant und würden die Tabelle unnötig aufblähen.
 const DEFAULT_SESSION_TYPES: SessionType[] = ['race'];
@@ -16,7 +12,7 @@ const DEFAULT_SESSION_TYPES: SessionType[] = ['race'];
 export function App() {
   const [sessions, setSessions] = useState<Session[]>([]);
   const [error, setError] = useState<string | null>(null);
-  const [selectedSeries, setSelectedSeries] = useState<Set<string>>(new Set());
+  const [selectedSeries, setSelectedSeries] = useState<Set<SeriesId>>(new Set());
   const [selectedSessionTypes, setSelectedSessionTypes] = useState<Set<SessionType>>(
     new Set(DEFAULT_SESSION_TYPES),
   );
@@ -48,7 +44,7 @@ export function App() {
     [sessions, selectedSeries, selectedSessionTypes],
   );
 
-  function toggleSeries(series: string) {
+  function toggleSeries(series: SeriesId) {
     setSelectedSeries((prev) => {
       const next = new Set(prev);
       if (next.has(series)) next.delete(series);
@@ -68,35 +64,47 @@ export function App() {
 
   return (
     <main>
-      <h1>Motorsport-Kalender</h1>
+      <div className="race-banner">
+        <div className="race-banner-checker" aria-hidden="true" />
+        <div className="race-banner-red" aria-hidden="true" />
+        <div className="race-banner-lines" aria-hidden="true">
+          <span />
+          <span />
+        </div>
+        <div className="race-banner-navy">
+          <h1>Motorsport-Kalender</h1>
+        </div>
+      </div>
       {error && <p role="alert">Termine konnten nicht geladen werden: {error}</p>}
-      <fieldset>
-        <legend>Serie</legend>
-        {availableSeries.map((series) => (
-          <label key={series}>
-            <input
-              type="checkbox"
-              checked={selectedSeries.has(series)}
-              onChange={() => toggleSeries(series)}
-            />
-            {series}
-          </label>
-        ))}
-      </fieldset>
-      <fieldset>
-        <legend>Session</legend>
-        {availableSessionTypes.map((type) => (
-          <label key={type}>
-            <input
-              type="checkbox"
-              checked={selectedSessionTypes.has(type)}
-              onChange={() => toggleSessionType(type)}
-            />
-            {SESSION_TYPE_LABELS[type]}
-          </label>
-        ))}
-      </fieldset>
-      <SessionTable sessions={filtered} />
+      <div className="filters">
+        <MultiSelectDropdown
+          label="Serie"
+          options={availableSeries}
+          labels={SERIES_LABELS}
+          selected={selectedSeries}
+          onToggle={toggleSeries}
+        />
+        <MultiSelectDropdown
+          label="Session"
+          options={availableSessionTypes}
+          labels={SESSION_TYPE_LABELS}
+          selected={selectedSessionTypes}
+          onToggle={toggleSessionType}
+        />
+      </div>
+      <MonthCalendar sessions={filtered} />
+      <footer>
+        <p>
+          Renntermine (WEC, IMSA, NLS, GTWC, IGTC, DTM, ADAC GT Masters, British GT, International GT Open, 24H
+          Series, Super GT, ELMS, Asian Le Mans Series, Michelin Le Mans Cup):{' '}
+          <a href="https://toomuchracing.com">toomuchracing.com</a>, lizenziert unter{' '}
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Formel E:{' '}
+          <a href="https://github.com/sportstimes/f1">sportstimes/f1</a> (MIT). Uhrzeiten NLS:{' '}
+          <a href="https://www.nuerburgring-langstrecken-serie.de">nuerburgring-langstrecken-serie.de</a>. Uhrzeiten
+          WEC: <a href="https://www.fiawec.com">fiawec.com</a>. Uhrzeiten IMSA:{' '}
+          <a href="https://raceweek.io">raceweek.io</a>.
+        </p>
+      </footer>
     </main>
   );
 }
