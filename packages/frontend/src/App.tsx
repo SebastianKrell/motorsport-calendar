@@ -110,6 +110,10 @@ export function App() {
             Uhrzeiten WEC: <a href="https://www.fiawec.com">fiawec.com</a>. Uhrzeiten IMSA:{' '}
             <a href="https://raceweek.io">raceweek.io</a>.
           </p>
+          <p>
+            <a href={`${import.meta.env.BASE_URL}impressum/`}>Impressum</a> ·{' '}
+            <a href={`${import.meta.env.BASE_URL}datenschutz/`}>Datenschutz</a>
+          </p>
         </footer>
       </main>
     </>

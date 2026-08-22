@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Selbst gehostet statt per @import von fonts.googleapis.com geladen --
+   sonst geht bei jedem Aufruf die IP-Adresse der Besucher an Google (s.
+   LG München, Urteil zu Google Fonts ohne Einwilligung). Datei: Press
+   Start 2P v16, Latin-Subset, OFL-lizenziert (Google Fonts). */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/press-start-2p-v16-latin.woff2') format('woff2');
+}
 
 :root {
   --bg: #f7f7f5;
@@ -262,9 +272,31 @@ main {
   cursor: pointer;
 }
 
+.calendar-month-label-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
 .calendar-month-label {
   font-weight: 600;
   text-transform: capitalize;
+}
+
+.calendar-today-button {
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  padding: 0.1rem 0;
+  font-size: 0.68rem;
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  cursor: pointer;
+}
+
+.calendar-today-button:hover {
+  color: var(--text);
+  text-decoration-color: var(--text-muted);
 }
 
 .calendar-weekdays,

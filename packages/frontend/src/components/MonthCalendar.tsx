@@ -92,6 +92,8 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
     ...Array.from({ length: monthStart.daysInMonth ?? 30 }, (_, i) => i + 1),
   ];
   const usedSeries = [...new Set(monthSessions.map((s) => s.series))].sort();
+  const now = DateTime.now();
+  const isCurrentMonth = visibleMonth.year === now.year && visibleMonth.month === now.month;
 
   return (
     <div className="calendar-layout">
@@ -100,7 +102,18 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
           <button type="button" aria-label="Vorheriger Monat" onClick={() => setVisibleMonth(shiftMonth(visibleMonth, -1))}>
             ‹
           </button>
-          <span className="calendar-month-label">{monthStart.setLocale('de').toFormat('LLLL yyyy')}</span>
+          <span className="calendar-month-label-group">
+            <span className="calendar-month-label">{monthStart.setLocale('de').toFormat('LLLL yyyy')}</span>
+            {!isCurrentMonth && (
+              <button
+                type="button"
+                className="calendar-today-button"
+                onClick={() => setVisibleMonth({ year: now.year, month: now.month })}
+              >
+                Heute
+              </button>
+            )}
+          </span>
           <button type="button" aria-label="Nächster Monat" onClick={() => setVisibleMonth(shiftMonth(visibleMonth, 1))}>
             ›
           </button>
