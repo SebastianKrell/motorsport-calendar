@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
   --bg: #f7f7f5;
   --surface: #ffffff;
-  --border: #e2e2df;
+  --day-bg: #eaeae6;
+  --border: #c7c7c1;
   --text: #1a1a18;
   --text-muted: #6b6b66;
   --brand: #7a1f1f;
@@ -18,7 +21,8 @@
 :root[data-theme='dark'] {
   --bg: #17181a;
   --surface: #1f2023;
-  --border: #333437;
+  --day-bg: #292a2e;
+  --border: #404145;
   --text: #eaeaea;
   --text-muted: #9a9a98;
   --brand: #5c1717;
@@ -45,76 +49,86 @@ body {
 main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 1.25rem 3rem;
+  padding: 1.5rem 1.25rem 3rem;
 }
 
-.race-banner {
-  display: flex;
-  align-items: stretch;
-  height: 50px;
-  margin: 1.25rem 0 1.5rem;
+/* Shrinking Sticky-Header ohne JS: outer ist höher als inner und beide sind
+   sticky -- outer klebt (dank negativem top) knapp über der Seite, inner
+   klebt an outer. Beim Scrollen "schrumpft" der Header dadurch optisch von
+   outer- auf inner-Höhe. */
+:root {
+  --header-outer-height: 96px;
+  --header-inner-height: 60px;
 }
 
-.race-banner-checker {
-  width: 100px;
-  margin-right: -18px;
-  background: repeating-conic-gradient(#111 0% 25%, #f2f2f2 0% 50%) 0 0 / 12px 12px;
-  transform: skewX(-20deg);
-}
-
-.race-banner-red {
-  width: 26px;
-  margin-right: 14px;
-  background: var(--brand);
-  transform: skewX(-20deg);
-}
-
-.race-banner-lines {
-  display: flex;
-  gap: 6px;
-  margin-right: 14px;
-}
-
-.race-banner-lines span {
-  width: 6px;
-  background: var(--text-muted);
-  transform: skewX(-20deg);
-}
-
-.race-banner-navy {
-  flex: 0 1 340px;
-  background: #101d33;
-  transform: skewX(-20deg);
+.site-header-outer {
+  height: var(--header-outer-height);
+  position: sticky;
+  top: calc((var(--header-outer-height) - var(--header-inner-height)) * -1);
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 1.75rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  z-index: 30;
 }
 
-.race-banner-navy h1 {
-  transform: skewX(20deg);
-  color: #ffffff;
-  font-size: 1.15rem;
-  font-weight: 700;
-  font-style: italic;
+.site-header-inner {
+  height: var(--header-inner-height);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.site-header-logo svg {
+  color: var(--brand);
+  flex-shrink: 0;
+}
+
+.site-header-title {
+  font-family: 'Press Start 2P', var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 400;
   letter-spacing: 0.02em;
   margin: 0;
   white-space: nowrap;
+  line-height: 1;
+}
+
+.site-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header-contact {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.site-header-contact:hover {
+  border-bottom-color: var(--brand);
 }
 
 .filters {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
   gap: 0.6rem;
   margin-bottom: 1.25rem;
-}
-
-.filters-left {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
 }
 
 .theme-toggle {
@@ -335,7 +349,8 @@ main {
 }
 
 .calendar-day:not(.is-blank) {
-  background: var(--bg);
+  background: var(--day-bg);
+  border: 1px solid var(--border);
 }
 
 .calendar-day-number {

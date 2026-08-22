@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { MonthCalendar } from './components/MonthCalendar';
 import { MultiSelectDropdown } from './components/MultiSelectDropdown';
+import { SiteHeader } from './components/SiteHeader';
 import { SERIES_LABELS, SESSION_TYPE_LABELS } from './labels';
 import type { Session, SessionsFile, SessionType, SeriesId } from './types';
 
@@ -77,21 +78,11 @@ export function App() {
   }
 
   return (
-    <main>
-      <div className="race-banner">
-        <div className="race-banner-checker" aria-hidden="true" />
-        <div className="race-banner-red" aria-hidden="true" />
-        <div className="race-banner-lines" aria-hidden="true">
-          <span />
-          <span />
-        </div>
-        <div className="race-banner-navy">
-          <h1>Motorsport-Kalender</h1>
-        </div>
-      </div>
-      {error && <p role="alert">Termine konnten nicht geladen werden: {error}</p>}
-      <div className="filters">
-        <div className="filters-left">
+    <>
+      <SiteHeader theme={theme} onSelectTheme={setTheme} />
+      <main>
+        {error && <p role="alert">Termine konnten nicht geladen werden: {error}</p>}
+        <div className="filters">
           <MultiSelectDropdown
             label="Serie"
             options={availableSeries}
@@ -107,28 +98,20 @@ export function App() {
             onToggle={toggleSessionType}
           />
         </div>
-        <div className="theme-toggle">
-          <button type="button" className={theme === 'light' ? 'is-active' : ''} onClick={() => setTheme('light')}>
-            Hell
-          </button>
-          <button type="button" className={theme === 'dark' ? 'is-active' : ''} onClick={() => setTheme('dark')}>
-            Dunkel
-          </button>
-        </div>
-      </div>
-      <MonthCalendar sessions={filtered} />
-      <footer>
-        <p>
-          Renntermine (WEC, IMSA, NLS, GTWC, IGTC, DTM, ADAC GT Masters, British GT, International GT Open, 24H
-          Series, Super GT, ELMS, Asian Le Mans Series, Michelin Le Mans Cup):{' '}
-          <a href="https://toomuchracing.com">toomuchracing.com</a>, lizenziert unter{' '}
-          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Formel E:{' '}
-          <a href="https://github.com/sportstimes/f1">sportstimes/f1</a> (MIT). Uhrzeiten NLS:{' '}
-          <a href="https://www.nuerburgring-langstrecken-serie.de">nuerburgring-langstrecken-serie.de</a>. Uhrzeiten
-          WEC: <a href="https://www.fiawec.com">fiawec.com</a>. Uhrzeiten IMSA:{' '}
-          <a href="https://raceweek.io">raceweek.io</a>.
-        </p>
-      </footer>
-    </main>
+        <MonthCalendar sessions={filtered} />
+        <footer>
+          <p>
+            Renntermine (WEC, IMSA, NLS, GTWC, IGTC, DTM, ADAC GT Masters, British GT, International GT Open, 24H
+            Series, Super GT, ELMS, Asian Le Mans Series, Michelin Le Mans Cup):{' '}
+            <a href="https://toomuchracing.com">toomuchracing.com</a>, lizenziert unter{' '}
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Formel E:{' '}
+            <a href="https://github.com/sportstimes/f1">sportstimes/f1</a> (MIT). Uhrzeiten NLS:{' '}
+            <a href="https://www.nuerburgring-langstrecken-serie.de">nuerburgring-langstrecken-serie.de</a>.
+            Uhrzeiten WEC: <a href="https://www.fiawec.com">fiawec.com</a>. Uhrzeiten IMSA:{' '}
+            <a href="https://raceweek.io">raceweek.io</a>.
+          </p>
+        </footer>
+      </main>
+    </>
   );
 }
