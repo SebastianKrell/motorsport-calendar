@@ -9,6 +9,14 @@ const SESSION_TYPE_ORDER: SessionType[] = ['fp', 'quali', 'sprint', 'race'];
 // Sender-Frage meist irrelevant und würden die Tabelle unnötig aufblähen.
 const DEFAULT_SESSION_TYPES: SessionType[] = ['race'];
 
+type Theme = 'light' | 'dark';
+
+// index.html setzt data-theme schon vor dem React-Mount (verhindert Flackern
+// beim Laden) -- hier nur den bereits gesetzten Wert übernehmen.
+function getInitialTheme(): Theme {
+  return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+}
+
 export function App() {
   const [sessions, setSessions] = useState<Session[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -16,6 +24,12 @@ export function App() {
   const [selectedSessionTypes, setSelectedSessionTypes] = useState<Set<SessionType>>(
     new Set(DEFAULT_SESSION_TYPES),
   );
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/sessions.json`)
@@ -77,20 +91,30 @@ export function App() {
       </div>
       {error && <p role="alert">Termine konnten nicht geladen werden: {error}</p>}
       <div className="filters">
-        <MultiSelectDropdown
-          label="Serie"
-          options={availableSeries}
-          labels={SERIES_LABELS}
-          selected={selectedSeries}
-          onToggle={toggleSeries}
-        />
-        <MultiSelectDropdown
-          label="Session"
-          options={availableSessionTypes}
-          labels={SESSION_TYPE_LABELS}
-          selected={selectedSessionTypes}
-          onToggle={toggleSessionType}
-        />
+        <div className="filters-left">
+          <MultiSelectDropdown
+            label="Serie"
+            options={availableSeries}
+            labels={SERIES_LABELS}
+            selected={selectedSeries}
+            onToggle={toggleSeries}
+          />
+          <MultiSelectDropdown
+            label="Session"
+            options={availableSessionTypes}
+            labels={SESSION_TYPE_LABELS}
+            selected={selectedSessionTypes}
+            onToggle={toggleSessionType}
+          />
+        </div>
+        <div className="theme-toggle">
+          <button type="button" className={theme === 'light' ? 'is-active' : ''} onClick={() => setTheme('light')}>
+            Hell
+          </button>
+          <button type="button" className={theme === 'dark' ? 'is-active' : ''} onClick={() => setTheme('dark')}>
+            Dunkel
+          </button>
+        </div>
       </div>
       <MonthCalendar sessions={filtered} />
       <footer>

@@ -15,21 +15,19 @@
   --font-mono: 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #17181a;
-    --surface: #1f2023;
-    --border: #333437;
-    --text: #eaeaea;
-    --text-muted: #9a9a98;
-    --brand: #5c1717;
-    --brand-text: #f2e6e6;
-    --accent-bg: #1c2f4d;
-    --accent-text: #a8c7f0;
-    --row-hover: #2e2224;
-    --stale-bg: #3a2f16;
-    --stale-text: #e0b568;
-  }
+:root[data-theme='dark'] {
+  --bg: #17181a;
+  --surface: #1f2023;
+  --border: #333437;
+  --text: #eaeaea;
+  --text-muted: #9a9a98;
+  --brand: #5c1717;
+  --brand-text: #f2e6e6;
+  --accent-bg: #1c2f4d;
+  --accent-text: #a8c7f0;
+  --row-hover: #2e2224;
+  --stale-bg: #3a2f16;
+  --stale-text: #e0b568;
 }
 
 * {
@@ -107,8 +105,37 @@ main {
 .filters {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: 0.6rem;
   margin-bottom: 1.25rem;
+}
+
+.filters-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.theme-toggle button {
+  border: none;
+  background: var(--surface);
+  color: var(--text-muted);
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.theme-toggle button.is-active {
+  background: var(--brand);
+  color: var(--brand-text);
 }
 
 .dropdown {
