@@ -30,12 +30,14 @@ export interface Broadcaster {
   url?: string;
 }
 
+export type SessionType = 'fp' | 'quali' | 'sprint' | 'race';
+
 export interface Session {
   series: SeriesId;
   eventName: string;
   circuit: string;
   round: number | null;
-  sessionType: 'fp' | 'quali' | 'sprint' | 'race';
+  sessionType: SessionType;
   startUtc: string;
   endUtc: string | null;
   source: 'api' | 'ics' | 'scrape' | 'manual';

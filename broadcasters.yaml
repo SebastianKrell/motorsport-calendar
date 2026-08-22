@@ -78,3 +78,81 @@ adac_gt_masters:
         type: free-tv
     verifiedAt: "2026-08-21"
     unverified: true
+
+igtc:
+  default:
+    broadcasters:
+      - name: "GT World (YouTube)"
+        type: free-stream
+        url: https://www.youtube.com/@GTWorldChallenge
+    verifiedAt: "2026-08-22"
+  events:
+    # Kronjuwel Nürburgring 24h hat abweichend deutsches Free-TV, s. CLAUDE.md
+    # Sonderfall-Logik bei Le Mans (analog: nationaler Sender + Stream extra).
+    - match: "Nürburgring"
+      broadcasters:
+        - name: RTL Nitro
+          type: free-tv
+        - name: 24h-rennen.de
+          type: free-stream
+      verifiedAt: "2026-08-22"
+
+gtwc_america:
+  default:
+    broadcasters:
+      - name: "GT World (YouTube)"
+        type: free-stream
+        url: https://www.youtube.com/@GTWorldChallenge
+    verifiedAt: "2026-08-22"
+
+gtwc_asia:
+  default:
+    broadcasters:
+      - name: "GT World (YouTube)"
+        type: free-stream
+        url: https://www.youtube.com/@GTWorldChallenge
+    verifiedAt: "2026-08-22"
+
+gtwc_australia:
+  default:
+    broadcasters:
+      - name: "GT World (YouTube)"
+        type: free-stream
+        url: https://www.youtube.com/@GTWorldChallenge
+    verifiedAt: "2026-08-22"
+
+british_gt:
+  default:
+    broadcasters:
+      - name: "GT World (YouTube) / britishgt.com"
+        type: free-stream
+        url: https://www.britishgt.com/live
+    verifiedAt: "2026-08-22"
+
+gt_open:
+  default:
+    broadcasters:
+      - name: "International GT Open (YouTube, @GTOPENseries)"
+        type: free-stream
+        url: https://www.youtube.com/@GTOPENseries
+    verifiedAt: "2026-08-22"
+    unverified: true
+
+creventic_24h:
+  default:
+    broadcasters:
+      - name: "24H SERIES (YouTube)"
+        type: free-stream
+        url: https://www.youtube.com/@24HSeries
+      - name: Sportdeutschland.tv
+        type: free-stream
+      - name: ServusTV On
+        type: free-stream
+    verifiedAt: "2026-08-22"
+
+# super_gt: bewusst kein Eintrag. Recherche 2026-08-22 fand keinen
+# verlässlichen kostenlosen internationalen Stream -- Hauptsender ist
+# J SPORTS (Japan, national). Motorsport.tv (bisherige engl. Streams) wird
+# eingestellt, Nachfolger RACER+ ist kostenpflichtig und primär US-fokussiert,
+# DE-Verfügbarkeit ungeklärt. Nicht raten (s. CLAUDE.md Konventionen) --
+# stattdessen "—" im Frontend, bis sich das ändert.

@@ -20,6 +20,9 @@ const ICS_SERIES: [SeriesId, string][] = [
   ['gt_open', 'kug92q3u7fqcg2t0di3e2cklio'],
   ['creventic_24h', '6rddivl20t6526fknlbhmhf6ps'],
   ['super_gt', '5ni9rjbofnkfvmpidmjpep9ek0'],
+  ['elms', 'ur7thj1o6ctignecm0uia024js'],
+  ['asian_le_mans', 'lilnartmo4uglqdpatsve4pido'],
+  ['michelin_le_mans_cup', 'niktsnpdfhu2bi3888ld8v24hc'],
 ];
 
 export const adapters: Adapter[] = [
