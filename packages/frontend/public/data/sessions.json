@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T05:31:43.581Z",
+  "generatedAt": "2026-08-26T05:34:25.540Z",
   "sessions": [
     {
       "series": "wec",
@@ -1073,11 +1073,30 @@
     },
     {
       "series": "gtwc_europe",
-      "eventName": "Endurance | Portimão | 3H",
-      "circuit": "Autódromo Internacional do Algarve",
+      "eventName": "Sprint | Zandvoort | Race 1 | 1H",
+      "circuit": "Circuit Zandvoort",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-18T00:00:00.000Z",
+      "startUtc": "2026-09-19T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorldChallenge"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Sprint | Barcelona | Race 2 | 1H",
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-10-04T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1111,25 +1130,6 @@
     },
     {
       "series": "gtwc_europe",
-      "eventName": "Sprint | Zandvoort | Race 1 | 1H",
-      "circuit": "Circuit Zandvoort",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-19T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorldChallenge"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "gtwc_europe",
       "eventName": "Endurance | Nürburgring | 3H",
       "circuit": "Nürburgring",
       "round": null,
@@ -1149,11 +1149,11 @@
     },
     {
       "series": "gtwc_europe",
-      "eventName": "Sprint | Barcelona | Race 2 | 1H",
-      "circuit": "Circuit de Barcelona-Catalunya",
+      "eventName": "Endurance | Portimão | 3H",
+      "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-04T00:00:00.000Z",
+      "startUtc": "2026-10-18T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1225,44 +1225,6 @@
     },
     {
       "series": "gtwc_asia",
-      "eventName": "Okayama | Race 2",
-      "circuit": "Okayama International Circuit",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-08-30T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorldChallenge"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "gtwc_asia",
-      "eventName": "Okayama | Race 1",
-      "circuit": "Okayama International Circuit",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-08-29T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorldChallenge"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "gtwc_asia",
       "eventName": "Beijing | Race 2",
       "circuit": "E-town",
       "round": null,
@@ -1282,11 +1244,11 @@
     },
     {
       "series": "gtwc_asia",
-      "eventName": "Beijing | Race 1",
-      "circuit": "E-town",
+      "eventName": "Okayama | Race 2",
+      "circuit": "Okayama International Circuit",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-03T00:00:00.000Z",
+      "startUtc": "2026-08-30T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1320,11 +1282,68 @@
     },
     {
       "series": "gtwc_asia",
+      "eventName": "Okayama | Race 1",
+      "circuit": "Okayama International Circuit",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-08-29T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorldChallenge"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "gtwc_asia",
+      "eventName": "Beijing | Race 1",
+      "circuit": "E-town",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-10-03T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorldChallenge"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "gtwc_asia",
       "eventName": "Shanghai | Race 1",
       "circuit": "Shanghai Audi International Circuit",
       "round": null,
       "sessionType": "race",
       "startUtc": "2026-10-31T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorldChallenge"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "gtwc_australia",
+      "eventName": "Adelaide | Race 1",
+      "circuit": "Adelaide Street Circuit",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-12-05T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1358,25 +1377,6 @@
     },
     {
       "series": "gtwc_australia",
-      "eventName": "Sydney Motorsport Park | Race 2",
-      "circuit": "Sydney Motorsport Park",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-20T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorldChallenge"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "gtwc_australia",
       "eventName": "Sydney Motorsport Park | Race 1",
       "circuit": "Sydney Motorsport Park",
       "round": null,
@@ -1396,11 +1396,11 @@
     },
     {
       "series": "gtwc_australia",
-      "eventName": "Adelaide | Race 1",
-      "circuit": "Adelaide Street Circuit",
+      "eventName": "Sydney Motorsport Park | Race 2",
+      "circuit": "Sydney Motorsport Park",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-12-05T00:00:00.000Z",
+      "startUtc": "2026-09-20T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1453,24 +1453,6 @@
     },
     {
       "series": "dtm",
-      "eventName": "Hockenheimring | Race 1",
-      "circuit": "Hockenheimring",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-10T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "dtm",
       "eventName": "Hockenheimring | Race 2",
       "circuit": "Hockenheimring",
       "round": null,
@@ -1507,25 +1489,7 @@
     },
     {
       "series": "dtm",
-      "eventName": "Sachsenring | Race 2",
-      "circuit": "Sachsenring",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-13T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "adac_gt_masters",
-      "eventName": "Hockenheimring | Race 1 | 60min",
+      "eventName": "Hockenheimring | Race 1",
       "circuit": "Hockenheimring",
       "round": null,
       "sessionType": "race",
@@ -1542,12 +1506,12 @@
       "broadcastersVerifiedAt": "2026-08-21"
     },
     {
-      "series": "adac_gt_masters",
-      "eventName": "Salzburgring | Race 1 | 80min",
-      "circuit": "Salzburgring 1",
+      "series": "dtm",
+      "eventName": "Sachsenring | Race 2",
+      "circuit": "Sachsenring",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-09-05T00:00:00.000Z",
+      "startUtc": "2026-09-13T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1596,23 +1560,40 @@
       "broadcastersVerifiedAt": "2026-08-21"
     },
     {
-      "series": "british_gt",
-      "eventName": "Brands Hatch | 2H",
-      "circuit": "Brands Hatch GP Circuit",
+      "series": "adac_gt_masters",
+      "eventName": "Hockenheimring | Race 1 | 60min",
+      "circuit": "Hockenheimring",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-09-27T00:00:00.000Z",
+      "startUtc": "2026-10-10T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
       "broadcasters": [
         {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-22"
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
+      "eventName": "Salzburgring | Race 1 | 80min",
+      "circuit": "Salzburgring 1",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-05T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
     },
     {
       "series": "british_gt",
@@ -1634,12 +1615,31 @@
       "broadcastersVerifiedAt": "2026-08-22"
     },
     {
+      "series": "british_gt",
+      "eventName": "Brands Hatch | 2H",
+      "circuit": "Brands Hatch GP Circuit",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-27T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
       "series": "gt_open",
-      "eventName": "Barcelona | Race 1",
+      "eventName": "Barcelona | Race 2",
       "circuit": "Barcelona-Catalunya Circuit",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-24T00:00:00.000Z",
+      "startUtc": "2026-10-25T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1673,11 +1673,11 @@
     },
     {
       "series": "gt_open",
-      "eventName": "Barcelona | Race 2",
-      "circuit": "Barcelona-Catalunya Circuit",
+      "eventName": "Hockenheim | Race 2",
+      "circuit": "Hockenheimring Baden-Württemberg",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-25T00:00:00.000Z",
+      "startUtc": "2026-09-13T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1711,11 +1711,11 @@
     },
     {
       "series": "gt_open",
-      "eventName": "Hockenheim | Race 2",
-      "circuit": "Hockenheimring Baden-Württemberg",
+      "eventName": "Barcelona | Race 1",
+      "circuit": "Barcelona-Catalunya Circuit",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-09-13T00:00:00.000Z",
+      "startUtc": "2026-10-24T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1757,19 +1757,6 @@
     },
     {
       "series": "super_gt",
-      "eventName": "Autopolis",
-      "circuit": "Autopolis International Racing Course",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-18T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "super_gt",
       "eventName": "Sportsland SUGO",
       "circuit": "Sportsland SUGO",
       "round": null,
@@ -1795,12 +1782,12 @@
       "broadcastersVerifiedAt": null
     },
     {
-      "series": "elms",
-      "eventName": "4 Hours of Portimão",
-      "circuit": "Autódromo Internacional do Algarve",
+      "series": "super_gt",
+      "eventName": "Autopolis",
+      "circuit": "Autopolis International Racing Course",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-10T00:00:00.000Z",
+      "startUtc": "2026-10-18T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1821,12 +1808,12 @@
       "broadcastersVerifiedAt": null
     },
     {
-      "series": "michelin_le_mans_cup",
-      "eventName": "Silverstone",
-      "circuit": "Silverstone Circuit",
+      "series": "elms",
+      "eventName": "4 Hours of Portimão",
+      "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-09-12T00:00:00.000Z",
+      "startUtc": "2026-10-10T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1840,6 +1827,19 @@
       "round": null,
       "sessionType": "race",
       "startUtc": "2026-10-10T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "michelin_le_mans_cup",
+      "eventName": "Silverstone",
+      "circuit": "Silverstone Circuit",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-12T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
