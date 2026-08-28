@@ -1,6 +1,6 @@
 import type { Adapter, SeriesId } from '../types.js';
 import { formelEAdapter } from './formel-e.js';
-import { gtwcEuropeAdapter } from './gtwc-europe.js';
+import { createGtwcAdapter } from './gtwc.js';
 import { createIcsAdapter } from './ics.js';
 import { imsaAdapter } from './imsa.js';
 import { nlsAdapter } from './nls.js';
@@ -9,14 +9,11 @@ import { wecAdapter } from './wec.js';
 // Kalender-IDs s. CLAUDE.md, Abschnitt "ICS-Feeds (toomuchracing.com)".
 // Italian GT und China GT fehlen bewusst: laut CLAUDE.md gibt es dafür
 // keinen ICS-Feed, nur eine Website (bräuchte einen eigenen Scraper).
-// NLS, WEC, IMSA und GTWC Europe laufen nicht mehr über den generischen
-// ICS-Adapter, sondern über dedizierte Adapter (nls.ts, wec.ts, imsa.ts,
-// gtwc-europe.ts), die echte Uhrzeiten liefern statt nur Datumsangaben ohne
-// Uhrzeit.
+// NLS, WEC, IMSA und alle vier GTWC-Regionen laufen nicht mehr über den
+// generischen ICS-Adapter, sondern über dedizierte Adapter (nls.ts, wec.ts,
+// imsa.ts, gtwc.ts), die echte Uhrzeiten liefern statt nur Datumsangaben
+// ohne Uhrzeit.
 const ICS_SERIES: [SeriesId, string][] = [
-  ['gtwc_america', '1g47v5qu33g114060qa1ula9d0'],
-  ['gtwc_asia', 'plm3evhsd30l34r2tj68fh9mss'],
-  ['gtwc_australia', '31e7b509e16383e2c02a557c478ba3fe7cac843154c97ca5fbc77d69a578c253'],
   ['igtc', 'kcelko7ictk6okcf4peougahlo'],
   ['dtm', '0urnjij5qqj3ijoht52fdsqk18'],
   ['adac_gt_masters', 'bo1ablitg2ecigfcdouq209vj0'],
@@ -29,11 +26,20 @@ const ICS_SERIES: [SeriesId, string][] = [
   ['michelin_le_mans_cup', 'niktsnpdfhu2bi3888ld8v24hc'],
 ];
 
+// Alle vier GTWC-Regionalseiten laufen auf demselben SRO-CMS und liefern
+// echte Session-Zeiten über gtwc.ts (s. dort) statt nur Renntage.
+const GTWC_SITES: [SeriesId, string][] = [
+  ['gtwc_europe', 'https://www.gt-world-challenge-europe.com'],
+  ['gtwc_america', 'https://www.gt-world-challenge-america.com'],
+  ['gtwc_asia', 'https://www.gt-world-challenge-asia.com'],
+  ['gtwc_australia', 'https://www.gt-world-challenge-australia.com'],
+];
+
 export const adapters: Adapter[] = [
   formelEAdapter,
   nlsAdapter,
   wecAdapter,
   imsaAdapter,
-  gtwcEuropeAdapter,
+  ...GTWC_SITES.map(([series, baseUrl]) => createGtwcAdapter(series, baseUrl)),
   ...ICS_SERIES.map(([series, calendarId]) => createIcsAdapter(series, calendarId)),
 ];
