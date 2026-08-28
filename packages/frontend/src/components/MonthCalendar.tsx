@@ -38,9 +38,36 @@ function isStale(verifiedAt: string | null): boolean {
   return DateTime.now().diff(DateTime.fromISO(verifiedAt), 'days').days > VERIFIED_STALE_AFTER_DAYS;
 }
 
+// "Läuft gerade" lässt sich nur ausrechnen, wenn wir sowohl Start- als auch
+// Endzeit exakt kennen. `date-only`-Einträge (nur Renntag, keine Uhrzeit aus
+// dem ICS-Feed) und Sessions ohne `endUtc` werden bewusst nie als live
+// markiert -- eine geratene Live-Anzeige wäre schlimmer als keine.
+function isLive(session: Session, now: DateTime): boolean {
+  if (session.confidence !== 'exact' || !session.endUtc) return false;
+  const start = DateTime.fromISO(session.startUtc, { zone: 'utc' });
+  const end = DateTime.fromISO(session.endUtc, { zone: 'utc' });
+  return now >= start && now <= end;
+}
+
+// Sessions bleiben nach Ende noch bis zu 24h in den Daten (s. GRACE_PERIOD_MS
+// im data-collector), damit über-Mitternacht-Rennen nicht vorzeitig
+// verschwinden. Dieselbe Referenz (endUtc, sonst startUtc) hier verwenden,
+// um "schon vorbei" konsistent mit dieser Kulanzregel zu berechnen.
+function isPast(session: Session, now: DateTime): boolean {
+  const reference = DateTime.fromISO(session.endUtc ?? session.startUtc, { zone: 'utc' });
+  return reference < now;
+}
+
 export function MonthCalendar({ sessions }: { sessions: Session[] }) {
   const [visibleMonth, setVisibleMonth] = useState<MonthKey | null>(null);
   const initialized = useRef(false);
+  // Für die "läuft gerade"-Markierung: alle 30s neu auswerten, damit sie ohne
+  // Reload verschwindet, sobald ein Rennen vorbei ist.
+  const [now, setNow] = useState(() => DateTime.now());
+  useEffect(() => {
+    const interval = setInterval(() => setNow(DateTime.now()), 30_000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Startmonat ergibt sich automatisch aus dem frühesten Termin: sessions.json
   // enthält ohnehin nur anstehende Termine, d.h. ist der aktuelle Monat leer,
@@ -92,7 +119,6 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
     ...Array.from({ length: monthStart.daysInMonth ?? 30 }, (_, i) => i + 1),
   ];
   const usedSeries = [...new Set(monthSessions.map((s) => s.series))].sort();
-  const now = DateTime.now();
   const isCurrentMonth = visibleMonth.year === now.year && visibleMonth.month === now.month;
 
   return (
@@ -144,7 +170,10 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
                       <div className="calendar-day-tooltip">
                         {daySessions.map((session, sessionIndex) => (
                           <div className="calendar-day-tooltip-item" key={sessionIndex}>
-                            <span className="calendar-day-tooltip-when">{formatWhen(session)}</span>
+                            <span className="calendar-day-tooltip-when">
+                              {isLive(session, now) && <span className="calendar-chip-live-dot" />}
+                              {formatWhen(session)}
+                            </span>
                             <span className="calendar-day-tooltip-title">
                               {SERIES_LABELS[session.series]} — {session.eventName}
                             </span>
@@ -175,7 +204,7 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
         ) : (
           monthSessions.map((session, index) => (
             <div
-              className="calendar-entry"
+              className={`calendar-entry${isLive(session, now) ? ' calendar-entry-live' : ''}${isPast(session, now) ? ' calendar-entry-past' : ''}`}
               key={`${session.series}-${session.eventName}-${session.sessionType}-${index}`}
             >
               <div className="calendar-entry-when">{formatWhen(session)}</div>
@@ -183,12 +212,25 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
                 {SERIES_LABELS[session.series]} — {session.eventName}
               </div>
               <div className="calendar-entry-meta">
+                {isLive(session, now) && <span className="calendar-chip calendar-chip-live">Live</span>}
                 <span className="calendar-chip calendar-chip-type">{SESSION_TYPE_LABELS[session.sessionType]}</span>
-                {session.broadcasters.map((b) => (
-                  <span className="calendar-chip" key={b.name}>
-                    {b.name}
-                  </span>
-                ))}
+                {session.broadcasters.map((b) =>
+                  b.url ? (
+                    <a
+                      className="calendar-chip calendar-chip-link"
+                      href={b.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      key={b.name}
+                    >
+                      {b.name}
+                    </a>
+                  ) : (
+                    <span className="calendar-chip" key={b.name}>
+                      {b.name}
+                    </span>
+                  ),
+                )}
                 {session.broadcasters.length > 0 && isStale(session.broadcastersVerifiedAt) && (
                   <span className="calendar-chip calendar-chip-stale">ohne Gewähr</span>
                 )}

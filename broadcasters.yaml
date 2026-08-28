@@ -52,8 +52,8 @@ gtwc_europe:
     broadcasters:
       - name: "GT World (YouTube, deutscher Kommentar)"
         type: free-stream
-        url: https://www.youtube.com/@GTWorldChallenge
-    verifiedAt: "2026-08-21"
+        url: https://www.youtube.com/@GTWorld
+    verifiedAt: "2026-08-28"
 
 nls:
   default:
@@ -86,8 +86,8 @@ igtc:
     broadcasters:
       - name: "GT World (YouTube)"
         type: free-stream
-        url: https://www.youtube.com/@GTWorldChallenge
-    verifiedAt: "2026-08-22"
+        url: https://www.youtube.com/@GTWorld
+    verifiedAt: "2026-08-28"
   events:
     # Kronjuwel Nürburgring 24h hat abweichend deutsches Free-TV, s. CLAUDE.md
     # Sonderfall-Logik bei Le Mans (analog: nationaler Sender + Stream extra).
@@ -104,24 +104,24 @@ gtwc_america:
     broadcasters:
       - name: "GT World (YouTube)"
         type: free-stream
-        url: https://www.youtube.com/@GTWorldChallenge
-    verifiedAt: "2026-08-22"
+        url: https://www.youtube.com/@GTWorld
+    verifiedAt: "2026-08-28"
 
 gtwc_asia:
   default:
     broadcasters:
       - name: "GT World (YouTube)"
         type: free-stream
-        url: https://www.youtube.com/@GTWorldChallenge
-    verifiedAt: "2026-08-22"
+        url: https://www.youtube.com/@GTWorld
+    verifiedAt: "2026-08-28"
 
 gtwc_australia:
   default:
     broadcasters:
       - name: "GT World (YouTube)"
         type: free-stream
-        url: https://www.youtube.com/@GTWorldChallenge
-    verifiedAt: "2026-08-22"
+        url: https://www.youtube.com/@GTWorld
+    verifiedAt: "2026-08-28"
 
 british_gt:
   default:

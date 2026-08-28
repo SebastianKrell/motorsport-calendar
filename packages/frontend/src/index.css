@@ -480,9 +480,57 @@ main {
   font-weight: 600;
 }
 
+a.calendar-chip-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.calendar-chip-link:hover,
+a.calendar-chip-link:focus-visible {
+  background: rgba(255, 255, 255, 0.32);
+  text-decoration: underline;
+}
+
 .calendar-chip-stale {
   background: transparent;
   border: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+.calendar-entry-live {
+  border-left: 3px solid #e53935;
+  padding-left: 0.5rem;
+  margin-left: -0.5rem;
+}
+
+.calendar-entry-past {
+  opacity: 0.45;
+}
+
+.calendar-chip-live {
+  background: #e53935;
+  color: #fff;
+  font-weight: 600;
+  animation: calendar-live-pulse 2s ease-in-out infinite;
+}
+
+.calendar-chip-live-dot {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #e53935;
+  margin-right: 0.3rem;
+  animation: calendar-live-pulse 2s ease-in-out infinite;
+}
+
+@keyframes calendar-live-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 .calendar-entries-empty {
