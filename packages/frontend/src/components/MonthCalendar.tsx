@@ -215,7 +215,7 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
                 {isLive(session, now) && <span className="calendar-chip calendar-chip-live">Live</span>}
                 <span className="calendar-chip calendar-chip-type">{SESSION_TYPE_LABELS[session.sessionType]}</span>
                 {session.broadcasters.map((b) =>
-                  b.url ? (
+                  b.url && !isPast(session, now) ? (
                     <a
                       className="calendar-chip calendar-chip-link"
                       href={b.url}
