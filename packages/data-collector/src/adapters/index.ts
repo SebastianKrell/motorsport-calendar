@@ -1,5 +1,6 @@
 import type { Adapter, SeriesId } from '../types.js';
 import { adacGtMastersAdapter, dtmAdapter, porscheCarreraCupAdapter } from './dtm.js';
+import { elmsAdapter } from './elms.js';
 import { formelEAdapter } from './formel-e.js';
 import { createGtwcAdapter } from './gtwc.js';
 import { createIcsAdapter } from './ics.js';
@@ -10,18 +11,18 @@ import { wecAdapter } from './wec.js';
 // Kalender-IDs s. CLAUDE.md, Abschnitt "ICS-Feeds (toomuchracing.com)".
 // Italian GT und China GT fehlen bewusst: laut CLAUDE.md gibt es dafür
 // keinen ICS-Feed, nur eine Website (bräuchte einen eigenen Scraper).
-// NLS, WEC, IMSA und alle vier GTWC-Regionen laufen nicht mehr über den
-// generischen ICS-Adapter, sondern über dedizierte Adapter (nls.ts, wec.ts,
-// imsa.ts, gtwc.ts), die echte Uhrzeiten liefern statt nur Datumsangaben
-// ohne Uhrzeit. DTM und der Porsche Carrera Cup Deutschland laufen komplett,
-// ADAC GT Masters teilweise über die echte dtm.com-API (s. dtm.ts).
+// NLS, WEC, IMSA, ELMS und alle vier GTWC-Regionen laufen nicht mehr über
+// den generischen ICS-Adapter, sondern über dedizierte Adapter (nls.ts,
+// wec.ts, imsa.ts, elms.ts, gtwc.ts), die echte Uhrzeiten liefern statt nur
+// Datumsangaben ohne Uhrzeit. DTM und der Porsche Carrera Cup Deutschland
+// laufen komplett, ADAC GT Masters teilweise über die echte dtm.com-API
+// (s. dtm.ts).
 const ICS_SERIES: [SeriesId, string][] = [
   ['igtc', 'kcelko7ictk6okcf4peougahlo'],
   ['british_gt', '6bh6kok6g3v97ogr2d1s2g1srs'],
   ['gt_open', 'kug92q3u7fqcg2t0di3e2cklio'],
   ['creventic_24h', '6rddivl20t6526fknlbhmhf6ps'],
   ['super_gt', '5ni9rjbofnkfvmpidmjpep9ek0'],
-  ['elms', 'ur7thj1o6ctignecm0uia024js'],
   ['asian_le_mans', 'lilnartmo4uglqdpatsve4pido'],
   ['michelin_le_mans_cup', 'niktsnpdfhu2bi3888ld8v24hc'],
 ];
@@ -40,6 +41,7 @@ export const adapters: Adapter[] = [
   nlsAdapter,
   wecAdapter,
   imsaAdapter,
+  elmsAdapter,
   dtmAdapter,
   adacGtMastersAdapter,
   porscheCarreraCupAdapter,

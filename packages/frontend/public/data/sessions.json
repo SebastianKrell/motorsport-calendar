@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T15:21:32.512Z",
+  "generatedAt": "2026-08-28T15:37:30.022Z",
   "sessions": [
     {
       "series": "wec",
@@ -2312,6 +2312,24 @@
     },
     {
       "series": "adac_gt_masters",
+      "eventName": "Hockenheimring | Race 1 | 60min",
+      "circuit": "Hockenheimring",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-10-10T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
       "eventName": "Hockenheimring | Race 2 | 60min",
       "circuit": "Hockenheimring",
       "round": null,
@@ -2365,43 +2383,6 @@
       "broadcastersVerifiedAt": "2026-08-21"
     },
     {
-      "series": "adac_gt_masters",
-      "eventName": "Hockenheimring | Race 1 | 60min",
-      "circuit": "Hockenheimring",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-10T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch | 2H",
-      "circuit": "Brands Hatch GP Circuit",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-27T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
       "series": "british_gt",
       "eventName": "Donington Park | 2H",
       "circuit": "Donington Park Circuit",
@@ -2421,39 +2402,20 @@
       "broadcastersVerifiedAt": "2026-08-22"
     },
     {
-      "series": "gt_open",
-      "eventName": "Monza | 500km",
-      "circuit": "Autodromo di Monza",
+      "series": "british_gt",
+      "eventName": "Brands Hatch | 2H",
+      "circuit": "Brands Hatch GP Circuit",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-18T00:00:00.000Z",
+      "startUtc": "2026-09-27T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
       "broadcasters": [
         {
-          "name": "International GT Open (YouTube, @GTOPENseries)",
+          "name": "GT World (YouTube) / britishgt.com",
           "type": "free-stream",
-          "url": "https://www.youtube.com/@GTOPENseries"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "gt_open",
-      "eventName": "Hockenheim | Race 2",
-      "circuit": "Hockenheimring Baden-Württemberg",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-13T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "International GT Open (YouTube, @GTOPENseries)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTOPENseries"
+          "url": "https://www.britishgt.com/live"
         }
       ],
       "broadcastersVerifiedAt": "2026-08-22"
@@ -2498,11 +2460,49 @@
     },
     {
       "series": "gt_open",
+      "eventName": "Monza | 500km",
+      "circuit": "Autodromo di Monza",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-10-18T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "International GT Open (YouTube, @GTOPENseries)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTOPENseries"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "gt_open",
       "eventName": "Hockenheim | Race 1",
       "circuit": "Hockenheimring Baden-Württemberg",
       "round": null,
       "sessionType": "race",
       "startUtc": "2026-09-12T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "International GT Open (YouTube, @GTOPENseries)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTOPENseries"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "gt_open",
+      "eventName": "Hockenheim | Race 2",
+      "circuit": "Hockenheimring Baden-Württemberg",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-13T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -2583,24 +2583,347 @@
     },
     {
       "series": "elms",
-      "eventName": "4 Hours of Portimão",
-      "circuit": "Autódromo Internacional do Algarve",
+      "eventName": "Goodyear 4 Hours of Silverstone",
+      "circuit": "Silverstone",
       "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-10T00:00:00.000Z",
+      "sessionType": "fp",
+      "startUtc": "2026-09-11T08:55:00.000Z",
       "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
     },
     {
       "series": "elms",
       "eventName": "Goodyear 4 Hours of Silverstone",
+      "circuit": "Silverstone",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2026-09-12T07:55:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "Goodyear 4 Hours of Silverstone (LMGT3)",
+      "circuit": "Silverstone",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-09-12T12:55:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "Goodyear 4 Hours of Silverstone (LMP3)",
+      "circuit": "Silverstone",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-09-12T13:20:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "Goodyear 4 Hours of Silverstone (LMP2 PRO/AM)",
+      "circuit": "Silverstone",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-09-12T13:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "Goodyear 4 Hours of Silverstone (LMP2)",
+      "circuit": "Silverstone",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-09-12T14:10:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "Goodyear 4 Hours of Silverstone",
+      "circuit": "Silverstone",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-13T10:00:00.000Z",
+      "endUtc": "2026-09-13T14:00:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "4 Hours of Portimão",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2026-10-08T09:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "4 Hours of Portimão",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2026-10-09T08:10:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "4 Hours of Portimão (LMGT3)",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-10-09T13:15:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "4 Hours of Portimão (LMP3)",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-10-09T13:40:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "4 Hours of Portimão (LMP2 PRO/AM)",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-10-09T14:05:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "4 Hours of Portimão (LMP2)",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-10-09T14:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "elms",
+      "eventName": "4 Hours of Portimão",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-10-10T12:30:00.000Z",
+      "endUtc": "2026-10-10T16:30:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "FIAWEC+",
+          "type": "free-stream",
+          "url": "https://plus.fiawec.com/en/european-le-mans-series"
+        },
+        {
+          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "michelin_le_mans_cup",
+      "eventName": "Silverstone",
       "circuit": "Silverstone Circuit",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-09-13T00:00:00.000Z",
+      "startUtc": "2026-09-12T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -2614,19 +2937,6 @@
       "round": null,
       "sessionType": "race",
       "startUtc": "2026-10-10T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "michelin_le_mans_cup",
-      "eventName": "Silverstone",
-      "circuit": "Silverstone Circuit",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-12T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",

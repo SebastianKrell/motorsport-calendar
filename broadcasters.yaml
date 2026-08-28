@@ -40,6 +40,19 @@ wec:
           type: streaming-paid
       verifiedAt: "2026-08-21"
 
+elms:
+  default:
+    broadcasters:
+      # Seit 2026 laufen alle ELMS-Rennen kostenlos (Konto nötig, kein
+      # Geoblocking) auf FIAWEC+ statt wie zuvor nur auf YouTube.
+      - name: FIAWEC+
+        type: free-stream
+        url: https://plus.fiawec.com/en/european-le-mans-series
+      - name: "YouTube (@EuropeanLeMansSeriesOfficial)"
+        type: free-stream
+        url: https://www.youtube.com/@EuropeanLeMansSeriesOfficial
+    verifiedAt: "2026-08-28"
+
 imsa:
   default:
     broadcasters:
