@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T14:59:46.910Z",
+  "generatedAt": "2026-08-28T15:21:32.512Z",
   "sessions": [
     {
       "series": "wec",
@@ -2042,32 +2042,14 @@
     },
     {
       "series": "dtm",
-      "eventName": "Hockenheimring | Race 2",
-      "circuit": "Hockenheimring",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-11T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "dtm",
-      "eventName": "Sachsenring | Race 1",
+      "eventName": "Sachsenring",
       "circuit": "Sachsenring",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-12T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
+      "round": 7,
+      "sessionType": "fp",
+      "startUtc": "2026-09-11T09:30:00.000Z",
+      "endUtc": "2026-09-13T10:25:00.000Z",
+      "source": "api",
+      "confidence": "exact",
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
@@ -2078,13 +2060,103 @@
     },
     {
       "series": "dtm",
-      "eventName": "Sachsenring | Race 2",
+      "eventName": "Sachsenring",
       "circuit": "Sachsenring",
-      "round": null,
+      "round": 7,
+      "sessionType": "fp",
+      "startUtc": "2026-09-11T13:50:00.000Z",
+      "endUtc": "2026-09-13T14:35:00.000Z",
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Sachsenring",
+      "circuit": "Sachsenring",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-09-12T07:55:00.000Z",
+      "endUtc": "2026-09-12T08:15:00.000Z",
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Sachsenring",
+      "circuit": "Sachsenring",
+      "round": 7,
       "sessionType": "race",
-      "startUtc": "2026-09-13T00:00:00.000Z",
+      "startUtc": "2026-09-12T11:30:00.000Z",
+      "endUtc": "2026-09-12T12:30:00.000Z",
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Sachsenring",
+      "circuit": "Sachsenring",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-09-13T07:00:00.000Z",
+      "endUtc": "2026-09-13T07:20:00.000Z",
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Sachsenring",
+      "circuit": "Sachsenring",
+      "round": 7,
+      "sessionType": "race",
+      "startUtc": "2026-09-13T11:30:00.000Z",
+      "endUtc": "2026-09-13T12:30:00.000Z",
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Hockenheimring",
+      "circuit": "Hockenheimring",
+      "round": 8,
+      "sessionType": "race",
+      "startUtc": "2026-10-08T22:00:00.000Z",
       "endUtc": null,
-      "source": "ics",
+      "source": "api",
       "confidence": "date-only",
       "broadcasters": [
         {
@@ -2096,13 +2168,139 @@
     },
     {
       "series": "dtm",
-      "eventName": "Hockenheimring | Race 1",
-      "circuit": "Hockenheimring",
-      "round": null,
+      "eventName": "Red Bull Ring",
+      "circuit": "Red Bull Ring",
+      "round": 1,
       "sessionType": "race",
-      "startUtc": "2026-10-10T00:00:00.000Z",
+      "startUtc": "2027-04-22T22:01:00.000Z",
       "endUtc": null,
-      "source": "ics",
+      "source": "api",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Motorsport Arena Oschersleben",
+      "circuit": "Motorsport Arena Oschersleben",
+      "round": 2,
+      "sessionType": "race",
+      "startUtc": "2027-05-06T22:01:00.000Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "DEKRA Lausitzring",
+      "circuit": "DEKRA Lausitzring Sprint",
+      "round": 3,
+      "sessionType": "race",
+      "startUtc": "2027-06-17T22:01:00.000Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Norisring",
+      "circuit": "Norisring",
+      "round": 4,
+      "sessionType": "race",
+      "startUtc": "2027-07-01T22:01:00.000Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Circuit Zandvoort",
+      "circuit": "Circuit Zandvoort",
+      "round": 5,
+      "sessionType": "race",
+      "startUtc": "2027-08-05T22:01:00.000Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Nürburgring",
+      "circuit": "Nürburgring Sprint",
+      "round": 6,
+      "sessionType": "race",
+      "startUtc": "2027-08-19T22:01:00.000Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Sachsenring",
+      "circuit": "Sachsenring",
+      "round": 7,
+      "sessionType": "race",
+      "startUtc": "2027-09-23T22:01:00.000Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "dtm",
+      "eventName": "Hockenheimring",
+      "circuit": "Hockenheimring",
+      "round": 8,
+      "sessionType": "race",
+      "startUtc": "2027-10-07T22:01:00.000Z",
+      "endUtc": null,
+      "source": "api",
       "confidence": "date-only",
       "broadcasters": [
         {
@@ -2114,11 +2312,11 @@
     },
     {
       "series": "adac_gt_masters",
-      "eventName": "Hockenheimring | Race 1 | 60min",
+      "eventName": "Hockenheimring | Race 2 | 60min",
       "circuit": "Hockenheimring",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-10T00:00:00.000Z",
+      "startUtc": "2026-10-11T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -2150,24 +2348,6 @@
     },
     {
       "series": "adac_gt_masters",
-      "eventName": "Hockenheimring | Race 2 | 60min",
-      "circuit": "Hockenheimring",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-11T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "adac_gt_masters",
       "eventName": "Salzburgring | Race 1 | 80min",
       "circuit": "Salzburgring 1",
       "round": null,
@@ -2185,23 +2365,22 @@
       "broadcastersVerifiedAt": "2026-08-21"
     },
     {
-      "series": "british_gt",
-      "eventName": "Donington Park | 2H",
-      "circuit": "Donington Park Circuit",
+      "series": "adac_gt_masters",
+      "eventName": "Hockenheimring | Race 1 | 60min",
+      "circuit": "Hockenheimring",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-09-06T00:00:00.000Z",
+      "startUtc": "2026-10-10T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
       "broadcasters": [
         {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-22"
+      "broadcastersVerifiedAt": "2026-08-21"
     },
     {
       "series": "british_gt",
@@ -2223,12 +2402,31 @@
       "broadcastersVerifiedAt": "2026-08-22"
     },
     {
-      "series": "gt_open",
-      "eventName": "Barcelona | Race 1",
-      "circuit": "Barcelona-Catalunya Circuit",
+      "series": "british_gt",
+      "eventName": "Donington Park | 2H",
+      "circuit": "Donington Park Circuit",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-24T00:00:00.000Z",
+      "startUtc": "2026-09-06T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "gt_open",
+      "eventName": "Monza | 500km",
+      "circuit": "Autodromo di Monza",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-10-18T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -2262,30 +2460,11 @@
     },
     {
       "series": "gt_open",
-      "eventName": "Hockenheim | Race 1",
-      "circuit": "Hockenheimring Baden-Württemberg",
+      "eventName": "Barcelona | Race 1",
+      "circuit": "Barcelona-Catalunya Circuit",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-09-12T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "International GT Open (YouTube, @GTOPENseries)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTOPENseries"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "gt_open",
-      "eventName": "Monza | 500km",
-      "circuit": "Autodromo di Monza",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-18T00:00:00.000Z",
+      "startUtc": "2026-10-24T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -2305,6 +2484,25 @@
       "round": null,
       "sessionType": "race",
       "startUtc": "2026-10-25T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "International GT Open (YouTube, @GTOPENseries)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTOPENseries"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "gt_open",
+      "eventName": "Hockenheim | Race 1",
+      "circuit": "Hockenheimring Baden-Württemberg",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-12T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -2359,11 +2557,11 @@
     },
     {
       "series": "super_gt",
-      "eventName": "Sportsland SUGO",
-      "circuit": "Sportsland SUGO",
+      "eventName": "Autopolis",
+      "circuit": "Autopolis International Racing Course",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-09-20T00:00:00.000Z",
+      "startUtc": "2026-10-18T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -2372,11 +2570,11 @@
     },
     {
       "series": "super_gt",
-      "eventName": "Autopolis",
-      "circuit": "Autopolis International Racing Course",
+      "eventName": "Sportsland SUGO",
+      "circuit": "Sportsland SUGO",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-10-18T00:00:00.000Z",
+      "startUtc": "2026-09-20T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",

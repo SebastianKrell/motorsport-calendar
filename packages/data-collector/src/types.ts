@@ -6,6 +6,7 @@ export type SeriesId =
   | 'gtwc_europe'
   | 'dtm'
   | 'adac_gt_masters'
+  | 'porsche_carrera_cup_de'
   | 'igtc'
   | 'gtwc_america'
   | 'gtwc_asia'

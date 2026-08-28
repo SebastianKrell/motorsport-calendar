@@ -11,6 +11,7 @@ export const SERIES_COLORS: Record<SeriesId, string> = {
   gtwc_europe: '#BA7517',
   dtm: '#D4537E',
   adac_gt_masters: '#997A22',
+  porsche_carrera_cup_de: '#C9A0DC',
   igtc: '#639922',
   gtwc_america: '#5DCAA5',
   gtwc_asia: '#85B7EB',

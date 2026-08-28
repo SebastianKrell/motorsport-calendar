@@ -81,6 +81,16 @@ adac_gt_masters:
     verifiedAt: "2026-08-21"
     unverified: true
 
+porsche_carrera_cup_de:
+  default:
+    broadcasters:
+      - name: "YouTube (@PorscheCarreraCupDeutschland)"
+        type: free-stream
+        url: https://www.youtube.com/@PorscheCarreraCupDeutschland
+      - name: Joyn
+        type: free-stream
+    verifiedAt: "2026-08-28"
+
 igtc:
   default:
     broadcasters:

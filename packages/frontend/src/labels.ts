@@ -15,6 +15,7 @@ export const SERIES_LABELS: Record<SeriesId, string> = {
   gtwc_europe: 'GTWC Europe',
   dtm: 'DTM',
   adac_gt_masters: 'ADAC GT Masters',
+  porsche_carrera_cup_de: 'Porsche Carrera Cup',
   igtc: 'IGTC',
   gtwc_america: 'GTWC America',
   gtwc_asia: 'GTWC Asia',
