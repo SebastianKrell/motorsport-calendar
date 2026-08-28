@@ -135,8 +135,10 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
                 type="button"
                 className="calendar-today-button"
                 onClick={() => setVisibleMonth({ year: now.year, month: now.month })}
+                aria-label="Zum heutigen Monat springen"
+                title="Heute"
               >
-                Heute
+                📅
               </button>
             )}
           </span>

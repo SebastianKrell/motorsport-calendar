@@ -283,20 +283,22 @@ main {
   text-transform: capitalize;
 }
 
-.calendar-today-button {
+.calendar-nav button.calendar-today-button {
+  width: auto;
+  height: auto;
   border: none;
   background: none;
   color: var(--text-muted);
-  padding: 0.1rem 0;
-  font-size: 0.68rem;
-  text-decoration: underline;
-  text-decoration-color: var(--border);
+  padding: 0.1rem 0.2rem;
+  font-size: 0.85rem;
+  line-height: 1;
+  opacity: 0.75;
   cursor: pointer;
 }
 
-.calendar-today-button:hover {
+.calendar-nav button.calendar-today-button:hover {
   color: var(--text);
-  text-decoration-color: var(--text-muted);
+  opacity: 1;
 }
 
 .calendar-weekdays,
