@@ -7,6 +7,16 @@
   "scripts": {
     "collect": "npm run collect -w data-collector",
     "dev": "npm run dev -w frontend",
-    "build": "npm run build -w frontend"
+    "build": "npm run build -w frontend",
+    "lint": "eslint \"packages/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit -p packages/data-collector/tsconfig.json && tsc -b packages/frontend/tsconfig.json"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.9.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.5",
+    "globals": "^17.11.0",
+    "typescript-eslint": "^8.68.0"
   }
 }

@@ -215,6 +215,31 @@ main {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
+.dropdown-actions {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0 0 0.4rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dropdown-actions button {
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.3rem 0.45rem;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.dropdown-actions button:hover {
+  border-color: var(--brand);
+  background: var(--row-hover);
+}
+
 .dropdown-option {
   display: flex;
   align-items: center;

@@ -2,6 +2,7 @@ import type { Adapter, SeriesId } from '../types.js';
 import { adacGtMastersAdapter, dtmAdapter, porscheCarreraCupAdapter } from './dtm.js';
 import { elmsAdapter } from './elms.js';
 import { formelEAdapter } from './formel-e.js';
+import { gtOpenAdapter } from './gt_open.js';
 import { createGtwcAdapter } from './gtwc.js';
 import { createIcsAdapter } from './ics.js';
 import { imsaAdapter } from './imsa.js';
@@ -20,7 +21,6 @@ import { wecAdapter } from './wec.js';
 const ICS_SERIES: [SeriesId, string][] = [
   ['igtc', 'kcelko7ictk6okcf4peougahlo'],
   ['british_gt', '6bh6kok6g3v97ogr2d1s2g1srs'],
-  ['gt_open', 'kug92q3u7fqcg2t0di3e2cklio'],
   ['creventic_24h', '6rddivl20t6526fknlbhmhf6ps'],
   ['super_gt', '5ni9rjbofnkfvmpidmjpep9ek0'],
   ['asian_le_mans', 'lilnartmo4uglqdpatsve4pido'],
@@ -42,6 +42,7 @@ export const adapters: Adapter[] = [
   wecAdapter,
   imsaAdapter,
   elmsAdapter,
+  gtOpenAdapter,
   dtmAdapter,
   adacGtMastersAdapter,
   porscheCarreraCupAdapter,

@@ -6,12 +6,16 @@ export function MultiSelectDropdown<T extends string>({
   labels,
   selected,
   onToggle,
+  onSelectAll,
+  onSelectNone,
 }: {
   label: string;
   options: T[];
   labels: Record<T, string>;
   selected: Set<T>;
   onToggle: (value: T) => void;
+  onSelectAll?: () => void;
+  onSelectNone?: () => void;
 }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -35,6 +39,16 @@ export function MultiSelectDropdown<T extends string>({
       </button>
       {open && (
         <div className="dropdown-panel">
+          {onSelectAll && onSelectNone && (
+            <div className="dropdown-actions">
+              <button type="button" onClick={onSelectAll}>
+                Alle
+              </button>
+              <button type="button" onClick={onSelectNone}>
+                Keine
+              </button>
+            </div>
+          )}
           {options.map((option) => (
             <label className="dropdown-option" key={option}>
               <input type="checkbox" checked={selected.has(option)} onChange={() => onToggle(option)} />
