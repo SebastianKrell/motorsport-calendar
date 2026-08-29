@@ -31,4 +31,19 @@ describe('deduplicateCrossSeries', () => {
 
     expect(result).toHaveLength(2);
   });
+
+  it('erkennt abweichende Indianapolis-Namen als dasselbe IGTC-Event', () => {
+    const igtc = {
+      ...session('igtc', 'Indianapolis 8 Hour'),
+      circuit: 'Indianapolis Motor Speedway',
+      startUtc: '2026-10-10T16:30:00.000Z',
+    };
+    const gtwc = {
+      ...session('gtwc_america', 'Indianapolis Motor Speedway'),
+      circuit: 'Indianapolis Motor Speedway',
+      startUtc: '2026-10-10T16:30:00.000Z',
+    };
+
+    expect(deduplicateCrossSeries([igtc, gtwc])).toEqual([igtc]);
+  });
 });

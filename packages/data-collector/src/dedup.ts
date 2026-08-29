@@ -15,11 +15,15 @@ function priorityRank(series: SeriesId): number {
 }
 
 function normalizeCircuit(circuit: string): string {
-  return circuit.trim().toLowerCase();
+  const normalized = circuit.trim().toLowerCase();
+  if (normalized.includes('indianapolis')) return 'indianapolis motor speedway';
+  return normalized;
 }
 
 function normalizeEventName(eventName: string): string {
-  return eventName.trim().toLowerCase();
+  const normalized = eventName.trim().toLowerCase();
+  if (normalized.includes('indianapolis')) return 'indianapolis';
+  return normalized;
 }
 
 // Paarweiser statt transitiver Vergleich: verhindert, dass z. B. zwei echte,
