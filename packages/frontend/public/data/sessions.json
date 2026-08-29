@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T18:32:42.660Z",
+  "generatedAt": "2026-08-29T18:38:53.507Z",
   "sessions": [
     {
       "series": "nls",
@@ -3256,40 +3256,58 @@
       "series": "super_gt",
       "eventName": "Sportsland SUGO",
       "circuit": "Sportsland SUGO",
-      "round": null,
+      "round": 6,
       "sessionType": "race",
       "startUtc": "2026-09-20T00:00:00.000Z",
       "endUtc": null,
-      "source": "ics",
+      "source": "scrape",
       "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "super_gt",
-      "eventName": "Mobility Resort Motegi",
-      "circuit": "Mobility Resort Motegi",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-11-08T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "super_gt",
-      "eventName": "Autopolis",
-      "circuit": "Autopolis International Racing Course",
-      "round": null,
+      "eventName": "AUTOPOLIS",
+      "circuit": "AUTOPOLIS",
+      "round": 7,
       "sessionType": "race",
       "startUtc": "2026-10-18T00:00:00.000Z",
       "endUtc": null,
-      "source": "ics",
+      "source": "scrape",
       "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "MOBILITY RESORT MOTEGI",
+      "circuit": "MOBILITY RESORT MOTEGI",
+      "round": 8,
+      "sessionType": "race",
+      "startUtc": "2026-11-08T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
     }
   ]
 }
