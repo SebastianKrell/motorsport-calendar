@@ -89,6 +89,8 @@ export function App() {
             labels={SERIES_LABELS}
             selected={selectedSeries}
             onToggle={toggleSeries}
+            onSelectAll={() => setSelectedSeries(new Set(availableSeries))}
+            onSelectNone={() => setSelectedSeries(new Set())}
           />
           <MultiSelectDropdown
             label="Session"
