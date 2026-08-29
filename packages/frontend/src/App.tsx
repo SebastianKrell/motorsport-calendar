@@ -111,7 +111,8 @@ export function App() {
             <a href="https://www.nuerburgring-langstrecken-serie.de">nuerburgring-langstrecken-serie.de</a>.
             Uhrzeiten WEC: <a href="https://www.fiawec.com">fiawec.com</a>. Uhrzeiten IMSA:{' '}
             <a href="https://raceweek.io">raceweek.io</a>. Uhrzeiten GTWC:{' '}
-            <a href="https://www.gt-world-challenge-europe.com">gt-world-challenge-*.com</a>. Uhrzeiten
+            <a href="https://www.gt-world-challenge-europe.com">gt-world-challenge-*.com</a>. Uhrzeiten IGTC:{' '}
+            <a href="https://www.intercontinentalgtchallenge.com">intercontinentalgtchallenge.com</a>. Uhrzeiten
             DTM / ADAC GT Masters / Porsche Carrera Cup: <a href="https://dtm.com">dtm.com</a>.
             Uhrzeiten Michelin Le Mans Cup: <a href="https://www.lemanscup.com">lemanscup.com</a>.
           </p>

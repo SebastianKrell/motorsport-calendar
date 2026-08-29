@@ -20,16 +20,16 @@ import { wecAdapter } from './wec.js';
 // laufen komplett, ADAC GT Masters teilweise über die echte dtm.com-API
 // (s. dtm.ts).
 const ICS_SERIES: [SeriesId, string][] = [
-  ['igtc', 'kcelko7ictk6okcf4peougahlo'],
   ['british_gt', '6bh6kok6g3v97ogr2d1s2g1srs'],
   ['creventic_24h', '6rddivl20t6526fknlbhmhf6ps'],
   ['super_gt', '5ni9rjbofnkfvmpidmjpep9ek0'],
   ['asian_le_mans', 'lilnartmo4uglqdpatsve4pido'],
 ];
 
-// Alle vier GTWC-Regionalseiten laufen auf demselben SRO-CMS und liefern
+// Die vier GTWC-Regionalseiten und IGTC laufen auf demselben SRO-CMS und liefern
 // echte Session-Zeiten über gtwc.ts (s. dort) statt nur Renntage.
 const GTWC_SITES: [SeriesId, string][] = [
+  ['igtc', 'https://www.intercontinentalgtchallenge.com'],
   ['gtwc_europe', 'https://www.gt-world-challenge-europe.com'],
   ['gtwc_america', 'https://www.gt-world-challenge-america.com'],
   ['gtwc_asia', 'https://www.gt-world-challenge-asia.com'],

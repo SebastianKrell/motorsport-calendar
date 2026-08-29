@@ -34,6 +34,11 @@ function decodeHtmlEntities(text: string): string {
     .replace(/&amp;/g, '&');
 }
 
+function fallbackCircuit(eventName: string): string {
+  if (/^Indianapolis 8 Hour$/i.test(eventName)) return 'Indianapolis Motor Speedway';
+  return eventName;
+}
+
 // Die "Event"-JSON-LD auf der Detailseite enthält nur Start-/Enddatum ohne
 // Uhrzeit ("startDate": "2026-08-28") -- die eigentlichen Session-Zeiten
 // stehen in der separaten HTML-Timetable weiter unten (s. extractSchedule).
@@ -68,7 +73,7 @@ function extractEventInfo(html: string): EventInfo | null {
 
   return {
     name,
-    circuit: locationCircuit || name,
+    circuit: locationCircuit || fallbackCircuit(name),
     round: roundMatch ? Number(roundMatch[1]) : null,
     startYear: Number(startDateMatch[1]),
     startMonth: Number(startDateMatch[2]),
@@ -105,12 +110,12 @@ interface ScheduleEntry {
 // Bezeichnungen zwischen den Regionen leicht unterscheiden (z.B. "Free
 // Practice 1" in Europa vs. "Practice 1" in USA/Asien/Australien, "Pre-
 // Qualifying" in Asien, "Superpole" in Europa) -- funktioniert dadurch
-// automatisch für alle vier GTWC-Regionalseiten.
+// automatisch für alle GTWC-Regionalseiten und IGTC.
 function classifySession(label: string): SessionType | null {
   const lower = label.toLowerCase();
   if (/test|pit walk|parade|autograph|grid walk/.test(lower)) return null;
   if (/practice/.test(lower)) return 'fp';
-  if (/qualifying|superpole/.test(lower)) return 'quali';
+  if (/qualifying|superpole|shootout/.test(lower)) return 'quali';
   if (/warm-?up/.test(lower)) return 'fp';
   if (/race/.test(lower)) return 'race';
   return null;
@@ -202,7 +207,7 @@ function raceDurationHours(eventName: string): number | null {
   return match ? Number(match[1]) : null;
 }
 
-// Alle vier GTWC-Regionalseiten (Europe/America/Asia/Australia) laufen auf
+// Alle GTWC-Regionalseiten (Europe/America/Asia/Australia) und IGTC laufen auf
 // derselben SRO-CMS-Vorlage: Kalenderseite mit Event-Links, Event-Detailseite
 // mit schema.org-JSON-LD (Datum, Rundennummer, Circuit) plus separater HTML-
 // Timetable (Label, lokale Zeit, GMT) -- ein gemeinsamer Adapter reicht,
