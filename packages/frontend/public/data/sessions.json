@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T18:38:53.507Z",
+  "generatedAt": "2026-08-29T18:44:43.682Z",
   "sessions": [
     {
       "series": "nls",
@@ -19,10 +19,11 @@
         },
         {
           "name": "YouTube (@VLNOFFICIAL)",
-          "type": "free-stream"
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@VLNOFFICIAL"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "nls",
@@ -42,10 +43,11 @@
         },
         {
           "name": "YouTube (@VLNOFFICIAL)",
-          "type": "free-stream"
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@VLNOFFICIAL"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "nls",
@@ -65,10 +67,11 @@
         },
         {
           "name": "YouTube (@VLNOFFICIAL)",
-          "type": "free-stream"
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@VLNOFFICIAL"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "nls",
@@ -88,10 +91,11 @@
         },
         {
           "name": "YouTube (@VLNOFFICIAL)",
-          "type": "free-stream"
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@VLNOFFICIAL"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "nls",
@@ -111,10 +115,11 @@
         },
         {
           "name": "YouTube (@VLNOFFICIAL)",
-          "type": "free-stream"
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@VLNOFFICIAL"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "nls",
@@ -134,10 +139,11 @@
         },
         {
           "name": "YouTube (@VLNOFFICIAL)",
-          "type": "free-stream"
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@VLNOFFICIAL"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "wec",
@@ -1085,17 +1091,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1109,17 +1110,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1133,17 +1129,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1157,17 +1148,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1181,17 +1167,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1205,17 +1186,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1229,17 +1205,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1253,17 +1224,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1277,17 +1243,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1301,17 +1262,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1325,17 +1281,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1349,17 +1300,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1373,17 +1319,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "elms",
@@ -1397,17 +1338,12 @@
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "FIAWEC+",
-          "type": "free-stream",
-          "url": "https://plus.fiawec.com/en/european-le-mans-series"
-        },
-        {
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-28"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "michelin_le_mans_cup",
@@ -1707,10 +1643,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1725,10 +1662,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1743,10 +1681,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1761,10 +1700,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1779,10 +1719,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1797,10 +1738,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1815,10 +1757,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1833,10 +1776,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1851,10 +1795,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1869,10 +1814,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1887,10 +1833,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -1905,10 +1852,11 @@
       "broadcasters": [
         {
           "name": "ProSieben / ran.de",
-          "type": "free-tv"
+          "type": "free-tv",
+          "url": "https://www.ran.de/sports/motorsport/dtm"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-21"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "adac_gt_masters",
