@@ -33,6 +33,8 @@ jobs:
 
       - run: npm run typecheck
 
+      - run: npm test
+
       - run: npm run collect
 
       # Nur bei Cron/manuellem Trigger zurückcommitten. Bei normalen Pushes

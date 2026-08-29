@@ -9,6 +9,7 @@
     "dev": "npm run dev -w frontend",
     "build": "npm run build -w frontend",
     "lint": "eslint \"packages/**/*.{ts,tsx}\"",
+    "test": "vitest run",
     "typecheck": "tsc --noEmit -p packages/data-collector/tsconfig.json && tsc -b packages/frontend/tsconfig.json"
   },
   "devDependencies": {
@@ -17,6 +18,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.5",
     "globals": "^17.11.0",
-    "typescript-eslint": "^8.68.0"
+    "typescript-eslint": "^8.68.0",
+    "vitest": "^4.1.11"
   }
 }
