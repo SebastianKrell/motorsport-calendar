@@ -43,15 +43,10 @@ wec:
 elms:
   default:
     broadcasters:
-      # Seit 2026 laufen alle ELMS-Rennen kostenlos (Konto nötig, kein
-      # Geoblocking) auf FIAWEC+ statt wie zuvor nur auf YouTube.
-      - name: FIAWEC+
-        type: free-stream
-        url: https://plus.fiawec.com/en/european-le-mans-series
       - name: "YouTube (@EuropeanLeMansSeriesOfficial)"
         type: free-stream
         url: https://www.youtube.com/@EuropeanLeMansSeriesOfficial
-    verifiedAt: "2026-08-28"
+    verifiedAt: "2026-08-29"
 
 michelin_le_mans_cup:
   default:
@@ -85,15 +80,16 @@ nls:
         url: https://www.vln.de
       - name: "YouTube (@VLNOFFICIAL)"
         type: free-stream
-    verifiedAt: "2026-08-21"
+        url: https://www.youtube.com/@VLNOFFICIAL
+    verifiedAt: "2026-08-29"
 
 dtm:
   default:
     broadcasters:
       - name: ProSieben / ran.de
         type: free-tv
-    verifiedAt: "2026-08-21"
-    unverified: true
+        url: https://www.ran.de/sports/motorsport/dtm
+    verifiedAt: "2026-08-29"
 
 adac_gt_masters:
   default:
