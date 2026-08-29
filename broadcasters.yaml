@@ -184,9 +184,10 @@ creventic_24h:
         type: free-stream
     verifiedAt: "2026-08-22"
 
-# super_gt: bewusst kein Eintrag. Recherche 2026-08-22 fand keinen
-# verlässlichen kostenlosen internationalen Stream -- Hauptsender ist
-# J SPORTS (Japan, national). Motorsport.tv (bisherige engl. Streams) wird
-# eingestellt, Nachfolger RACER+ ist kostenpflichtig und primär US-fokussiert,
-# DE-Verfügbarkeit ungeklärt. Nicht raten (s. CLAUDE.md Konventionen) --
-# stattdessen "—" im Frontend, bis sich das ändert.
+super_gt:
+  default:
+    broadcasters:
+      - name: "SUPER GT Official (YouTube, zeitversetzt)"
+        type: free-stream
+        url: https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA
+    verifiedAt: "2026-08-29"

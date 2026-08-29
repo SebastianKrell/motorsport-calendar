@@ -8,6 +8,7 @@ import { createIcsAdapter } from './ics.js';
 import { imsaAdapter } from './imsa.js';
 import { leMansCupAdapter } from './le-mans-cup.js';
 import { nlsAdapter } from './nls.js';
+import { superGtAdapter } from './super-gt.js';
 import { wecAdapter } from './wec.js';
 
 // Kalender-IDs s. CLAUDE.md, Abschnitt "ICS-Feeds (toomuchracing.com)".
@@ -21,7 +22,6 @@ import { wecAdapter } from './wec.js';
 // (s. dtm.ts).
 const ICS_SERIES: [SeriesId, string][] = [
   ['creventic_24h', '6rddivl20t6526fknlbhmhf6ps'],
-  ['super_gt', '5ni9rjbofnkfvmpidmjpep9ek0'],
   ['asian_le_mans', 'lilnartmo4uglqdpatsve4pido'],
 ];
 
@@ -43,6 +43,7 @@ export const adapters: Adapter[] = [
   imsaAdapter,
   elmsAdapter,
   leMansCupAdapter,
+  superGtAdapter,
   gtOpenAdapter,
   dtmAdapter,
   adacGtMastersAdapter,
