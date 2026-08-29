@@ -14,6 +14,10 @@ function priorityRank(series: SeriesId): number {
   return index === -1 ? DEDUP_PRIORITY.length : index;
 }
 
+function isCrossSeriesDuplicateCandidate(series: SeriesId): boolean {
+  return DEDUP_PRIORITY.includes(series);
+}
+
 function normalizeCircuit(circuit: string): string {
   const normalized = circuit.trim().toLowerCase();
   if (normalized.includes('indianapolis')) return 'indianapolis motor speedway';
@@ -44,6 +48,7 @@ export function deduplicateCrossSeries(sessions: Session[]): Session[] {
     for (let j = i + 1; j < sessions.length; j++) {
       const b = sessions[j];
       if (dropped.has(b) || a.series === b.series) continue;
+      if (!isCrossSeriesDuplicateCandidate(a.series) || !isCrossSeriesDuplicateCandidate(b.series)) continue;
       if (normalizeCircuit(a.circuit) !== normalizeCircuit(b.circuit)) continue;
       if (normalizeEventName(a.eventName) !== normalizeEventName(b.eventName)) continue;
 

@@ -22,8 +22,15 @@ interface EventInfo {
   name: string;
   circuit: string;
   round: number | null;
+  raceDate: string;
   startMonth: number;
   startYear: number;
+}
+
+export interface GtwcSite {
+  baseUrl: string;
+  eventNameSuffix?: string;
+  dateOnlyFallback?: boolean;
 }
 
 function decodeHtmlEntities(text: string): string {
@@ -31,6 +38,7 @@ function decodeHtmlEntities(text: string): string {
     .replace(/&uuml;/g, 'ü')
     .replace(/&auml;/g, 'ä')
     .replace(/&ouml;/g, 'ö')
+    .replace(/&atilde;/g, 'ã')
     .replace(/&amp;/g, '&');
 }
 
@@ -56,6 +64,7 @@ function extractEventInfo(html: string): EventInfo | null {
 
   const nameMatch = scriptMatch[0].match(/"name":\s*"([^"]*)"/);
   const startDateMatch = scriptMatch[0].match(/"startDate":\s*"(\d{4})-(\d{2})-(\d{2})"/);
+  const endDateMatch = scriptMatch[0].match(/"endDate":\s*"(\d{4}-\d{2}-\d{2})"/);
   const descriptionMatch = scriptMatch[0].match(/"description":\s*"([^"]*)"/);
   const locationNameMatch = scriptMatch[0].match(/"location":\s*\{[^}]*?"name":\s*"([^"]*)"/);
   if (!nameMatch || !startDateMatch) return null;
@@ -75,6 +84,7 @@ function extractEventInfo(html: string): EventInfo | null {
     name,
     circuit: locationCircuit || fallbackCircuit(name),
     round: roundMatch ? Number(roundMatch[1]) : null,
+    raceDate: endDateMatch?.[1] ?? `${startDateMatch[1]}-${startDateMatch[2]}-${startDateMatch[3]}`,
     startYear: Number(startDateMatch[1]),
     startMonth: Number(startDateMatch[2]),
   };
@@ -115,7 +125,7 @@ function classifySession(label: string): SessionType | null {
   const lower = label.toLowerCase();
   if (/test|pit walk|parade|autograph|grid walk/.test(lower)) return null;
   if (/practice/.test(lower)) return 'fp';
-  if (/qualifying|superpole|shootout/.test(lower)) return 'quali';
+  if (/qualify(?:ing)?|superpole|shootout/.test(lower)) return 'quali';
   if (/warm[\s-]?up/.test(lower)) return 'fp';
   if (/race/.test(lower)) return 'race';
   return null;
@@ -212,65 +222,88 @@ function raceDurationHours(eventName: string): number | null {
 // Event-Detailseite mit schema.org-JSON-LD (Datum, Rundennummer, Circuit) plus
 // separater HTML-Timetable (Label, lokale Zeit, GMT) -- ein gemeinsamer Adapter
 // reicht, parametrisiert nur über Serie und Basis-URL.
+function dateOnlyRace(series: SeriesId, event: EventInfo, eventNameSuffix?: string): Session {
+  return {
+    series,
+    eventName: `${event.name}${eventNameSuffix ?? ''}`,
+    circuit: event.circuit,
+    round: event.round,
+    sessionType: 'race',
+    startUtc: `${event.raceDate}T00:00:00.000Z`,
+    endUtc: null,
+    source: 'scrape',
+    confidence: 'date-only',
+  };
+}
+
+async function fetchSiteSessions(series: SeriesId, site: GtwcSite): Promise<Session[]> {
+  const eventUrls = await fetchEventUrls(site.baseUrl);
+  const sessions: Session[] = [];
+
+  for (const url of eventUrls) {
+    try {
+      const html = await fetchHtml(url);
+      const event = extractEventInfo(html);
+      if (!event) {
+        console.warn(`[${series}] kein Event-JSON-LD auf ${url} gefunden, überspringe`);
+        continue;
+      }
+      // Test-/Show-Events (z.B. "Official Test Days", "End of Year
+      // Gala") haben keine Rundennummer und sind keine
+      // Meisterschaftsrennen -- bewusst ausgelassen.
+      if (event.round === null) continue;
+
+      const schedule = extractSchedule(html);
+      const isPlaceholder = schedule.length === 1 && schedule[0].localMinutes === 0;
+      if (schedule.length === 0 || isPlaceholder) {
+        const reason = isPlaceholder ? 'nur Platzhalter-Timetable' : 'keine Timetable';
+        if (site.dateOnlyFallback) {
+          sessions.push(dateOnlyRace(series, event, site.eventNameSuffix));
+        } else {
+          console.warn(`[${series}] ${reason} auf ${url} gefunden, überspringe`);
+        }
+        continue;
+      }
+
+      const durationHours = raceDurationHours(event.name);
+
+      for (const entry of schedule) {
+        const startUtc = resolveStartUtc(entry, event);
+        const endUtc =
+          entry.sessionType === 'race' && durationHours
+            ? new Date(new Date(startUtc).getTime() + durationHours * 60 * 60 * 1000).toISOString()
+            : null;
+
+        sessions.push({
+          series,
+          eventName: `${event.name}${site.eventNameSuffix ?? ''}`,
+          circuit: event.circuit,
+          round: event.round,
+          sessionType: entry.sessionType,
+          startUtc,
+          endUtc,
+          source: 'scrape',
+          confidence: 'exact',
+        });
+      }
+    } catch (error) {
+      console.warn(`[${series}] Scrape von ${url} fehlgeschlagen:`, error instanceof Error ? error.message : error);
+    }
+  }
+
+  return sessions;
+}
+
 export function createGtwcAdapter(series: SeriesId, baseUrl: string): Adapter {
+  return createCombinedGtwcAdapter(series, [{ baseUrl }]);
+}
+
+export function createCombinedGtwcAdapter(series: SeriesId, sites: GtwcSite[]): Adapter {
   return {
     series,
     async fetchSessions(): Promise<Session[]> {
-      const eventUrls = await fetchEventUrls(baseUrl);
-      const sessions: Session[] = [];
-
-      for (const url of eventUrls) {
-        try {
-          const html = await fetchHtml(url);
-          const event = extractEventInfo(html);
-          if (!event) {
-            console.warn(`[${series}] kein Event-JSON-LD auf ${url} gefunden, überspringe`);
-            continue;
-          }
-          // Test-/Show-Events (z.B. "Official Test Days", "End of Year
-          // Gala") haben keine Rundennummer und sind keine
-          // Meisterschaftsrennen -- bewusst ausgelassen.
-          if (event.round === null) continue;
-
-          const schedule = extractSchedule(html);
-          if (schedule.length === 0) {
-            console.warn(`[${series}] keine Timetable auf ${url} gefunden, überspringe`);
-            continue;
-          }
-          // Das SRO-CMS setzt bei noch nicht veröffentlichten Zeitplänen teils
-          // eine einzelne "Race"-Zeile um 00:00 ein. Diese Zeit ist kein
-          // bestätigter Termin und darf daher nicht als "exact" erscheinen.
-          if (schedule.length === 1 && schedule[0].localMinutes === 0) {
-            console.warn(`[${series}] nur Platzhalter-Timetable auf ${url} gefunden, überspringe`);
-            continue;
-          }
-
-          const durationHours = raceDurationHours(event.name);
-
-          for (const entry of schedule) {
-            const startUtc = resolveStartUtc(entry, event);
-            const endUtc =
-              entry.sessionType === 'race' && durationHours
-                ? new Date(new Date(startUtc).getTime() + durationHours * 60 * 60 * 1000).toISOString()
-                : null;
-
-            sessions.push({
-              series,
-              eventName: event.name,
-              circuit: event.circuit,
-              round: event.round,
-              sessionType: entry.sessionType,
-              startUtc,
-              endUtc,
-              source: 'scrape',
-              confidence: 'exact',
-            });
-          }
-        } catch (error) {
-          console.warn(`[${series}] Scrape von ${url} fehlgeschlagen:`, error instanceof Error ? error.message : error);
-        }
-      }
-
+      const sessions = (await Promise.all(sites.map((site) => fetchSiteSessions(series, site)))).flat();
+      if (sessions.length === 0) throw new Error('Keine SRO-Sessions gefunden');
       return sessions;
     },
   };

@@ -113,8 +113,12 @@ export function App() {
             <a href="https://raceweek.io">raceweek.io</a>. Uhrzeiten GTWC:{' '}
             <a href="https://www.gt-world-challenge-europe.com">gt-world-challenge-*.com</a>. Uhrzeiten IGTC:{' '}
             <a href="https://www.intercontinentalgtchallenge.com">intercontinentalgtchallenge.com</a>. Uhrzeiten
-            British GT: <a href="https://www.britishgt.com">britishgt.com</a>. Uhrzeiten DTM / ADAC GT Masters /
-            Porsche Carrera Cup: <a href="https://dtm.com">dtm.com</a>.
+            GT2/GT4: <a href="https://www.gt2europeanseries.com">gt2europeanseries.com</a>,{' '}
+            <a href="https://www.gt4europeanseries.com">gt4europeanseries.com</a>,{' '}
+            <a href="https://www.gtamerica.us">gtamerica.us</a> und{' '}
+            <a href="https://www.gt4-america.com">gt4-america.com</a>. Uhrzeiten British GT:{' '}
+            <a href="https://www.britishgt.com">britishgt.com</a>. Uhrzeiten DTM / ADAC GT Masters / Porsche Carrera
+            Cup: <a href="https://dtm.com">dtm.com</a>.
             Uhrzeiten Michelin Le Mans Cup: <a href="https://www.lemanscup.com">lemanscup.com</a>.
             Uhrzeiten Super GT: <a href="https://supergt.net/en/calendar">supergt.net</a>.
           </p>

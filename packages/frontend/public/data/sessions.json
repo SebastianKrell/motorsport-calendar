@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T18:44:43.682Z",
+  "generatedAt": "2026-08-29T18:55:52.341Z",
   "sessions": [
     {
       "series": "nls",
@@ -3253,6 +3253,614 @@
           "name": "SUPER GT Official (YouTube, zeitversetzt)",
           "type": "free-stream",
           "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT2 Europe)",
+      "circuit": "Zandvoort",
+      "round": 7,
+      "sessionType": "race",
+      "startUtc": "2026-09-20T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Portimão (GT2 Europe)",
+      "circuit": "Portimão",
+      "round": 9,
+      "sessionType": "race",
+      "startUtc": "2026-10-18T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT4 Europe)",
+      "circuit": "Circuit Park Zandvoort",
+      "round": 5,
+      "sessionType": "race",
+      "startUtc": "2026-09-20T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Portimao (GT4 Europe)",
+      "circuit": "Portimao Circuit",
+      "round": 6,
+      "sessionType": "race",
+      "startUtc": "2026-10-18T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Road America (GT America)",
+      "circuit": "Road America",
+      "round": 9,
+      "sessionType": "fp",
+      "startUtc": "2026-08-28T21:15:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Road America (GT America)",
+      "circuit": "Road America",
+      "round": 9,
+      "sessionType": "quali",
+      "startUtc": "2026-08-29T14:05:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Road America (GT America)",
+      "circuit": "Road America",
+      "round": 9,
+      "sessionType": "race",
+      "startUtc": "2026-08-29T21:15:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Road America (GT America)",
+      "circuit": "Road America",
+      "round": 9,
+      "sessionType": "race",
+      "startUtc": "2026-08-30T16:05:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 11,
+      "sessionType": "fp",
+      "startUtc": "2026-09-25T19:10:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 11,
+      "sessionType": "fp",
+      "startUtc": "2026-09-25T21:10:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 11,
+      "sessionType": "quali",
+      "startUtc": "2026-09-26T14:20:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 11,
+      "sessionType": "race",
+      "startUtc": "2026-09-26T18:05:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 11,
+      "sessionType": "race",
+      "startUtc": "2026-09-27T14:10:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 13,
+      "sessionType": "fp",
+      "startUtc": "2026-10-08T17:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 13,
+      "sessionType": "fp",
+      "startUtc": "2026-10-08T19:15:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 13,
+      "sessionType": "quali",
+      "startUtc": "2026-10-09T13:20:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 13,
+      "sessionType": "race",
+      "startUtc": "2026-10-10T12:05:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 13,
+      "sessionType": "race",
+      "startUtc": "2026-10-11T15:40:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Road America (GT4 America)",
+      "circuit": "Road America",
+      "round": 8,
+      "sessionType": "race",
+      "startUtc": "2026-08-28T20:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Road America (GT4 America)",
+      "circuit": "Road America",
+      "round": 8,
+      "sessionType": "race",
+      "startUtc": "2026-08-29T18:10:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT4 America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 10,
+      "sessionType": "fp",
+      "startUtc": "2026-09-24T14:20:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT4 America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 10,
+      "sessionType": "fp",
+      "startUtc": "2026-09-25T06:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT4 America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 10,
+      "sessionType": "quali",
+      "startUtc": "2026-09-25T11:05:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT4 America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 10,
+      "sessionType": "quali",
+      "startUtc": "2026-09-25T11:25:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT4 America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 10,
+      "sessionType": "race",
+      "startUtc": "2026-09-25T13:55:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT4 America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 10,
+      "sessionType": "race",
+      "startUtc": "2026-09-26T13:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT4 America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 12,
+      "sessionType": "fp",
+      "startUtc": "2026-10-08T20:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT4 America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 12,
+      "sessionType": "fp",
+      "startUtc": "2026-10-09T15:35:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT4 America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 12,
+      "sessionType": "quali",
+      "startUtc": "2026-10-09T18:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT4 America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 12,
+      "sessionType": "quali",
+      "startUtc": "2026-10-09T19:05:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT4 America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 12,
+      "sessionType": "race",
+      "startUtc": "2026-10-10T14:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT4 America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 12,
+      "sessionType": "race",
+      "startUtc": "2026-10-11T14:25:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
