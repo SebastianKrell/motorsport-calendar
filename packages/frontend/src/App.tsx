@@ -1,3 +1,4 @@
+import { DateTime } from 'luxon';
 import { useEffect, useMemo, useState } from 'react';
 import { MonthCalendar } from './components/MonthCalendar';
 import { MultiSelectDropdown } from './components/MultiSelectDropdown';
@@ -18,8 +19,15 @@ function getInitialTheme(): Theme {
   return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
 }
 
+function formatGeneratedAt(value: string | null): string | null {
+  if (!value) return null;
+  const timestamp = DateTime.fromISO(value, { zone: 'utc' }).setZone('Europe/Berlin').setLocale('de');
+  return timestamp.isValid ? timestamp.toFormat("dd.LL.yyyy, HH:mm 'Uhr'") : null;
+}
+
 export function App() {
   const [sessions, setSessions] = useState<Session[]>([]);
+  const [generatedAt, setGeneratedAt] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [selectedSeries, setSelectedSeries] = useState<Set<SeriesId>>(new Set());
   const [selectedSessionTypes, setSelectedSessionTypes] = useState<Set<SessionType>>(
@@ -40,6 +48,7 @@ export function App() {
       })
       .then((data) => {
         setSessions(data.sessions);
+        setGeneratedAt(data.generatedAt);
         // Alle Serien starten aktiviert -- erst nach dem Laden bekannt, da
         // die Serienliste aus den tatsächlich vorhandenen Sessions kommt.
         setSelectedSeries(new Set(data.sessions.map((s) => s.series)));
@@ -48,6 +57,7 @@ export function App() {
   }, []);
 
   const availableSeries = useMemo(() => [...new Set(sessions.map((s) => s.series))].sort(), [sessions]);
+  const formattedGeneratedAt = useMemo(() => formatGeneratedAt(generatedAt), [generatedAt]);
 
   const availableSessionTypes = useMemo(
     () => SESSION_TYPE_ORDER.filter((type) => sessions.some((s) => s.sessionType === type)),
@@ -102,6 +112,7 @@ export function App() {
         </div>
         <MonthCalendar sessions={filtered} />
         <footer>
+          {formattedGeneratedAt && <p>Datenstand: {formattedGeneratedAt}</p>}
           <p>
             Renntermine (WEC, IMSA, NLS, GTWC, IGTC, ADAC GT Masters, International GT Open, 24H Series, ELMS,
             Asian Le Mans Series):{' '}

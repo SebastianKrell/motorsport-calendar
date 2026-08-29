@@ -30,7 +30,7 @@ function shiftMonth(key: MonthKey, delta: number): MonthKey {
 function formatWhen(session: Session): string {
   const start = DateTime.fromISO(session.startUtc, { zone: 'utc' }).setZone('Europe/Berlin');
   const day = start.setLocale('de').toFormat('ccc dd.LL.');
-  return session.confidence === 'date-only' ? day : `${day} · ${start.toFormat('HH:mm')}`;
+  return session.confidence === 'date-only' ? `${day} · Uhrzeit noch offen` : `${day} · ${start.toFormat('HH:mm')}`;
 }
 
 function isStale(verifiedAt: string | null): boolean {
