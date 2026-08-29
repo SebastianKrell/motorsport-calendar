@@ -35,6 +35,7 @@ const EVENT_HTML = `
 
 afterEach(() => {
   vi.unstubAllGlobals();
+  vi.restoreAllMocks();
 });
 
 describe('SRO-Adapter für IGTC', () => {
@@ -65,5 +66,114 @@ describe('SRO-Adapter für IGTC', () => {
         endUtc: '2026-10-11T00:30:00.000Z',
       }),
     ]);
+  });
+});
+
+describe('SRO-Adapter für British GT', () => {
+  it('liest Doppelrennen mit offiziellen GMT-Zeiten und ignoriert Test-Sessions', async () => {
+    const baseUrl = 'https://www.britishgt.com';
+    const eventHtml = `
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Oulton Park",
+        "startDate": "2026-05-22",
+        "location": { "name": "Oulton Park International Circuit, Great Britain" },
+        "description": "British GT Championship, Round 2 & 3, Oulton Park, Great Britain"
+      }
+      </script>
+      <table>
+        <caption class="timetable__caption"><span>Friday, 22 May</span></caption>
+        <tbody class="timetable__table-body">
+          <tr><td>Test 1</td><td>10:45</td><td>09:45</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <caption class="timetable__caption"><span>Saturday, 23 May</span></caption>
+        <tbody class="timetable__table-body">
+          <tr><td>Free Practice 1</td><td>09:30</td><td>08:30</td></tr>
+          <tr><td>GT3 Qualifying 1</td><td>15:35</td><td>14:35</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <caption class="timetable__caption"><span>Sunday, 24 May</span></caption>
+        <tbody class="timetable__table-body">
+          <tr><td>Warm Up</td><td>09:15</td><td>08:15</td></tr>
+          <tr><td>Race 1</td><td>11:05</td><td>10:05</td></tr>
+          <tr><td>Race 2</td><td>17:15</td><td>16:15</td></tr>
+        </tbody>
+      </table>`;
+
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (input: string | URL | Request) => {
+        const url = String(input);
+        const body =
+          url === `${baseUrl}/calendar` ? '<a href="/event/110/oulton-park">Oulton Park</a>' : eventHtml;
+        return new Response(body, { status: 200 });
+      }),
+    );
+
+    await expect(createGtwcAdapter('british_gt', baseUrl).fetchSessions()).resolves.toEqual([
+      expect.objectContaining({
+        eventName: 'Oulton Park',
+        circuit: 'Oulton Park International Circuit',
+        round: 2,
+        sessionType: 'fp',
+        startUtc: '2026-05-23T08:30:00.000Z',
+      }),
+      expect.objectContaining({
+        sessionType: 'quali',
+        startUtc: '2026-05-23T14:35:00.000Z',
+      }),
+      expect.objectContaining({
+        sessionType: 'fp',
+        startUtc: '2026-05-24T08:15:00.000Z',
+      }),
+      expect.objectContaining({
+        sessionType: 'race',
+        startUtc: '2026-05-24T10:05:00.000Z',
+      }),
+      expect.objectContaining({
+        sessionType: 'race',
+        startUtc: '2026-05-24T16:15:00.000Z',
+      }),
+    ]);
+  });
+
+  it('veröffentlicht eine einzelne Mitternachtszeile nicht als exakten Renntermin', async () => {
+    const baseUrl = 'https://www.britishgt.com';
+    const placeholderHtml = `
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Brands Hatch",
+        "startDate": "2026-09-26",
+        "location": { "name": "Brands Hatch Circuit, Great Britain" },
+        "description": "British GT Championship, Round 8, Brands Hatch, Great Britain"
+      }
+      </script>
+      <table>
+        <caption class="timetable__caption"><span>Sunday, 27 September</span></caption>
+        <tbody class="timetable__table-body">
+          <tr><td>Race</td><td>00:00</td><td>23:00</td></tr>
+        </tbody>
+      </table>`;
+
+    vi.spyOn(console, 'warn').mockImplementation(() => undefined);
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (input: string | URL | Request) => {
+        const body =
+          String(input) === `${baseUrl}/calendar`
+            ? '<a href="/event/113/brands-hatch">Brands Hatch</a>'
+            : placeholderHtml;
+        return new Response(body, { status: 200 });
+      }),
+    );
+
+    await expect(createGtwcAdapter('british_gt', baseUrl).fetchSessions()).resolves.toEqual([]);
   });
 });

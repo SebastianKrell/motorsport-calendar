@@ -13,22 +13,22 @@ import { wecAdapter } from './wec.js';
 // Kalender-IDs s. CLAUDE.md, Abschnitt "ICS-Feeds (toomuchracing.com)".
 // Italian GT und China GT fehlen bewusst: laut CLAUDE.md gibt es dafür
 // keinen ICS-Feed, nur eine Website (bräuchte einen eigenen Scraper).
-// NLS, WEC, IMSA, ELMS, Michelin Le Mans Cup und alle vier GTWC-Regionen laufen nicht mehr über
-// den generischen ICS-Adapter, sondern über dedizierte Adapter (nls.ts,
-// wec.ts, imsa.ts, elms.ts, le-mans-cup.ts, gtwc.ts), die echte Uhrzeiten liefern statt nur
-// Datumsangaben ohne Uhrzeit. DTM und der Porsche Carrera Cup Deutschland
+// NLS, WEC, IMSA, ELMS, Michelin Le Mans Cup, British GT und alle vier GTWC-Regionen laufen
+// nicht mehr über den generischen ICS-Adapter, sondern über dedizierte Adapter
+// (nls.ts, wec.ts, imsa.ts, elms.ts, le-mans-cup.ts, gtwc.ts), die echte
+// Uhrzeiten liefern statt nur Datumsangaben ohne Uhrzeit. DTM und der Porsche Carrera Cup Deutschland
 // laufen komplett, ADAC GT Masters teilweise über die echte dtm.com-API
 // (s. dtm.ts).
 const ICS_SERIES: [SeriesId, string][] = [
-  ['british_gt', '6bh6kok6g3v97ogr2d1s2g1srs'],
   ['creventic_24h', '6rddivl20t6526fknlbhmhf6ps'],
   ['super_gt', '5ni9rjbofnkfvmpidmjpep9ek0'],
   ['asian_le_mans', 'lilnartmo4uglqdpatsve4pido'],
 ];
 
-// Die vier GTWC-Regionalseiten und IGTC laufen auf demselben SRO-CMS und liefern
+// Die vier GTWC-Regionalseiten, IGTC und British GT laufen auf demselben SRO-CMS und liefern
 // echte Session-Zeiten über gtwc.ts (s. dort) statt nur Renntage.
 const GTWC_SITES: [SeriesId, string][] = [
+  ['british_gt', 'https://www.britishgt.com'],
   ['igtc', 'https://www.intercontinentalgtchallenge.com'],
   ['gtwc_europe', 'https://www.gt-world-challenge-europe.com'],
   ['gtwc_america', 'https://www.gt-world-challenge-america.com'],
