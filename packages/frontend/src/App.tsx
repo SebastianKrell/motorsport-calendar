@@ -33,7 +33,7 @@ export function App() {
   }, [theme]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/sessions.json`)
+    fetch(`${import.meta.env.BASE_URL}data/sessions.json`, { cache: 'no-store' })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json() as Promise<SessionsFile>;
