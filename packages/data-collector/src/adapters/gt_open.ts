@@ -34,7 +34,7 @@ function findEvents(value: unknown): RawEvent[] | null {
 // Die Next.js-Seite serialisiert ihren Kalender in React-Flight-Scripts. Die
 // öffentliche Payload ist stabiler und vollständiger als die sichtbare Liste,
 // die vergangene Events clientseitig ausblendet.
-function extractEvents(html: string): RawEvent[] {
+export function extractEvents(html: string): RawEvent[] {
   const $ = cheerio.load(html);
   for (const script of $('script').toArray()) {
     const content = $(script).html()?.trim() ?? '';
