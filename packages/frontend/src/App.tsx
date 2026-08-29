@@ -103,8 +103,8 @@ export function App() {
         <MonthCalendar sessions={filtered} />
         <footer>
           <p>
-            Renntermine (WEC, IMSA, NLS, GTWC, IGTC, ADAC GT Masters, British GT, International GT Open, 24H Series,
-            Super GT, ELMS, Asian Le Mans Series):{' '}
+            Renntermine (WEC, IMSA, NLS, GTWC, IGTC, ADAC GT Masters, International GT Open, 24H Series, Super GT,
+            ELMS, Asian Le Mans Series):{' '}
             <a href="https://toomuchracing.com">toomuchracing.com</a>, lizenziert unter{' '}
             <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Formel E:{' '}
             <a href="https://github.com/sportstimes/f1">sportstimes/f1</a> (MIT). Uhrzeiten NLS:{' '}
@@ -113,7 +113,8 @@ export function App() {
             <a href="https://raceweek.io">raceweek.io</a>. Uhrzeiten GTWC:{' '}
             <a href="https://www.gt-world-challenge-europe.com">gt-world-challenge-*.com</a>. Uhrzeiten IGTC:{' '}
             <a href="https://www.intercontinentalgtchallenge.com">intercontinentalgtchallenge.com</a>. Uhrzeiten
-            DTM / ADAC GT Masters / Porsche Carrera Cup: <a href="https://dtm.com">dtm.com</a>.
+            British GT: <a href="https://www.britishgt.com">britishgt.com</a>. Uhrzeiten DTM / ADAC GT Masters /
+            Porsche Carrera Cup: <a href="https://dtm.com">dtm.com</a>.
             Uhrzeiten Michelin Le Mans Cup: <a href="https://www.lemanscup.com">lemanscup.com</a>.
           </p>
           <p>

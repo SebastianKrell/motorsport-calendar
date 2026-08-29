@@ -110,13 +110,13 @@ interface ScheduleEntry {
 // Bezeichnungen zwischen den Regionen leicht unterscheiden (z.B. "Free
 // Practice 1" in Europa vs. "Practice 1" in USA/Asien/Australien, "Pre-
 // Qualifying" in Asien, "Superpole" in Europa) -- funktioniert dadurch
-// automatisch für alle GTWC-Regionalseiten und IGTC.
+// automatisch für alle GTWC-Regionalseiten, IGTC und British GT.
 function classifySession(label: string): SessionType | null {
   const lower = label.toLowerCase();
   if (/test|pit walk|parade|autograph|grid walk/.test(lower)) return null;
   if (/practice/.test(lower)) return 'fp';
   if (/qualifying|superpole|shootout/.test(lower)) return 'quali';
-  if (/warm-?up/.test(lower)) return 'fp';
+  if (/warm[\s-]?up/.test(lower)) return 'fp';
   if (/race/.test(lower)) return 'race';
   return null;
 }
@@ -207,11 +207,11 @@ function raceDurationHours(eventName: string): number | null {
   return match ? Number(match[1]) : null;
 }
 
-// Alle GTWC-Regionalseiten (Europe/America/Asia/Australia) und IGTC laufen auf
-// derselben SRO-CMS-Vorlage: Kalenderseite mit Event-Links, Event-Detailseite
-// mit schema.org-JSON-LD (Datum, Rundennummer, Circuit) plus separater HTML-
-// Timetable (Label, lokale Zeit, GMT) -- ein gemeinsamer Adapter reicht,
-// parametrisiert nur über Serie und Basis-URL.
+// Alle GTWC-Regionalseiten (Europe/America/Asia/Australia), IGTC und British GT
+// laufen auf derselben SRO-CMS-Vorlage: Kalenderseite mit Event-Links,
+// Event-Detailseite mit schema.org-JSON-LD (Datum, Rundennummer, Circuit) plus
+// separater HTML-Timetable (Label, lokale Zeit, GMT) -- ein gemeinsamer Adapter
+// reicht, parametrisiert nur über Serie und Basis-URL.
 export function createGtwcAdapter(series: SeriesId, baseUrl: string): Adapter {
   return {
     series,
@@ -235,6 +235,13 @@ export function createGtwcAdapter(series: SeriesId, baseUrl: string): Adapter {
           const schedule = extractSchedule(html);
           if (schedule.length === 0) {
             console.warn(`[${series}] keine Timetable auf ${url} gefunden, überspringe`);
+            continue;
+          }
+          // Das SRO-CMS setzt bei noch nicht veröffentlichten Zeitplänen teils
+          // eine einzelne "Race"-Zeile um 00:00 ein. Diese Zeit ist kein
+          // bestätigter Termin und darf daher nicht als "exact" erscheinen.
+          if (schedule.length === 1 && schedule[0].localMinutes === 0) {
+            console.warn(`[${series}] nur Platzhalter-Timetable auf ${url} gefunden, überspringe`);
             continue;
           }
 

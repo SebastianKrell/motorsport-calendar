@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T09:26:54.478Z",
+  "generatedAt": "2026-08-29T09:40:52.727Z",
   "sessions": [
     {
       "series": "wec",
@@ -2406,14 +2406,14 @@
     },
     {
       "series": "british_gt",
-      "eventName": "Brands Hatch | 2H",
-      "circuit": "Brands Hatch GP Circuit",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-27T00:00:00.000Z",
+      "eventName": "Donington Park",
+      "circuit": "Donington Park",
+      "round": 7,
+      "sessionType": "fp",
+      "startUtc": "2026-09-05T08:35:00.000Z",
       "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
+      "source": "scrape",
+      "confidence": "exact",
       "broadcasters": [
         {
           "name": "GT World (YouTube) / britishgt.com",
@@ -2425,14 +2425,128 @@
     },
     {
       "series": "british_gt",
-      "eventName": "Donington Park | 2H",
-      "circuit": "Donington Park Circuit",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-06T00:00:00.000Z",
+      "eventName": "Donington Park",
+      "circuit": "Donington Park",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-09-05T10:55:00.000Z",
       "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Donington Park",
+      "circuit": "Donington Park",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-09-05T14:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Donington Park",
+      "circuit": "Donington Park",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-09-05T14:59:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Donington Park",
+      "circuit": "Donington Park",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-09-05T15:13:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Donington Park",
+      "circuit": "Donington Park",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-09-05T15:28:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Donington Park",
+      "circuit": "Donington Park",
+      "round": 7,
+      "sessionType": "fp",
+      "startUtc": "2026-09-06T08:40:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Donington Park",
+      "circuit": "Donington Park",
+      "round": 7,
+      "sessionType": "race",
+      "startUtc": "2026-09-06T12:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
       "broadcasters": [
         {
           "name": "GT World (YouTube) / britishgt.com",
@@ -2528,6 +2642,19 @@
     },
     {
       "series": "super_gt",
+      "eventName": "Sportsland SUGO",
+      "circuit": "Sportsland SUGO",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-20T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "super_gt",
       "eventName": "Autopolis",
       "circuit": "Autopolis International Racing Course",
       "round": null,
@@ -2546,19 +2673,6 @@
       "round": null,
       "sessionType": "race",
       "startUtc": "2026-11-08T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "super_gt",
-      "eventName": "Sportsland SUGO",
-      "circuit": "Sportsland SUGO",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-20T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
