@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { createGtwcAdapter } from './gtwc.js';
+import { createCombinedGtwcAdapter, createGtwcAdapter } from './gtwc.js';
 
 const BASE_URL = 'https://www.intercontinentalgtchallenge.com';
 
@@ -174,6 +174,79 @@ describe('SRO-Adapter für British GT', () => {
       }),
     );
 
-    await expect(createGtwcAdapter('british_gt', baseUrl).fetchSessions()).resolves.toEqual([]);
+    await expect(createGtwcAdapter('british_gt', baseUrl).fetchSessions()).rejects.toThrow(
+      'Keine SRO-Sessions gefunden',
+    );
+  });
+});
+
+describe('Kombinierter SRO-Adapter für GT2/GT4', () => {
+  it('kennzeichnet Teilserien und behält offizielle Renntage ohne Timetable', async () => {
+    const gt2Url = 'https://www.gt2europeanseries.com';
+    const gt4Url = 'https://www.gt4europeanseries.com';
+    const eventHtml = (series: string, round: number, endDate: string, schedule = '') => `
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Portimao",
+        "startDate": "2026-10-16",
+        "endDate": "${endDate}",
+        "location": { "name": "Portimao Circuit, Portugal" },
+        "description": "${series}, Round ${round}, Portimao, Portugal"
+      }
+      </script>
+      ${schedule}`;
+    const gt4Schedule = `
+      <table>
+        <caption class="timetable__caption"><span>Saturday, 17 October</span></caption>
+        <tbody class="timetable__table-body">
+          <tr><td>Qualify 1</td><td>15:05</td><td>14:05</td></tr>
+          <tr><td>Race 1</td><td>17:10</td><td>16:10</td></tr>
+        </tbody>
+      </table>`;
+
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (input: string | URL | Request) => {
+        const url = String(input);
+        if (url === `${gt2Url}/calendar`) {
+          return new Response('<a href="/event/110/portimao">Portimao</a>', { status: 200 });
+        }
+        if (url === `${gt4Url}/calendar`) {
+          return new Response('<a href="/event/76/portimao">Portimao</a>', { status: 200 });
+        }
+        const body =
+          url.startsWith(gt2Url)
+            ? eventHtml('GT2 European Series', 9, '2026-10-18')
+            : eventHtml('GT4 European Series', 6, '2026-10-18', gt4Schedule);
+        return new Response(body, { status: 200 });
+      }),
+    );
+
+    const adapter = createCombinedGtwcAdapter('gt2_gt4_europe', [
+      { baseUrl: gt2Url, eventNameSuffix: ' (GT2 Europe)', dateOnlyFallback: true },
+      { baseUrl: gt4Url, eventNameSuffix: ' (GT4 Europe)', dateOnlyFallback: true },
+    ]);
+
+    await expect(adapter.fetchSessions()).resolves.toEqual([
+      expect.objectContaining({
+        eventName: 'Portimao (GT2 Europe)',
+        sessionType: 'race',
+        startUtc: '2026-10-18T00:00:00.000Z',
+        confidence: 'date-only',
+      }),
+      expect.objectContaining({
+        eventName: 'Portimao (GT4 Europe)',
+        sessionType: 'quali',
+        startUtc: '2026-10-17T14:05:00.000Z',
+        confidence: 'exact',
+      }),
+      expect.objectContaining({
+        eventName: 'Portimao (GT4 Europe)',
+        sessionType: 'race',
+        startUtc: '2026-10-17T16:10:00.000Z',
+      }),
+    ]);
   });
 });

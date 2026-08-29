@@ -3,7 +3,7 @@ import { adacGtMastersAdapter, dtmAdapter, porscheCarreraCupAdapter } from './dt
 import { elmsAdapter } from './elms.js';
 import { formelEAdapter } from './formel-e.js';
 import { gtOpenAdapter } from './gt_open.js';
-import { createGtwcAdapter } from './gtwc.js';
+import { createCombinedGtwcAdapter, createGtwcAdapter } from './gtwc.js';
 import { createIcsAdapter } from './ics.js';
 import { imsaAdapter } from './imsa.js';
 import { leMansCupAdapter } from './le-mans-cup.js';
@@ -48,6 +48,30 @@ export const adapters: Adapter[] = [
   dtmAdapter,
   adacGtMastersAdapter,
   porscheCarreraCupAdapter,
+  createCombinedGtwcAdapter('gt2_gt4_europe', [
+    {
+      baseUrl: 'https://www.gt2europeanseries.com',
+      eventNameSuffix: ' (GT2 Europe)',
+      dateOnlyFallback: true,
+    },
+    {
+      baseUrl: 'https://www.gt4europeanseries.com',
+      eventNameSuffix: ' (GT4 Europe)',
+      dateOnlyFallback: true,
+    },
+  ]),
+  createCombinedGtwcAdapter('gt_gt4_america', [
+    {
+      baseUrl: 'https://www.gtamerica.us',
+      eventNameSuffix: ' (GT America)',
+      dateOnlyFallback: true,
+    },
+    {
+      baseUrl: 'https://www.gt4-america.com',
+      eventNameSuffix: ' (GT4 America)',
+      dateOnlyFallback: true,
+    },
+  ]),
   ...GTWC_SITES.map(([series, baseUrl]) => createGtwcAdapter(series, baseUrl)),
   ...ICS_SERIES.map(([series, calendarId]) => createIcsAdapter(series, calendarId)),
 ];

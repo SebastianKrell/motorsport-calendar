@@ -46,4 +46,19 @@ describe('deduplicateCrossSeries', () => {
 
     expect(deduplicateCrossSeries([igtc, gtwc])).toEqual([igtc]);
   });
+
+  it('behält eigenständige Support-Serien am selben Rennwochenende', () => {
+    const igtc = {
+      ...session('igtc', 'Indianapolis 8 Hour'),
+      circuit: 'Indianapolis Motor Speedway',
+      startUtc: '2026-10-10T16:30:00.000Z',
+    };
+    const gtAmerica = {
+      ...session('gt_gt4_america', 'Indianapolis Motor Speedway (GT America)'),
+      circuit: 'Indianapolis Motor Speedway',
+      startUtc: '2026-10-10T12:05:00.000Z',
+    };
+
+    expect(deduplicateCrossSeries([igtc, gtAmerica])).toEqual([igtc, gtAmerica]);
+  });
 });

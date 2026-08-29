@@ -151,6 +151,22 @@ gtwc_australia:
         url: https://www.youtube.com/@GTWorld
     verifiedAt: "2026-08-28"
 
+gt2_gt4_europe:
+  default:
+    broadcasters:
+      - name: "GT World (YouTube)"
+        type: free-stream
+        url: https://www.youtube.com/@GTWorld
+    verifiedAt: "2026-08-29"
+
+gt_gt4_america:
+  default:
+    broadcasters:
+      - name: "GT World (YouTube)"
+        type: free-stream
+        url: https://www.youtube.com/@GTWorld
+    verifiedAt: "2026-08-29"
+
 british_gt:
   default:
     broadcasters:
