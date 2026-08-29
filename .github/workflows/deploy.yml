@@ -29,6 +29,10 @@ jobs:
 
       - run: npm ci
 
+      - run: npm run lint
+
+      - run: npm run typecheck
+
       - run: npm run collect
 
       # Nur bei Cron/manuellem Trigger zurückcommitten. Bei normalen Pushes
