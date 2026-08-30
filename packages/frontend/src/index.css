@@ -119,7 +119,31 @@ main {
 .site-header-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.6rem;
+}
+
+.header-select select {
+  max-width: 150px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.35rem 1.7rem 0.35rem 0.55rem;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .site-header-contact {
@@ -267,6 +291,33 @@ main {
 }
 
 @media (max-width: 640px) {
+  :root {
+    --header-outer-height: 150px;
+    --header-inner-height: 114px;
+  }
+
+  .site-header-inner {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0.65rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .site-header-actions {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .site-header-contact {
+    display: none;
+  }
+
+  .header-select select {
+    max-width: 125px;
+  }
+
   .calendar-layout {
     grid-template-columns: 1fr;
   }

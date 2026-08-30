@@ -1,10 +1,21 @@
 import { DateTime } from 'luxon';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { SERIES_COLORS } from '../colors';
-import { SERIES_LABELS, SESSION_TYPE_LABELS } from '../labels';
+import { displayStart, formatWhen } from '../formatSessionTime';
+import {
+  broadcasterLabel,
+  localeFor,
+  SERIES_LABELS,
+  SESSION_TYPE_LABELS,
+  UI_TEXT,
+  type Language,
+} from '../i18n';
 import type { Session, SeriesId } from '../types';
 
-const WEEKDAY_LABELS = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
+const WEEKDAY_LABELS: Record<Language, string[]> = {
+  de: ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'],
+  en: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+};
 const VERIFIED_STALE_AFTER_DAYS = 60;
 const MAX_DOTS_PER_DAY = 4;
 
@@ -13,8 +24,8 @@ interface MonthKey {
   month: number; // 1-12
 }
 
-function monthKeyOf(iso: string): MonthKey {
-  const dt = DateTime.fromISO(iso, { zone: 'utc' }).setZone('Europe/Berlin');
+function monthKeyOf(session: Session, timeZone: string): MonthKey {
+  const dt = displayStart(session, timeZone);
   return { year: dt.year, month: dt.month };
 }
 
@@ -25,12 +36,6 @@ function sameMonth(a: MonthKey, b: MonthKey): boolean {
 function shiftMonth(key: MonthKey, delta: number): MonthKey {
   const dt = DateTime.fromObject({ year: key.year, month: key.month, day: 1 }).plus({ months: delta });
   return { year: dt.year, month: dt.month };
-}
-
-function formatWhen(session: Session): string {
-  const start = DateTime.fromISO(session.startUtc, { zone: 'utc' }).setZone('Europe/Berlin');
-  const day = start.setLocale('de').toFormat('ccc dd.LL.');
-  return session.confidence === 'date-only' ? `${day} · Uhrzeit noch offen` : `${day} · ${start.toFormat('HH:mm')}`;
 }
 
 function isStale(verifiedAt: string | null): boolean {
@@ -58,7 +63,15 @@ function isPast(session: Session, now: DateTime): boolean {
   return reference < now;
 }
 
-export function MonthCalendar({ sessions }: { sessions: Session[] }) {
+export function MonthCalendar({
+  sessions,
+  language,
+  timeZone,
+}: {
+  sessions: Session[];
+  language: Language;
+  timeZone: string;
+}) {
   const [visibleMonth, setVisibleMonth] = useState<MonthKey | null>(null);
   const initialized = useRef(false);
   // Für die "läuft gerade"-Markierung: alle 30s neu auswerten, damit sie ohne
@@ -75,41 +88,41 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
   useEffect(() => {
     if (initialized.current || sessions.length === 0) return;
     const earliest = [...sessions].sort((a, b) => a.startUtc.localeCompare(b.startUtc))[0];
-    setVisibleMonth(monthKeyOf(earliest.startUtc));
+    setVisibleMonth(monthKeyOf(earliest, timeZone));
     initialized.current = true;
-  }, [sessions]);
+  }, [sessions, timeZone]);
 
   const monthSessions = useMemo(() => {
     if (!visibleMonth) return [];
     return sessions
-      .filter((s) => sameMonth(monthKeyOf(s.startUtc), visibleMonth))
+      .filter((s) => sameMonth(monthKeyOf(s, timeZone), visibleMonth))
       .sort((a, b) => a.startUtc.localeCompare(b.startUtc));
-  }, [sessions, visibleMonth]);
+  }, [sessions, visibleMonth, timeZone]);
 
   const seriesByDay = useMemo(() => {
     const map = new Map<number, Set<SeriesId>>();
     for (const session of monthSessions) {
-      const day = DateTime.fromISO(session.startUtc, { zone: 'utc' }).setZone('Europe/Berlin').day;
+      const day = displayStart(session, timeZone).day;
       const set = map.get(day) ?? new Set<SeriesId>();
       set.add(session.series);
       map.set(day, set);
     }
     return map;
-  }, [monthSessions]);
+  }, [monthSessions, timeZone]);
 
   const sessionsByDay = useMemo(() => {
     const map = new Map<number, Session[]>();
     for (const session of monthSessions) {
-      const day = DateTime.fromISO(session.startUtc, { zone: 'utc' }).setZone('Europe/Berlin').day;
+      const day = displayStart(session, timeZone).day;
       const list = map.get(day) ?? [];
       list.push(session);
       map.set(day, list);
     }
     return map;
-  }, [monthSessions]);
+  }, [monthSessions, timeZone]);
 
   if (!visibleMonth) {
-    return <p className="empty-state">Lade Termine …</p>;
+    return <p className="empty-state">{UI_TEXT[language].loading}</p>;
   }
 
   const monthStart = DateTime.fromObject({ year: visibleMonth.year, month: visibleMonth.month, day: 1 });
@@ -119,35 +132,36 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
     ...Array.from({ length: monthStart.daysInMonth ?? 30 }, (_, i) => i + 1),
   ];
   const usedSeries = [...new Set(monthSessions.map((s) => s.series))].sort();
-  const isCurrentMonth = visibleMonth.year === now.year && visibleMonth.month === now.month;
+  const zonedNow = now.setZone(timeZone);
+  const isCurrentMonth = visibleMonth.year === zonedNow.year && visibleMonth.month === zonedNow.month;
 
   return (
     <div className="calendar-layout">
       <div className="calendar-grid-panel">
         <div className="calendar-nav">
-          <button type="button" aria-label="Vorheriger Monat" onClick={() => setVisibleMonth(shiftMonth(visibleMonth, -1))}>
+          <button type="button" aria-label={UI_TEXT[language].previousMonth} onClick={() => setVisibleMonth(shiftMonth(visibleMonth, -1))}>
             ‹
           </button>
           <span className="calendar-month-label-group">
-            <span className="calendar-month-label">{monthStart.setLocale('de').toFormat('LLLL yyyy')}</span>
+            <span className="calendar-month-label">{monthStart.setLocale(localeFor(language)).toFormat('LLLL yyyy')}</span>
             {!isCurrentMonth && (
               <button
                 type="button"
                 className="calendar-today-button"
-                onClick={() => setVisibleMonth({ year: now.year, month: now.month })}
-                aria-label="Zum heutigen Monat springen"
-                title="Heute"
+                onClick={() => setVisibleMonth({ year: zonedNow.year, month: zonedNow.month })}
+                aria-label={UI_TEXT[language].currentMonth}
+                title={UI_TEXT[language].today}
               >
                 📅
               </button>
             )}
           </span>
-          <button type="button" aria-label="Nächster Monat" onClick={() => setVisibleMonth(shiftMonth(visibleMonth, 1))}>
+          <button type="button" aria-label={UI_TEXT[language].nextMonth} onClick={() => setVisibleMonth(shiftMonth(visibleMonth, 1))}>
             ›
           </button>
         </div>
         <div className="calendar-weekdays">
-          {WEEKDAY_LABELS.map((label) => (
+          {WEEKDAY_LABELS[language].map((label) => (
             <span key={label}>{label}</span>
           ))}
         </div>
@@ -174,10 +188,10 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
                           <div className="calendar-day-tooltip-item" key={sessionIndex}>
                             <span className="calendar-day-tooltip-when">
                               {isLive(session, now) && <span className="calendar-chip-live-dot" />}
-                              {formatWhen(session)}
+                              {formatWhen(session, timeZone, language)}
                             </span>
                             <span className="calendar-day-tooltip-title">
-                              {SERIES_LABELS[session.series]} — {session.eventName}
+                              {SERIES_LABELS[language][session.series]} — {session.eventName}
                             </span>
                           </div>
                         ))}
@@ -193,7 +207,7 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
           <div className="calendar-legend">
             {usedSeries.map((series) => (
               <span key={series}>
-                <span className="calendar-dot" style={{ background: SERIES_COLORS[series] }} /> {SERIES_LABELS[series]}
+                <span className="calendar-dot" style={{ background: SERIES_COLORS[series] }} /> {SERIES_LABELS[language][series]}
               </span>
             ))}
           </div>
@@ -202,20 +216,20 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
 
       <div className="calendar-entries">
         {monthSessions.length === 0 ? (
-          <p className="calendar-entries-empty">Keine Termine in diesem Monat.</p>
+          <p className="calendar-entries-empty">{UI_TEXT[language].noEvents}</p>
         ) : (
           monthSessions.map((session, index) => (
             <div
               className={`calendar-entry${isLive(session, now) ? ' calendar-entry-live' : ''}${isPast(session, now) ? ' calendar-entry-past' : ''}`}
               key={`${session.series}-${session.eventName}-${session.sessionType}-${index}`}
             >
-              <div className="calendar-entry-when">{formatWhen(session)}</div>
+              <div className="calendar-entry-when">{formatWhen(session, timeZone, language)}</div>
               <div className="calendar-entry-title">
-                {SERIES_LABELS[session.series]} — {session.eventName}
+                {SERIES_LABELS[language][session.series]} — {session.eventName}
               </div>
               <div className="calendar-entry-meta">
-                {isLive(session, now) && <span className="calendar-chip calendar-chip-live">Live</span>}
-                <span className="calendar-chip calendar-chip-type">{SESSION_TYPE_LABELS[session.sessionType]}</span>
+                {isLive(session, now) && <span className="calendar-chip calendar-chip-live">{UI_TEXT[language].live}</span>}
+                <span className="calendar-chip calendar-chip-type">{SESSION_TYPE_LABELS[language][session.sessionType]}</span>
                 {session.broadcasters.map((b) =>
                   b.url && !isPast(session, now) ? (
                     <a
@@ -225,16 +239,16 @@ export function MonthCalendar({ sessions }: { sessions: Session[] }) {
                       rel="noopener noreferrer"
                       key={b.name}
                     >
-                      {b.name}
+                      {broadcasterLabel(b.name, language)}
                     </a>
                   ) : (
                     <span className="calendar-chip" key={b.name}>
-                      {b.name}
+                      {broadcasterLabel(b.name, language)}
                     </span>
                   ),
                 )}
                 {session.broadcasters.length > 0 && isStale(session.broadcastersVerifiedAt) && (
-                  <span className="calendar-chip calendar-chip-stale">ohne Gewähr</span>
+                  <span className="calendar-chip calendar-chip-stale">{UI_TEXT[language].unverified}</span>
                 )}
               </div>
             </div>

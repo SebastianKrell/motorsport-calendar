@@ -8,6 +8,8 @@ export function MultiSelectDropdown<T extends string>({
   onToggle,
   onSelectAll,
   onSelectNone,
+  allLabel,
+  noneLabel,
 }: {
   label: string;
   options: T[];
@@ -16,6 +18,8 @@ export function MultiSelectDropdown<T extends string>({
   onToggle: (value: T) => void;
   onSelectAll?: () => void;
   onSelectNone?: () => void;
+  allLabel: string;
+  noneLabel: string;
 }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -28,7 +32,7 @@ export function MultiSelectDropdown<T extends string>({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const summary = selected.size === options.length ? 'Alle' : `${selected.size}/${options.length}`;
+  const summary = selected.size === options.length ? allLabel : `${selected.size}/${options.length}`;
 
   return (
     <div className="dropdown" ref={ref}>
@@ -42,10 +46,10 @@ export function MultiSelectDropdown<T extends string>({
           {onSelectAll && onSelectNone && (
             <div className="dropdown-actions">
               <button type="button" onClick={onSelectAll}>
-                Alle
+                {allLabel}
               </button>
               <button type="button" onClick={onSelectNone}>
-                Keine
+                {noneLabel}
               </button>
             </div>
           )}

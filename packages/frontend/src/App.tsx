@@ -3,7 +3,9 @@ import { useEffect, useMemo, useState } from 'react';
 import { MonthCalendar } from './components/MonthCalendar';
 import { MultiSelectDropdown } from './components/MultiSelectDropdown';
 import { SiteHeader } from './components/SiteHeader';
-import { SERIES_LABELS, SESSION_TYPE_LABELS } from './labels';
+import { SourceAttribution } from './components/SourceAttribution';
+import { localeFor, SERIES_LABELS, SESSION_TYPE_LABELS, UI_TEXT, type Language } from './i18n';
+import { DEFAULT_TIME_ZONE, isSupportedTimeZone } from './timeZones';
 import type { Session, SessionsFile, SessionType, SeriesId } from './types';
 
 const SESSION_TYPE_ORDER: SessionType[] = ['fp', 'quali', 'sprint', 'race'];
@@ -19,10 +21,22 @@ function getInitialTheme(): Theme {
   return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
 }
 
-function formatGeneratedAt(value: string | null): string | null {
+function getInitialLanguage(): Language {
+  return localStorage.getItem('language') === 'en' ? 'en' : 'de';
+}
+
+function getInitialTimeZone(): string {
+  const stored = localStorage.getItem('timeZone');
+  return isSupportedTimeZone(stored) ? stored : DEFAULT_TIME_ZONE;
+}
+
+function formatGeneratedAt(value: string | null, timeZone: string, language: Language): string | null {
   if (!value) return null;
-  const timestamp = DateTime.fromISO(value, { zone: 'utc' }).setZone('Europe/Berlin').setLocale('de');
-  return timestamp.isValid ? timestamp.toFormat("dd.LL.yyyy, HH:mm 'Uhr'") : null;
+  const timestamp = DateTime.fromISO(value, { zone: 'utc' }).setZone(timeZone).setLocale(localeFor(language));
+  if (!timestamp.isValid) return null;
+  return language === 'de'
+    ? timestamp.toFormat("dd.LL.yyyy, HH:mm 'Uhr'")
+    : timestamp.toFormat('dd/LL/yyyy, HH:mm');
 }
 
 export function App() {
@@ -34,11 +48,37 @@ export function App() {
     new Set(DEFAULT_SESSION_TYPES),
   );
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
+  const [language, setLanguage] = useState<Language>(getInitialLanguage);
+  const [timeZone, setTimeZone] = useState<string>(getInitialTimeZone);
+  const text = UI_TEXT[language];
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+    localStorage.setItem('language', language);
+    document.title = language === 'de' ? 'Motorsport-Kalender' : 'Motorsport Calendar';
+    const description = language === 'de'
+      ? 'Motorsport-Termine und Übertragungen mit frei wählbarer Zeitzone.'
+      : 'Motorsport events and broadcasts with a selectable time zone.';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute(
+      'content',
+      language === 'de' ? 'Motorsport-Kalender' : 'Motorsport Calendar',
+    );
+    document.querySelector('meta[property="og:locale"]')?.setAttribute(
+      'content',
+      language === 'de' ? 'de_DE' : 'en_GB',
+    );
+  }, [language]);
+
+  useEffect(() => {
+    localStorage.setItem('timeZone', timeZone);
+  }, [timeZone]);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/sessions.json`, { cache: 'no-store' })
@@ -57,7 +97,10 @@ export function App() {
   }, []);
 
   const availableSeries = useMemo(() => [...new Set(sessions.map((s) => s.series))].sort(), [sessions]);
-  const formattedGeneratedAt = useMemo(() => formatGeneratedAt(generatedAt), [generatedAt]);
+  const formattedGeneratedAt = useMemo(
+    () => formatGeneratedAt(generatedAt, timeZone, language),
+    [generatedAt, timeZone, language],
+  );
 
   const availableSessionTypes = useMemo(
     () => SESSION_TYPE_ORDER.filter((type) => sessions.some((s) => s.sessionType === type)),
@@ -89,53 +132,45 @@ export function App() {
 
   return (
     <>
-      <SiteHeader theme={theme} onSelectTheme={setTheme} />
+      <SiteHeader
+        theme={theme}
+        onSelectTheme={setTheme}
+        language={language}
+        onSelectLanguage={setLanguage}
+        timeZone={timeZone}
+        onSelectTimeZone={setTimeZone}
+      />
       <main>
-        {error && <p role="alert">Termine konnten nicht geladen werden: {error}</p>}
+        {error && <p role="alert">{text.loadError}: {error}</p>}
         <div className="filters">
           <MultiSelectDropdown
-            label="Serie"
+            label={text.series}
             options={availableSeries}
-            labels={SERIES_LABELS}
+            labels={SERIES_LABELS[language]}
             selected={selectedSeries}
             onToggle={toggleSeries}
             onSelectAll={() => setSelectedSeries(new Set(availableSeries))}
             onSelectNone={() => setSelectedSeries(new Set())}
+            allLabel={text.all}
+            noneLabel={text.none}
           />
           <MultiSelectDropdown
-            label="Session"
+            label={text.session}
             options={availableSessionTypes}
-            labels={SESSION_TYPE_LABELS}
+            labels={SESSION_TYPE_LABELS[language]}
             selected={selectedSessionTypes}
             onToggle={toggleSessionType}
+            allLabel={text.all}
+            noneLabel={text.none}
           />
         </div>
-        <MonthCalendar sessions={filtered} />
+        <MonthCalendar sessions={filtered} language={language} timeZone={timeZone} />
         <footer>
-          {formattedGeneratedAt && <p>Datenstand: {formattedGeneratedAt}</p>}
+          {formattedGeneratedAt && <p>{text.dataAsOf}: {formattedGeneratedAt}</p>}
+          <SourceAttribution language={language} />
           <p>
-            Renntermine (WEC, IMSA, NLS, GTWC, IGTC, ADAC GT Masters, International GT Open, 24H Series, ELMS,
-            Asian Le Mans Series):{' '}
-            <a href="https://toomuchracing.com">toomuchracing.com</a>, lizenziert unter{' '}
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>. Formel E:{' '}
-            <a href="https://github.com/sportstimes/f1">sportstimes/f1</a> (MIT). Uhrzeiten NLS:{' '}
-            <a href="https://www.nuerburgring-langstrecken-serie.de">nuerburgring-langstrecken-serie.de</a>.
-            Uhrzeiten WEC: <a href="https://www.fiawec.com">fiawec.com</a>. Uhrzeiten IMSA:{' '}
-            <a href="https://raceweek.io">raceweek.io</a>. Uhrzeiten GTWC:{' '}
-            <a href="https://www.gt-world-challenge-europe.com">gt-world-challenge-*.com</a>. Uhrzeiten IGTC:{' '}
-            <a href="https://www.intercontinentalgtchallenge.com">intercontinentalgtchallenge.com</a>. Uhrzeiten
-            GT2/GT4: <a href="https://www.gt2europeanseries.com">gt2europeanseries.com</a>,{' '}
-            <a href="https://www.gt4europeanseries.com">gt4europeanseries.com</a>,{' '}
-            <a href="https://www.gtamerica.us">gtamerica.us</a> und{' '}
-            <a href="https://www.gt4-america.com">gt4-america.com</a>. Uhrzeiten British GT:{' '}
-            <a href="https://www.britishgt.com">britishgt.com</a>. Uhrzeiten DTM / ADAC GT Masters / Porsche Carrera
-            Cup: <a href="https://dtm.com">dtm.com</a>.
-            Uhrzeiten Michelin Le Mans Cup: <a href="https://www.lemanscup.com">lemanscup.com</a>.
-            Uhrzeiten Super GT: <a href="https://supergt.net/en/calendar">supergt.net</a>.
-          </p>
-          <p>
-            <a href={`${import.meta.env.BASE_URL}impressum/`}>Impressum</a> ·{' '}
-            <a href={`${import.meta.env.BASE_URL}datenschutz/`}>Datenschutz</a>
+            <a href={`${import.meta.env.BASE_URL}impressum/`}>{text.imprint}</a> ·{' '}
+            <a href={`${import.meta.env.BASE_URL}datenschutz/`}>{text.privacy}</a>
           </p>
         </footer>
       </main>

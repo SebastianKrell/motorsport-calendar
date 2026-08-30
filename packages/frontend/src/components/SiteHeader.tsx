@@ -49,42 +49,77 @@ function PixelStripes() {
 export function SiteHeader({
   theme,
   onSelectTheme,
+  language,
+  onSelectLanguage,
+  timeZone,
+  onSelectTimeZone,
 }: {
   theme: 'light' | 'dark';
   onSelectTheme: (theme: 'light' | 'dark') => void;
+  language: Language;
+  onSelectLanguage: (language: Language) => void;
+  timeZone: string;
+  onSelectTimeZone: (timeZone: string) => void;
 }) {
+  const text = UI_TEXT[language];
+
   return (
     <header className="site-header-outer">
       <div className="site-header-inner">
         <div className="site-header-logo">
           <PixelStripes />
-          <h1 className="site-header-title">MOTORSPORT-KALENDER</h1>
+          <h1 className="site-header-title">{text.title}</h1>
         </div>
         <div className="site-header-actions">
-          <div className="theme-toggle">
+          <div className="theme-toggle" aria-label={text.theme}>
             <button
               type="button"
               className={theme === 'light' ? 'is-active' : ''}
               onClick={() => onSelectTheme('light')}
             >
-              Hell
+              {text.light}
             </button>
             <button
               type="button"
               className={theme === 'dark' ? 'is-active' : ''}
               onClick={() => onSelectTheme('dark')}
             >
-              Dunkel
+              {text.dark}
             </button>
           </div>
+          <label className="header-select">
+            <span className="visually-hidden">{text.timeZone}</span>
+            <select value={timeZone} onChange={(event) => onSelectTimeZone(event.target.value)}>
+              {TIME_ZONE_OPTIONS.map((option) => (
+                <option value={option.value} key={option.value}>
+                  {option.labels[language]}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="header-select">
+            <span className="visually-hidden">{text.language}</span>
+            <select
+              value={language}
+              onChange={(event) => onSelectLanguage(event.target.value as Language)}
+            >
+              {LANGUAGE_OPTIONS.map((option) => (
+                <option value={option.value} key={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </label>
           <a
             className="site-header-contact"
             href="https://github.com/SebastianKrell/motorsport-calendar/issues"
           >
-            Contact
+            {text.contact}
           </a>
         </div>
       </div>
     </header>
   );
 }
+import { LANGUAGE_OPTIONS, UI_TEXT, type Language } from '../i18n';
+import { TIME_ZONE_OPTIONS } from '../timeZones';
