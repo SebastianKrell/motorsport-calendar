@@ -9,6 +9,7 @@ import { DEFAULT_TIME_ZONE, isSupportedTimeZone } from './timeZones';
 import type { Session, SessionsFile, SessionType, SeriesId } from './types';
 
 const SESSION_TYPE_ORDER: SessionType[] = ['fp', 'quali', 'sprint', 'race'];
+const TIME_ZONE_STORAGE_KEY = 'timeZone-v2';
 // Standardmäßig nur Rennen anzeigen -- Trainings/Qualifyings sind für die
 // Sender-Frage meist irrelevant und würden die Tabelle unnötig aufblähen.
 const DEFAULT_SESSION_TYPES: SessionType[] = ['race'];
@@ -26,7 +27,7 @@ function getInitialLanguage(): Language {
 }
 
 function getInitialTimeZone(): string {
-  const stored = localStorage.getItem('timeZone');
+  const stored = localStorage.getItem(TIME_ZONE_STORAGE_KEY);
   return isSupportedTimeZone(stored) ? stored : DEFAULT_TIME_ZONE;
 }
 
@@ -77,7 +78,7 @@ export function App() {
   }, [language]);
 
   useEffect(() => {
-    localStorage.setItem('timeZone', timeZone);
+    localStorage.setItem(TIME_ZONE_STORAGE_KEY, timeZone);
   }, [timeZone]);
 
   useEffect(() => {
