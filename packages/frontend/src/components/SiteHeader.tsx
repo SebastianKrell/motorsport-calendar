@@ -1,3 +1,7 @@
+import { UI_TEXT, type Language } from '../i18n';
+import { TIME_ZONE_OPTIONS } from '../timeZones';
+import { LanguageSelector } from './LanguageSelector';
+
 // Drei parallele schräge Pixel-Balken vor dem Schriftzug (klassisches
 // "MOTORSPORT"-Wordmark-Motiv) -- nur Rot-Abstufungen, hell zu unserem
 // Marken-Rot, keine Fremdmarken-Farben. Die Schräge entsteht durch eine
@@ -97,19 +101,7 @@ export function SiteHeader({
               ))}
             </select>
           </label>
-          <label className="header-select">
-            <span className="visually-hidden">{text.language}</span>
-            <select
-              value={language}
-              onChange={(event) => onSelectLanguage(event.target.value as Language)}
-            >
-              {LANGUAGE_OPTIONS.map((option) => (
-                <option value={option.value} key={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-          </label>
+          <LanguageSelector language={language} label={text.language} onSelect={onSelectLanguage} />
           <a
             className="site-header-contact"
             href="https://github.com/SebastianKrell/motorsport-calendar/issues"
@@ -121,5 +113,3 @@ export function SiteHeader({
     </header>
   );
 }
-import { LANGUAGE_OPTIONS, UI_TEXT, type Language } from '../i18n';
-import { TIME_ZONE_OPTIONS } from '../timeZones';
