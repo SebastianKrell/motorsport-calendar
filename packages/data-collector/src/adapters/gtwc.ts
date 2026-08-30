@@ -123,7 +123,9 @@ interface ScheduleEntry {
 // automatisch für alle GTWC-Regionalseiten, IGTC und British GT.
 function classifySession(label: string): SessionType | null {
   const lower = label.toLowerCase();
-  if (/test|pit walk|parade|autograph|grid walk/.test(lower)) return null;
+  // SRO führt bei manchen Endurance-Rennen Zwischenstände wie "Main Race
+  // after 0.5 h" als eigene Tabellenzeile. Das ist kein zweiter Rennstart.
+  if (/test|pit walk|parade|autograph|grid walk|\bafter\s+\d+(?:\.\d+)?\s*h\b/.test(lower)) return null;
   if (/practice/.test(lower)) return 'fp';
   if (/qualify(?:ing)?|superpole|shootout/.test(lower)) return 'quali';
   if (/warm[\s-]?up/.test(lower)) return 'fp';
