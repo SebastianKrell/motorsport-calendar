@@ -69,6 +69,50 @@ describe('SRO-Adapter für IGTC', () => {
   });
 });
 
+describe('SRO-Adapter für GTWC Europe', () => {
+  it('veröffentlicht Zwischenstände eines laufenden Rennens nicht als zweiten Rennstart', async () => {
+    const baseUrl = 'https://www.gt-world-challenge-europe.com';
+    const eventHtml = `
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Nürburgring",
+        "startDate": "2026-08-28",
+        "endDate": "2026-08-30",
+        "location": { "name": "Nürburgring, Germany" },
+        "description": "GT World Challenge Europe, Round 7, Nürburgring, Germany"
+      }
+      </script>
+      <table>
+        <caption class="timetable__caption"><span>Sunday, 30 August</span></caption>
+        <tbody class="timetable__table-body">
+          <tr><td>Main Race</td><td>15:00</td><td>13:00</td></tr>
+          <tr><td>Main Race after 0.5 h</td><td>15:30</td><td>13:30</td></tr>
+        </tbody>
+      </table>`;
+
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (input: string | URL | Request) => {
+        const body =
+          String(input) === `${baseUrl}/calendar`
+            ? '<a href="/event/252/nürburgring">Nürburgring</a>'
+            : eventHtml;
+        return new Response(body, { status: 200 });
+      }),
+    );
+
+    const sessions = await createGtwcAdapter('gtwc_europe', baseUrl).fetchSessions();
+    expect(sessions).toEqual([
+      expect.objectContaining({
+        sessionType: 'race',
+        startUtc: '2026-08-30T13:00:00.000Z',
+      }),
+    ]);
+  });
+});
+
 describe('SRO-Adapter für British GT', () => {
   it('liest Doppelrennen mit offiziellen GMT-Zeiten und ignoriert Test-Sessions', async () => {
     const baseUrl = 'https://www.britishgt.com';

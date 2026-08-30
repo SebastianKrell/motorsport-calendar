@@ -10,6 +10,7 @@ import {
   UI_TEXT,
   type Language,
 } from '../i18n';
+import { isLive, isPast } from '../sessionStatus';
 import type { Session, SeriesId } from '../types';
 
 const WEEKDAY_LABELS: Record<Language, string[]> = {
@@ -41,26 +42,6 @@ function shiftMonth(key: MonthKey, delta: number): MonthKey {
 function isStale(verifiedAt: string | null): boolean {
   if (!verifiedAt) return true;
   return DateTime.now().diff(DateTime.fromISO(verifiedAt), 'days').days > VERIFIED_STALE_AFTER_DAYS;
-}
-
-// "Läuft gerade" lässt sich nur ausrechnen, wenn wir sowohl Start- als auch
-// Endzeit exakt kennen. `date-only`-Einträge (nur Renntag, keine Uhrzeit aus
-// dem ICS-Feed) und Sessions ohne `endUtc` werden bewusst nie als live
-// markiert -- eine geratene Live-Anzeige wäre schlimmer als keine.
-function isLive(session: Session, now: DateTime): boolean {
-  if (session.confidence !== 'exact' || !session.endUtc) return false;
-  const start = DateTime.fromISO(session.startUtc, { zone: 'utc' });
-  const end = DateTime.fromISO(session.endUtc, { zone: 'utc' });
-  return now >= start && now <= end;
-}
-
-// Sessions bleiben nach Ende noch bis zu 24h in den Daten (s. GRACE_PERIOD_MS
-// im data-collector), damit über-Mitternacht-Rennen nicht vorzeitig
-// verschwinden. Dieselbe Referenz (endUtc, sonst startUtc) hier verwenden,
-// um "schon vorbei" konsistent mit dieser Kulanzregel zu berechnen.
-function isPast(session: Session, now: DateTime): boolean {
-  const reference = DateTime.fromISO(session.endUtc ?? session.startUtc, { zone: 'utc' });
-  return reference < now;
 }
 
 export function MonthCalendar({

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T10:19:23.696Z",
+  "generatedAt": "2026-08-30T14:58:07.094Z",
   "sessions": [
     {
       "series": "nls",
@@ -2380,25 +2380,6 @@
       "eventName": "Nürburgring",
       "circuit": "Nürburgring",
       "round": 7,
-      "sessionType": "fp",
-      "startUtc": "2026-08-29T14:15:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Nürburgring",
-      "circuit": "Nürburgring",
-      "round": 7,
       "sessionType": "quali",
       "startUtc": "2026-08-30T07:45:00.000Z",
       "endUtc": null,
@@ -3416,25 +3397,6 @@
       "round": 13,
       "sessionType": "race",
       "startUtc": "2026-10-11T15:40:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Road America (GT America)",
-      "circuit": "Road America",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-08-29T14:05:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
