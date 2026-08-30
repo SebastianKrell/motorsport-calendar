@@ -29,6 +29,7 @@
               ? 'dark'
               : 'light';
         document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.lang = localStorage.getItem('language') === 'en' ? 'en' : 'de';
       })();
     </script>
   </head>
