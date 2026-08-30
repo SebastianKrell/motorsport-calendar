@@ -3,8 +3,8 @@ import type { SessionType, SeriesId } from './types';
 export type Language = 'de' | 'en';
 
 export const LANGUAGE_OPTIONS: { value: Language; label: string }[] = [
-  { value: 'de', label: '🇩🇪 Deutsch' },
-  { value: 'en', label: '🇬🇧 English' },
+  { value: 'de', label: 'Deutsch' },
+  { value: 'en', label: 'English' },
 ];
 
 export const SERIES_LABELS: Record<Language, Record<SeriesId, string>> = {

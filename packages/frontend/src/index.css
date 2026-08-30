@@ -134,6 +134,65 @@ main {
   cursor: pointer;
 }
 
+.language-selector {
+  position: relative;
+}
+
+.language-selector > button,
+.language-selector-menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.language-selector > button {
+  border-radius: 8px;
+  padding: 0.35rem 0.55rem;
+}
+
+.language-selector > button.is-open {
+  border-color: var(--brand);
+}
+
+.language-flag {
+  width: 20px;
+  height: 12px;
+  flex: none;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.language-selector-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 40;
+  min-width: 145px;
+  padding: 0.3rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.language-selector-menu button {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.4rem 0.5rem;
+}
+
+.language-selector-menu button:hover,
+.language-selector-menu button.is-selected {
+  background: var(--row-hover);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
