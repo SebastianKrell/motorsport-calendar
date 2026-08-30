@@ -91,8 +91,8 @@ export function SiteHeader({
               {text.dark}
             </button>
           </div>
-          <label className="header-select">
-            <span className="visually-hidden">{text.timeZone}</span>
+          <label className="header-select header-time-zone">
+            <span>{text.timeZone}:</span>
             <select value={timeZone} onChange={(event) => onSelectTimeZone(event.target.value)}>
               {TIME_ZONE_OPTIONS.map((option) => (
                 <option value={option.value} key={option.value}>

@@ -134,6 +134,16 @@ main {
   cursor: pointer;
 }
 
+.header-time-zone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .language-selector {
   position: relative;
 }
@@ -374,7 +384,7 @@ main {
   }
 
   .header-select select {
-    max-width: 125px;
+    max-width: 155px;
   }
 
   .calendar-layout {
