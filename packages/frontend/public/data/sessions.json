@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T09:30:55.492Z",
+  "generatedAt": "2026-09-04T09:23:59.274Z",
   "sessions": [
     {
       "series": "nls",
@@ -1864,7 +1864,25 @@
       "circuit": "Salzburgring",
       "round": 5,
       "sessionType": "fp",
-      "startUtc": "2026-09-04T08:05:00.000Z",
+      "startUtc": "2026-09-04T07:30:00.000Z",
+      "endUtc": "2026-09-04T08:30:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
+      "eventName": "Salzburgring (ADAC GT Masters)",
+      "circuit": "Salzburgring",
+      "round": 5,
+      "sessionType": "fp",
+      "startUtc": "2026-09-04T13:10:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -1881,9 +1899,63 @@
       "eventName": "Salzburgring (ADAC GT Masters)",
       "circuit": "Salzburgring",
       "round": 5,
+      "sessionType": "quali",
+      "startUtc": "2026-09-05T07:30:00.000Z",
+      "endUtc": "2026-09-05T07:50:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
+      "eventName": "Salzburgring (ADAC GT Masters)",
+      "circuit": "Salzburgring",
+      "round": 5,
       "sessionType": "race",
-      "startUtc": "2026-09-06T13:10:00.000Z",
-      "endUtc": null,
+      "startUtc": "2026-09-05T12:05:00.000Z",
+      "endUtc": "2026-09-05T13:05:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
+      "eventName": "Salzburgring (ADAC GT Masters)",
+      "circuit": "Salzburgring",
+      "round": 5,
+      "sessionType": "quali",
+      "startUtc": "2026-09-06T07:15:00.000Z",
+      "endUtc": "2026-09-06T07:35:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
+      "eventName": "Salzburgring (ADAC GT Masters)",
+      "circuit": "Salzburgring",
+      "round": 5,
+      "sessionType": "race",
+      "startUtc": "2026-09-06T12:05:00.000Z",
+      "endUtc": "2026-09-06T13:05:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -2533,26 +2605,7 @@
       "circuit": "Portimao Circuit",
       "round": 10,
       "sessionType": "fp",
-      "startUtc": "2026-10-17T07:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Portimao",
-      "circuit": "Portimao Circuit",
-      "round": 10,
-      "sessionType": "fp",
-      "startUtc": "2026-10-17T11:40:00.000Z",
+      "startUtc": "2026-10-16T07:45:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2571,7 +2624,7 @@
       "circuit": "Portimao Circuit",
       "round": 10,
       "sessionType": "quali",
-      "startUtc": "2026-10-18T09:40:00.000Z",
+      "startUtc": "2026-10-16T16:55:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2590,7 +2643,7 @@
       "circuit": "Portimao Circuit",
       "round": 10,
       "sessionType": "race",
-      "startUtc": "2026-10-18T14:15:00.000Z",
+      "startUtc": "2026-10-17T16:00:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2903,6 +2956,25 @@
       "round": 7,
       "sessionType": "race",
       "startUtc": "2026-10-18T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "MOBILITY RESORT MOTEGI",
+      "circuit": "MOBILITY RESORT MOTEGI",
+      "round": 3,
+      "sessionType": "race",
+      "startUtc": "2026-11-07T00:00:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "date-only",
