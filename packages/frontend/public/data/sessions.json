@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T09:23:59.274Z",
+  "generatedAt": "2026-09-05T08:52:42.682Z",
   "sessions": [
     {
       "series": "nls",
@@ -1857,24 +1857,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "adac_gt_masters",
-      "eventName": "Salzburgring (ADAC GT Masters)",
-      "circuit": "Salzburgring",
-      "round": 5,
-      "sessionType": "fp",
-      "startUtc": "2026-09-04T07:30:00.000Z",
-      "endUtc": "2026-09-04T08:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
     },
     {
       "series": "adac_gt_masters",
