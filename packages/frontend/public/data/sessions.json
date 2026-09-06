@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T08:52:42.682Z",
+  "generatedAt": "2026-09-06T09:12:02.117Z",
   "sessions": [
     {
       "series": "nls",
@@ -144,108 +144,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "wec",
-      "eventName": "Lone Star Le Mans",
-      "circuit": "Circuit des Amériques",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-09-04T09:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport 1",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL Nitro",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL+",
-          "type": "streaming"
-        },
-        {
-          "name": "ServusTV On",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "Lone Star Le Mans",
-      "circuit": "Circuit des Amériques",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-09-04T14:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport 1",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL Nitro",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL+",
-          "type": "streaming"
-        },
-        {
-          "name": "ServusTV On",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "Lone Star Le Mans",
-      "circuit": "Circuit des Amériques",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-09-05T09:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport 1",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL Nitro",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL+",
-          "type": "streaming"
-        },
-        {
-          "name": "ServusTV On",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
     },
     {
       "series": "wec",
@@ -1655,8 +1553,8 @@
       "circuit": "Sachsenring",
       "round": 7,
       "sessionType": "fp",
-      "startUtc": "2026-09-11T13:30:00.000Z",
-      "endUtc": "2026-09-11T14:00:00.000Z",
+      "startUtc": "2026-09-11T13:50:00.000Z",
+      "endUtc": "2026-09-11T14:20:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -1674,8 +1572,8 @@
       "circuit": "Sachsenring",
       "round": 7,
       "sessionType": "quali",
-      "startUtc": "2026-09-12T07:10:00.000Z",
-      "endUtc": "2026-09-12T07:30:00.000Z",
+      "startUtc": "2026-09-12T07:55:00.000Z",
+      "endUtc": "2026-09-12T08:15:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -1712,8 +1610,8 @@
       "circuit": "Sachsenring",
       "round": 7,
       "sessionType": "quali",
-      "startUtc": "2026-09-13T07:20:00.000Z",
-      "endUtc": "2026-09-13T07:40:00.000Z",
+      "startUtc": "2026-09-13T07:00:00.000Z",
+      "endUtc": "2026-09-13T07:20:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -1863,42 +1761,6 @@
       "eventName": "Salzburgring (ADAC GT Masters)",
       "circuit": "Salzburgring",
       "round": 5,
-      "sessionType": "fp",
-      "startUtc": "2026-09-04T13:10:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "adac_gt_masters",
-      "eventName": "Salzburgring (ADAC GT Masters)",
-      "circuit": "Salzburgring",
-      "round": 5,
-      "sessionType": "quali",
-      "startUtc": "2026-09-05T07:30:00.000Z",
-      "endUtc": "2026-09-05T07:50:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "adac_gt_masters",
-      "eventName": "Salzburgring (ADAC GT Masters)",
-      "circuit": "Salzburgring",
-      "round": 5,
       "sessionType": "race",
       "startUtc": "2026-09-05T12:05:00.000Z",
       "endUtc": "2026-09-05T13:05:00.000Z",
@@ -2029,25 +1891,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Donington Park",
-      "circuit": "Donington Park",
-      "round": 7,
-      "sessionType": "fp",
-      "startUtc": "2026-09-05T08:35:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
     },
     {
       "series": "british_gt",
