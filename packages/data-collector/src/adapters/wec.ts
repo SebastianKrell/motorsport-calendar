@@ -1,3 +1,5 @@
+import ical from 'node-ical';
+import type { ParameterValue } from 'node-ical';
 import type { Adapter, Session, SessionType } from '../types.js';
 
 const USER_AGENT = 'motorsport-calendar (https://github.com/SebastianKrell/motorsport-calendar)';
@@ -25,27 +27,21 @@ async function fetchSeasonRaceUrls(): Promise<string[]> {
   return [...urls];
 }
 
-interface RawSubEvent {
-  name: string;
-  startDate: string;
-}
-
 interface RawSportsEvent {
   '@type': string;
   name: string;
   location?: { name?: string };
-  subEvent?: RawSubEvent[];
 }
 
-// fiawec.com bettet den kompletten Zeitplan als schema.org-JSON-LD ein (ein
-// <script type="application/ld+json"> pro Event mit "subEvent"-Array je
-// Session) -- deutlich robuster als HTML-Struktur-Scraping.
+// Das JSON-LD liefert zuverlässige Event-Metadaten, seine Session-Zeiten sind
+// jedoch fälschlich mit dem europäischen Seiten-Offset ausgezeichnet. Für die
+// Zeiten wird deshalb der offizielle ICS-Export verwendet (s. unten).
 function extractSportsEvent(html: string): RawSportsEvent | null {
   const scriptRegex = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g;
   for (const match of html.matchAll(scriptRegex)) {
     try {
       const parsed = JSON.parse(match[1]) as RawSportsEvent;
-      if (parsed['@type'] === 'SportsEvent' && Array.isArray(parsed.subEvent)) {
+      if (parsed['@type'] === 'SportsEvent') {
         return parsed;
       }
     } catch {
@@ -55,14 +51,21 @@ function extractSportsEvent(html: string): RawSportsEvent | null {
   return null;
 }
 
-// "Qualifying - LMGT3 - 6 Hours of Imola" -> Label "Qualifying - LMGT3",
-// Eventtitel "6 Hours of Imola" (letztes Segment, konsistent über alle
-// subEvents desselben Rennens).
-function splitLabelAndEventTitle(subEventName: string): { label: string; eventTitle: string } {
-  const parts = subEventName.split(' - ');
-  const eventTitle = parts[parts.length - 1];
-  const label = parts.slice(0, -1).join(' - ');
-  return { label, eventTitle };
+function extractCalendarUrl(html: string): string | null {
+  const match = html.match(/href="(\/en\/race\/calendar\/\d+)"/);
+  return match ? `https://www.fiawec.com${match[1]}` : null;
+}
+
+function textValue(value: ParameterValue<string> | undefined): string {
+  if (!value) return '';
+  return typeof value === 'string' ? value : value.val;
+}
+
+// ICS-Summaries folgen "<Event> - <Session>", wobei Qualifying und Hyperpole
+// noch die Klasse als weiteres Segment tragen.
+function splitEventTitleAndLabel(summary: string): { eventTitle: string; label: string } | null {
+  const match = summary.match(/^(.*?) - ((?:Free Practice|Warm-?up|Qualifying|Hyperpole|Race).*)$/i);
+  return match ? { eventTitle: match[1].trim(), label: match[2].trim() } : null;
 }
 
 function classifySession(label: string): SessionType | null {
@@ -81,14 +84,6 @@ function classSuffix(label: string): string {
   return withoutPrefix === label ? '' : ` (${withoutPrefix})`;
 }
 
-// "6 Hours of Imola" -> 6, "24 Hours of Le Mans" -> 24. Für Events ohne
-// Stundenangabe (z.B. "Qatar 1812km") bleibt die Dauer unbekannt -- dann
-// lieber kein endUtc als eine geratene Dauer.
-function raceDurationHours(eventTitle: string): number | null {
-  const match = eventTitle.match(/(\d+)\s*Hours?/i);
-  return match ? Number(match[1]) : null;
-}
-
 export const wecAdapter: Adapter = {
   series: 'wec',
   async fetchSessions(): Promise<Session[]> {
@@ -99,26 +94,29 @@ export const wecAdapter: Adapter = {
       try {
         const html = await fetchHtml(url);
         const event = extractSportsEvent(html);
-        if (!event?.subEvent) {
-          console.warn(`[wec] kein JSON-LD-Zeitplan auf ${url} gefunden, überspringe`);
+        if (!event) {
+          console.warn(`[wec] keine JSON-LD-Eventdaten auf ${url} gefunden, überspringe`);
+          continue;
+        }
+        const calendarUrl = extractCalendarUrl(html);
+        if (!calendarUrl) {
+          console.warn(`[wec] kein offizieller Kalenderexport auf ${url} gefunden, überspringe`);
           continue;
         }
 
         const circuit = event.location?.name ?? '';
+        const calendar = ical.sync.parseICS(await fetchHtml(calendarUrl));
 
-        for (const subEvent of event.subEvent) {
-          const { label, eventTitle } = splitLabelAndEventTitle(subEvent.name);
+        for (const component of Object.values(calendar)) {
+          if (!component || component.type !== 'VEVENT') continue;
+          const parsedSummary = splitEventTitleAndLabel(textValue(component.summary));
+          if (!parsedSummary) continue;
+          const { label, eventTitle } = parsedSummary;
           const sessionType = classifySession(label);
           if (!sessionType) {
             console.warn(`[wec] unbekannter Session-Typ "${label}" bei "${eventTitle}", übersprungen`);
             continue;
           }
-
-          const startUtc = new Date(subEvent.startDate).toISOString();
-          const durationHours = sessionType === 'race' ? raceDurationHours(eventTitle) : null;
-          const endUtc = durationHours
-            ? new Date(new Date(subEvent.startDate).getTime() + durationHours * 60 * 60 * 1000).toISOString()
-            : null;
 
           sessions.push({
             series: 'wec',
@@ -126,8 +124,8 @@ export const wecAdapter: Adapter = {
             circuit,
             round: null,
             sessionType,
-            startUtc,
-            endUtc,
+            startUtc: component.start.toISOString(),
+            endUtc: component.end?.toISOString() ?? null,
             source: 'scrape',
             confidence: 'exact',
           });
