@@ -18,8 +18,8 @@ const session: Session = {
 };
 
 describe('isPast', () => {
-  it('does not mark a race with unknown end time as past immediately after the start', () => {
-    expect(isPast(session, DateTime.fromISO('2026-08-30T14:54:00Z'))).toBe(false);
+  it('marks a race with unknown end time as past immediately after the start', () => {
+    expect(isPast(session, DateTime.fromISO('2026-08-30T14:54:00Z'))).toBe(true);
   });
 
   it('uses the known end time when one is available', () => {
