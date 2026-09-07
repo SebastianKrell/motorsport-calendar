@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T19:02:53.914Z",
+  "generatedAt": "2026-09-07T10:00:36.588Z",
   "sessions": [
     {
       "series": "nls",
@@ -144,142 +144,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "wec",
-      "eventName": "Lone Star Le Mans (LMGT3)",
-      "circuit": "Circuit des Amériques",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-05T20:00:00.000Z",
-      "endUtc": "2026-09-05T20:12:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport 1",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL Nitro",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL+",
-          "type": "streaming"
-        },
-        {
-          "name": "ServusTV On",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "Lone Star Le Mans (LMGT3)",
-      "circuit": "Circuit des Amériques",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-05T20:20:00.000Z",
-      "endUtc": "2026-09-05T20:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport 1",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL Nitro",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL+",
-          "type": "streaming"
-        },
-        {
-          "name": "ServusTV On",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "Lone Star Le Mans (HYPERCAR)",
-      "circuit": "Circuit des Amériques",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-05T20:40:00.000Z",
-      "endUtc": "2026-09-05T20:52:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport 1",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL Nitro",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL+",
-          "type": "streaming"
-        },
-        {
-          "name": "ServusTV On",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "Lone Star Le Mans (HYPERCAR)",
-      "circuit": "Circuit des Amériques",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-05T21:00:00.000Z",
-      "endUtc": "2026-09-05T21:10:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport 1",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL Nitro",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL+",
-          "type": "streaming"
-        },
-        {
-          "name": "ServusTV On",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
     },
     {
       "series": "wec",
@@ -938,6 +802,63 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Battle on the Bricks",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2026-09-18T19:25:00.000Z",
+      "endUtc": "2026-09-18T20:55:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Battle on the Bricks",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2026-09-19T14:45:00.000Z",
+      "endUtc": "2026-09-19T16:15:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Battle on the Bricks",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-09-19T21:05:00.000Z",
+      "endUtc": "2026-09-19T22:55:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "imsa",
@@ -1837,24 +1758,6 @@
       "eventName": "Salzburgring (ADAC GT Masters)",
       "circuit": "Salzburgring",
       "round": 5,
-      "sessionType": "quali",
-      "startUtc": "2026-09-06T07:15:00.000Z",
-      "endUtc": "2026-09-06T07:35:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "adac_gt_masters",
-      "eventName": "Salzburgring (ADAC GT Masters)",
-      "circuit": "Salzburgring",
-      "round": 5,
       "sessionType": "race",
       "startUtc": "2026-09-06T12:05:00.000Z",
       "endUtc": "2026-09-06T13:05:00.000Z",
@@ -2443,25 +2346,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Donington Park",
-      "circuit": "Donington Park",
-      "round": 7,
-      "sessionType": "fp",
-      "startUtc": "2026-09-06T08:40:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
     },
     {
       "series": "british_gt",
