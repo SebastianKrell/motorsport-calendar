@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T10:00:36.588Z",
+  "generatedAt": "2026-09-08T09:25:22.933Z",
   "sessions": [
     {
       "series": "nls",
@@ -144,40 +144,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "wec",
-      "eventName": "Lone Star Le Mans",
-      "circuit": "Circuit des Amériques",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-06T18:00:00.000Z",
-      "endUtc": "2026-09-07T00:00:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport 1",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL Nitro",
-          "type": "free-tv"
-        },
-        {
-          "name": "RTL+",
-          "type": "streaming"
-        },
-        {
-          "name": "ServusTV On",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
     },
     {
       "series": "wec",
@@ -1755,24 +1721,6 @@
     },
     {
       "series": "adac_gt_masters",
-      "eventName": "Salzburgring (ADAC GT Masters)",
-      "circuit": "Salzburgring",
-      "round": 5,
-      "sessionType": "race",
-      "startUtc": "2026-09-06T12:05:00.000Z",
-      "endUtc": "2026-09-06T13:05:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "adac_gt_masters",
       "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
       "circuit": "Hockenheimring Baden-Württemberg",
       "round": 6,
@@ -2346,25 +2294,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Donington Park",
-      "circuit": "Donington Park",
-      "round": 7,
-      "sessionType": "race",
-      "startUtc": "2026-09-06T12:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
     },
     {
       "series": "igtc",
