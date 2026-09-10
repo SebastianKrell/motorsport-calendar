@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T09:27:16.098Z",
+  "generatedAt": "2026-09-10T09:26:49.156Z",
   "sessions": [
     {
       "series": "nls",
@@ -203,8 +203,34 @@
       "circuit": "Fuji Speedway",
       "round": null,
       "sessionType": "fp",
-      "startUtc": "2026-09-26T00:50:00.000Z",
-      "endUtc": "2026-09-26T01:50:00.000Z",
+      "startUtc": "2026-09-26T00:30:00.000Z",
+      "endUtc": "2026-09-26T01:30:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Eurosport",
+          "type": "pay-tv"
+        },
+        {
+          "name": "HBO Max / discovery+",
+          "type": "streaming"
+        },
+        {
+          "name": "FIAWEC+",
+          "type": "streaming-paid"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "wec",
+      "eventName": "6 Hours of Fuji (LMGT3)",
+      "circuit": "Fuji Speedway",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-09-26T05:00:00.000Z",
+      "endUtc": "2026-09-26T05:12:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -230,7 +256,7 @@
       "round": null,
       "sessionType": "quali",
       "startUtc": "2026-09-26T05:20:00.000Z",
-      "endUtc": "2026-09-26T05:32:00.000Z",
+      "endUtc": "2026-09-26T05:30:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -251,12 +277,12 @@
     },
     {
       "series": "wec",
-      "eventName": "6 Hours of Fuji (LMGT3)",
+      "eventName": "6 Hours of Fuji (HYPERCAR)",
       "circuit": "Fuji Speedway",
       "round": null,
       "sessionType": "quali",
       "startUtc": "2026-09-26T05:40:00.000Z",
-      "endUtc": "2026-09-26T05:50:00.000Z",
+      "endUtc": "2026-09-26T05:52:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -282,33 +308,7 @@
       "round": null,
       "sessionType": "quali",
       "startUtc": "2026-09-26T06:00:00.000Z",
-      "endUtc": "2026-09-26T06:12:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Fuji (HYPERCAR)",
-      "circuit": "Fuji Speedway",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T06:20:00.000Z",
-      "endUtc": "2026-09-26T06:30:00.000Z",
+      "endUtc": "2026-09-26T06:10:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -1231,7 +1231,7 @@
       "circuit": "Silverstone",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-09-12T15:40:00.000Z",
+      "startUtc": "2026-09-12T15:15:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
