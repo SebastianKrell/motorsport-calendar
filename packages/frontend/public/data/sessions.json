@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T09:26:49.156Z",
+  "generatedAt": "2026-09-11T09:24:35.810Z",
   "sessions": [
     {
       "series": "nls",
@@ -1136,7 +1136,7 @@
       "circuit": "Silverstone",
       "round": null,
       "sessionType": "fp",
-      "startUtc": "2026-09-11T09:00:00.000Z",
+      "startUtc": "2026-09-11T08:45:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -1155,7 +1155,7 @@
       "circuit": "Silverstone",
       "round": null,
       "sessionType": "fp",
-      "startUtc": "2026-09-11T15:45:00.000Z",
+      "startUtc": "2026-09-11T15:40:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -1174,7 +1174,7 @@
       "circuit": "Silverstone",
       "round": null,
       "sessionType": "quali",
-      "startUtc": "2026-09-12T10:45:00.000Z",
+      "startUtc": "2026-09-12T10:30:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -1193,7 +1193,7 @@
       "circuit": "Silverstone",
       "round": null,
       "sessionType": "quali",
-      "startUtc": "2026-09-12T11:10:00.000Z",
+      "startUtc": "2026-09-12T10:50:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -1212,7 +1212,7 @@
       "circuit": "Silverstone",
       "round": null,
       "sessionType": "quali",
-      "startUtc": "2026-09-12T11:40:00.000Z",
+      "startUtc": "2026-09-12T11:10:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -1882,11 +1882,106 @@
       "eventName": "Zandvoort (GT2 Europe)",
       "circuit": "Zandvoort",
       "round": 7,
-      "sessionType": "race",
-      "startUtc": "2026-09-20T00:00:00.000Z",
+      "sessionType": "fp",
+      "startUtc": "2026-09-18T09:35:00.000Z",
       "endUtc": null,
       "source": "scrape",
-      "confidence": "date-only",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT2 Europe)",
+      "circuit": "Zandvoort",
+      "round": 7,
+      "sessionType": "fp",
+      "startUtc": "2026-09-18T14:25:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT2 Europe)",
+      "circuit": "Zandvoort",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-09-19T08:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT2 Europe)",
+      "circuit": "Zandvoort",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-09-19T08:20:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT2 Europe)",
+      "circuit": "Zandvoort",
+      "round": 7,
+      "sessionType": "race",
+      "startUtc": "2026-09-19T12:15:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT2 Europe)",
+      "circuit": "Zandvoort",
+      "round": 7,
+      "sessionType": "race",
+      "startUtc": "2026-09-20T08:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
       "broadcasters": [
         {
           "name": "GT World (YouTube)",
@@ -1920,11 +2015,106 @@
       "eventName": "Zandvoort (GT4 Europe)",
       "circuit": "Circuit Park Zandvoort",
       "round": 5,
-      "sessionType": "race",
-      "startUtc": "2026-09-20T00:00:00.000Z",
+      "sessionType": "fp",
+      "startUtc": "2026-09-18T10:35:00.000Z",
       "endUtc": null,
       "source": "scrape",
-      "confidence": "date-only",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT4 Europe)",
+      "circuit": "Circuit Park Zandvoort",
+      "round": 5,
+      "sessionType": "fp",
+      "startUtc": "2026-09-18T15:25:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT4 Europe)",
+      "circuit": "Circuit Park Zandvoort",
+      "round": 5,
+      "sessionType": "quali",
+      "startUtc": "2026-09-19T09:15:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT4 Europe)",
+      "circuit": "Circuit Park Zandvoort",
+      "round": 5,
+      "sessionType": "quali",
+      "startUtc": "2026-09-19T09:35:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT4 Europe)",
+      "circuit": "Circuit Park Zandvoort",
+      "round": 5,
+      "sessionType": "race",
+      "startUtc": "2026-09-19T15:25:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt2_gt4_europe",
+      "eventName": "Zandvoort (GT4 Europe)",
+      "circuit": "Circuit Park Zandvoort",
+      "round": 5,
+      "sessionType": "race",
+      "startUtc": "2026-09-20T09:35:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
       "broadcasters": [
         {
           "name": "GT World (YouTube)",
