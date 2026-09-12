@@ -359,6 +359,83 @@ main {
   align-items: start;
 }
 
+.next-session {
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.next-session-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.85rem;
+  background: var(--day-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.next-session-heading h2 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.next-session-series-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.next-session-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0.85rem;
+}
+
+.next-session-content p {
+  margin: 0;
+}
+
+.next-session-when {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.next-session-title {
+  margin-top: 0.2rem !important;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.next-session-type {
+  margin-top: 0.15rem !important;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.next-session-broadcasters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem;
+}
+
+.next-session .calendar-chip {
+  background: var(--accent-bg);
+  color: var(--accent-text);
+  border: 1px solid color-mix(in srgb, var(--accent-text) 25%, transparent);
+}
+
+.next-session .calendar-chip-link:hover,
+.next-session .calendar-chip-link:focus-visible {
+  background: var(--row-hover);
+}
+
 @media (max-width: 640px) {
   :root {
     --header-outer-height: 150px;
@@ -389,6 +466,15 @@ main {
 
   .calendar-layout {
     grid-template-columns: 1fr;
+  }
+
+  .next-session-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .next-session-broadcasters {
+    justify-content: flex-start;
   }
 }
 

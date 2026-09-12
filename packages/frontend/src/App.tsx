@@ -2,6 +2,7 @@ import { DateTime } from 'luxon';
 import { useEffect, useMemo, useState } from 'react';
 import { MonthCalendar } from './components/MonthCalendar';
 import { MultiSelectDropdown } from './components/MultiSelectDropdown';
+import { NextSession } from './components/NextSession';
 import { SiteHeader } from './components/SiteHeader';
 import { SourceAttribution } from './components/SourceAttribution';
 import { localeFor, SERIES_LABELS, SESSION_TYPE_LABELS, UI_TEXT, type Language } from './i18n';
@@ -165,6 +166,7 @@ export function App() {
             noneLabel={text.none}
           />
         </div>
+        <NextSession sessions={filtered} language={language} timeZone={timeZone} />
         <MonthCalendar sessions={filtered} language={language} timeZone={timeZone} />
         <footer>
           {formattedGeneratedAt && <p>{text.dataAsOf}: {formattedGeneratedAt}</p>}
