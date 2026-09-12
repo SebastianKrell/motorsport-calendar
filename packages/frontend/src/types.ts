@@ -3,6 +3,7 @@
 // generierte JSON-Datei, kein TS-Import über Paketgrenzen nötig.
 
 export type SeriesId =
+  | 'f1'
   | 'fe'
   | 'nls'
   | 'wec'
@@ -31,7 +32,7 @@ export interface Broadcaster {
   url?: string;
 }
 
-export type SessionType = 'fp' | 'quali' | 'sprint' | 'race';
+export type SessionType = 'fp' | 'sprint_quali' | 'quali' | 'sprint' | 'race';
 
 export interface Session {
   series: SeriesId;

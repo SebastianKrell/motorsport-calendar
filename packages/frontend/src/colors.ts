@@ -4,6 +4,7 @@ import type { SeriesId } from './types';
 // Farbe einer Serie stabil, unabhängig davon, welche anderen Serien in
 // einem Monat sonst noch Termine haben.
 export const SERIES_COLORS: Record<SeriesId, string> = {
+  f1: '#E10600',
   fe: '#7F77DD',
   nls: '#1D9E75',
   wec: '#D81E2C',

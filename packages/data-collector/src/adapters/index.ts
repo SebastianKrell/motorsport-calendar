@@ -2,6 +2,7 @@ import type { Adapter, SeriesId } from '../types.js';
 import { adacGtMastersAdapter, dtmAdapter, porscheCarreraCupAdapter } from './dtm.js';
 import { elmsAdapter } from './elms.js';
 import { formelEAdapter } from './formel-e.js';
+import { formula1Adapter } from './formula-1.js';
 import { gtOpenAdapter } from './gt_open.js';
 import { createCombinedGtwcAdapter, createGtwcAdapter } from './gtwc.js';
 import { createIcsAdapter } from './ics.js';
@@ -37,6 +38,7 @@ const GTWC_SITES: [SeriesId, string][] = [
 ];
 
 export const adapters: Adapter[] = [
+  formula1Adapter,
   formelEAdapter,
   nlsAdapter,
   wecAdapter,

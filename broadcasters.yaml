@@ -5,6 +5,17 @@
 # unverified: true markiert Einträge, die laut CLAUDE.md vor Saisonstart
 # noch bestätigt werden müssen.
 
+f1:
+  default:
+    broadcasters:
+      - name: Sky Sport F1
+        type: pay-tv
+        url: https://www.sky.de/sport/formel1
+      - name: F1 TV Pro
+        type: streaming-paid
+        url: https://www.formula1.com/en/subscribe-to-f1-tv.html
+    verifiedAt: "2026-09-12"
+
 fe:
   default:
     broadcasters:
