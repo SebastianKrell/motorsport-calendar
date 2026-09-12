@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T09:05:14.451Z",
+  "generatedAt": "2026-09-12T16:57:44.245Z",
   "sessions": [
     {
       "series": "nls",
@@ -870,25 +870,6 @@
       "circuit": "Silverstone",
       "round": null,
       "sessionType": "fp",
-      "startUtc": "2026-09-11T09:55:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "elms",
-      "eventName": "Goodyear 4 Hours of Silverstone",
-      "circuit": "Silverstone",
-      "round": null,
-      "sessionType": "fp",
       "startUtc": "2026-09-12T07:55:00.000Z",
       "endUtc": null,
       "source": "scrape",
@@ -1126,25 +1107,6 @@
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "michelin_le_mans_cup",
-      "eventName": "Silverstone Round",
-      "circuit": "Silverstone",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-09-11T15:40:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@LeMansCup)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@LeMansCup"
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
@@ -1547,44 +1509,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "dtm",
-      "eventName": "Sachsenring",
-      "circuit": "Sachsenring",
-      "round": 7,
-      "sessionType": "fp",
-      "startUtc": "2026-09-11T09:30:00.000Z",
-      "endUtc": "2026-09-11T10:15:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv",
-          "url": "https://www.ran.de/sports/motorsport/dtm"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "dtm",
-      "eventName": "Sachsenring",
-      "circuit": "Sachsenring",
-      "round": 7,
-      "sessionType": "fp",
-      "startUtc": "2026-09-11T13:50:00.000Z",
-      "endUtc": "2026-09-11T14:20:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv",
-          "url": "https://www.ran.de/sports/motorsport/dtm"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
