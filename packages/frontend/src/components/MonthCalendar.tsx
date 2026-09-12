@@ -34,6 +34,12 @@ function sameMonth(a: MonthKey, b: MonthKey): boolean {
   return a.year === b.year && a.month === b.month;
 }
 
+function isToday(session: Session, now: DateTime, timeZone: string): boolean {
+  const start = displayStart(session, timeZone);
+  const zonedNow = now.setZone(timeZone);
+  return start.year === zonedNow.year && start.month === zonedNow.month && start.day === zonedNow.day;
+}
+
 function shiftMonth(key: MonthKey, delta: number): MonthKey {
   const dt = DateTime.fromObject({ year: key.year, month: key.month, day: 1 }).plus({ months: delta });
   return { year: dt.year, month: dt.month };
@@ -150,8 +156,12 @@ export function MonthCalendar({
           {cells.map((day, index) => {
             const daySeries = day !== null ? [...(seriesByDay.get(day) ?? [])] : [];
             const daySessions = day !== null ? sessionsByDay.get(day) ?? [] : [];
+            const isTodayCell =
+              day !== null &&
+              isCurrentMonth &&
+              day === zonedNow.day;
             return (
-              <div className={`calendar-day${day === null ? ' is-blank' : ''}`} key={index}>
+              <div className={`calendar-day${day === null ? ' is-blank' : ''}${isTodayCell ? ' is-today' : ''}`} key={index}>
                 {day !== null && (
                   <>
                     <span className="calendar-day-number">{day}</span>
@@ -201,7 +211,7 @@ export function MonthCalendar({
         ) : (
           monthSessions.map((session, index) => (
             <div
-              className={`calendar-entry${isLive(session, now) ? ' calendar-entry-live' : ''}${isPast(session, now) ? ' calendar-entry-past' : ''}`}
+            className={`calendar-entry${isToday(session, now, timeZone) ? ' calendar-entry-today' : ''}${isLive(session, now) ? ' calendar-entry-live' : ''}${isPast(session, now) ? ' calendar-entry-past' : ''}`}
               key={`${session.series}-${session.eventName}-${session.sessionType}-${index}`}
             >
               <div className="calendar-entry-when">{formatWhen(session, timeZone, language)}</div>

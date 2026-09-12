@@ -30,4 +30,13 @@ describe('isPast', () => {
       ),
     ).toBe(true);
   });
+
+  it('marks a previous-day practice without an end time as past', () => {
+    expect(
+      isPast(
+        { ...session, sessionType: 'fp', startUtc: '2026-09-11T09:55:00.000Z' },
+        DateTime.fromISO('2026-09-12T16:55:00.000Z'),
+      ),
+    ).toBe(true);
+  });
 });
