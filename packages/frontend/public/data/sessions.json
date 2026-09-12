@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T09:24:35.810Z",
+  "generatedAt": "2026-09-12T09:05:14.451Z",
   "sessions": [
     {
       "series": "nls",
@@ -1126,25 +1126,6 @@
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "michelin_le_mans_cup",
-      "eventName": "Silverstone Round",
-      "circuit": "Silverstone",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-09-11T08:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@LeMansCup)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@LeMansCup"
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
@@ -2560,25 +2541,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "igtc",
-      "eventName": "Suzuka 1000km",
-      "circuit": "Suzuka",
-      "round": 4,
-      "sessionType": "fp",
-      "startUtc": "2026-09-11T08:50:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
     },
     {
       "series": "igtc",
