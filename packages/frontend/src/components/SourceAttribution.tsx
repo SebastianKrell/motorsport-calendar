@@ -6,7 +6,7 @@ export function SourceAttribution({ language }: { language: Language }) {
       <p>
         Race dates: <a href="https://toomuchracing.com">toomuchracing.com</a> (licensed under{' '}
         <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>) and{' '}
-        <a href="https://github.com/sportstimes/f1">sportstimes/f1</a> (MIT). Session times: official
+        <a href="https://github.com/sportstimes/f1">sportstimes/f1</a> (MIT, Formula 1 and Formula E). Session times: official
         websites of <a href="https://www.nuerburgring-langstrecken-serie.de">NLS</a>,{' '}
         <a href="https://www.fiawec.com">WEC</a>, <a href="https://www.britishgt.com">British GT</a>,{' '}
         <a href="https://dtm.com">DTM</a>, <a href="https://www.lemanscup.com">Michelin Le Mans Cup</a>,{' '}
@@ -20,7 +20,7 @@ export function SourceAttribution({ language }: { language: Language }) {
     <p>
       Renntermine: <a href="https://toomuchracing.com">toomuchracing.com</a> (lizenziert unter{' '}
       <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>) und{' '}
-      <a href="https://github.com/sportstimes/f1">sportstimes/f1</a> (MIT). Session-Zeiten: offizielle
+      <a href="https://github.com/sportstimes/f1">sportstimes/f1</a> (MIT, Formel 1 und Formel E). Session-Zeiten: offizielle
       Seiten von <a href="https://www.nuerburgring-langstrecken-serie.de">NLS</a>,{' '}
       <a href="https://www.fiawec.com">WEC</a>, <a href="https://www.britishgt.com">British GT</a>,{' '}
       <a href="https://dtm.com">DTM</a>, <a href="https://www.lemanscup.com">Michelin Le Mans Cup</a>,{' '}

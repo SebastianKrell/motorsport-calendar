@@ -1,4 +1,5 @@
 export type SeriesId =
+  | 'f1'
   | 'fe'
   | 'nls'
   | 'wec'
@@ -21,7 +22,7 @@ export type SeriesId =
   | 'asian_le_mans'
   | 'michelin_le_mans_cup';
 
-export type SessionType = 'fp' | 'quali' | 'sprint' | 'race';
+export type SessionType = 'fp' | 'sprint_quali' | 'quali' | 'sprint' | 'race';
 export type SessionSource = 'api' | 'ics' | 'scrape' | 'manual';
 export type Confidence = 'exact' | 'date-only';
 

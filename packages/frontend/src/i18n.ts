@@ -9,6 +9,7 @@ export const LANGUAGE_OPTIONS: { value: Language; label: string }[] = [
 
 export const SERIES_LABELS: Record<Language, Record<SeriesId, string>> = {
   de: {
+    f1: 'Formel 1',
     fe: 'Formel E',
     nls: 'NLS',
     wec: 'WEC',
@@ -32,6 +33,7 @@ export const SERIES_LABELS: Record<Language, Record<SeriesId, string>> = {
     michelin_le_mans_cup: 'Michelin Le Mans Cup',
   },
   en: {
+    f1: 'Formula 1',
     fe: 'Formula E',
     nls: 'NLS',
     wec: 'WEC',
@@ -57,8 +59,8 @@ export const SERIES_LABELS: Record<Language, Record<SeriesId, string>> = {
 };
 
 export const SESSION_TYPE_LABELS: Record<Language, Record<SessionType, string>> = {
-  de: { fp: 'Training', quali: 'Qualifying', sprint: 'Sprint', race: 'Rennen' },
-  en: { fp: 'Practice', quali: 'Qualifying', sprint: 'Sprint', race: 'Race' },
+  de: { fp: 'Training', sprint_quali: 'Sprint-Qualifying', quali: 'Qualifying', sprint: 'Sprint', race: 'Rennen' },
+  en: { fp: 'Practice', sprint_quali: 'Sprint Qualifying', quali: 'Qualifying', sprint: 'Sprint', race: 'Race' },
 };
 
 export const UI_TEXT = {
