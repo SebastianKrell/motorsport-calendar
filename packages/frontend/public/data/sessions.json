@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-09-14T10:23:36.053Z",
+  "generatedAt": "2026-09-15T09:50:36.999Z",
   "sessions": [
-    {
-      "series": "nls",
-      "eventName": "66. ADAC ACAS Cup",
-      "circuit": "Nürburgring",
-      "round": 9,
-      "sessionType": "race",
-      "startUtc": "2026-09-13T10:00:00.000Z",
-      "endUtc": "2026-09-13T14:00:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "vln.de",
-          "type": "free-stream",
-          "url": "https://www.vln.de"
-        },
-        {
-          "name": "YouTube (@VLNOFFICIAL)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@VLNOFFICIAL"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
     {
       "series": "nls",
       "eventName": "2. NLS Sportwarte-Trophy",
@@ -794,25 +770,6 @@
     },
     {
       "series": "elms",
-      "eventName": "Goodyear 4 Hours of Silverstone",
-      "circuit": "Silverstone",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-13T10:00:00.000Z",
-      "endUtc": "2026-09-13T14:00:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "elms",
       "eventName": "4 Hours of Portimão",
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
@@ -1212,25 +1169,6 @@
     },
     {
       "series": "gt_open",
-      "eventName": "Hockenheim",
-      "circuit": "Hockenheim",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-13T16:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "International GT Open (YouTube, @GTOPENseries)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTOPENseries"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "gt_open",
       "eventName": "Monza",
       "circuit": "Monza",
       "round": null,
@@ -1266,25 +1204,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "dtm",
-      "eventName": "Sachsenring",
-      "circuit": "Sachsenring",
-      "round": 7,
-      "sessionType": "race",
-      "startUtc": "2026-09-13T11:30:00.000Z",
-      "endUtc": "2026-09-13T12:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv",
-          "url": "https://www.ran.de/sports/motorsport/dtm"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "dtm",
@@ -2895,30 +2814,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "f1",
-      "eventName": "Spanish Grand Prix",
-      "circuit": "Madrid",
-      "round": 14,
-      "sessionType": "race",
-      "startUtc": "2026-09-13T13:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
     },
     {
       "series": "f1",
