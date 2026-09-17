@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T09:44:20.794Z",
+  "generatedAt": "2026-09-17T09:53:00.228Z",
   "sessions": [
     {
       "series": "nls",
@@ -793,7 +793,7 @@
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "fp",
-      "startUtc": "2026-10-09T08:10:00.000Z",
+      "startUtc": "2026-10-09T08:15:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -945,7 +945,7 @@
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "quali",
-      "startUtc": "2026-10-09T09:50:00.000Z",
+      "startUtc": "2026-10-09T09:55:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -964,7 +964,7 @@
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "quali",
-      "startUtc": "2026-10-09T10:15:00.000Z",
+      "startUtc": "2026-10-09T10:20:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -983,7 +983,7 @@
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "quali",
-      "startUtc": "2026-10-09T10:40:00.000Z",
+      "startUtc": "2026-10-09T10:45:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
