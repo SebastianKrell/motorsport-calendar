@@ -11,6 +11,7 @@ import { leMansCupAdapter } from './le-mans-cup.js';
 import { nlsAdapter } from './nls.js';
 import { superGtAdapter } from './super-gt.js';
 import { wecAdapter } from './wec.js';
+import { adac1000KmNuerburgringAdapter, goodwoodFestivalOfSpeedAdapter } from './special-events.js';
 
 // Kalender-IDs s. CLAUDE.md, Abschnitt "ICS-Feeds (toomuchracing.com)".
 // Italian GT und China GT fehlen bewusst: laut CLAUDE.md gibt es dafür
@@ -40,6 +41,8 @@ const GTWC_SITES: [SeriesId, string][] = [
 export const adapters: Adapter[] = [
   formula1Adapter,
   formelEAdapter,
+  adac1000KmNuerburgringAdapter,
+  goodwoodFestivalOfSpeedAdapter,
   nlsAdapter,
   wecAdapter,
   imsaAdapter,

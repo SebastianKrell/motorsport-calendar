@@ -26,4 +26,6 @@ export const SERIES_COLORS: Record<SeriesId, string> = {
   elms: '#993C1D',
   asian_le_mans: '#C0DD97',
   michelin_le_mans_cup: '#F5C4B3',
+  adac_1000km_nuerburgring: '#534AB7',
+  goodwood_festival_of_speed: '#D85A30',
 };

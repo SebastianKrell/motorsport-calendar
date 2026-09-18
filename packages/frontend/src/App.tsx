@@ -9,11 +9,11 @@ import { localeFor, SERIES_LABELS, SESSION_TYPE_LABELS, UI_TEXT, type Language }
 import { DEFAULT_TIME_ZONE, isSupportedTimeZone } from './timeZones';
 import type { Session, SessionsFile, SessionType, SeriesId } from './types';
 
-const SESSION_TYPE_ORDER: SessionType[] = ['fp', 'sprint_quali', 'quali', 'sprint', 'race'];
+const SESSION_TYPE_ORDER: SessionType[] = ['fp', 'sprint_quali', 'quali', 'sprint', 'race', 'event'];
 const TIME_ZONE_STORAGE_KEY = 'timeZone-v2';
 // Standardmäßig nur Rennen anzeigen -- Trainings/Qualifyings sind für die
 // Sender-Frage meist irrelevant und würden die Tabelle unnötig aufblähen.
-const DEFAULT_SESSION_TYPES: SessionType[] = ['race'];
+const DEFAULT_SESSION_TYPES: SessionType[] = ['race', 'event'];
 
 type Theme = 'light' | 'dark';
 
