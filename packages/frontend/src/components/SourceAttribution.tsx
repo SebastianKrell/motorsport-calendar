@@ -11,7 +11,9 @@ export function SourceAttribution({ language }: { language: Language }) {
         <a href="https://www.fiawec.com">WEC</a>, <a href="https://www.britishgt.com">British GT</a>,{' '}
         <a href="https://dtm.com">DTM</a>, <a href="https://www.lemanscup.com">Michelin Le Mans Cup</a>,{' '}
         <a href="https://supergt.net/en/calendar">Super GT</a>, SRO series, and{' '}
-        <a href="https://raceweek.io">raceweek.io</a> for IMSA.
+        <a href="https://raceweek.io">raceweek.io</a> for IMSA. Additional event schedules: the official{' '}
+        <a href="https://1000kmnuerburgring.de/besucher/">ADAC 1000 km Nürburgring</a> and{' '}
+        <a href="https://www.goodwood.com/motorsport/festival-of-speed/">Goodwood Festival of Speed</a> websites.
       </p>
     );
   }
@@ -25,7 +27,9 @@ export function SourceAttribution({ language }: { language: Language }) {
       <a href="https://www.fiawec.com">WEC</a>, <a href="https://www.britishgt.com">British GT</a>,{' '}
       <a href="https://dtm.com">DTM</a>, <a href="https://www.lemanscup.com">Michelin Le Mans Cup</a>,{' '}
       <a href="https://supergt.net/en/calendar">Super GT</a>, den SRO-Serien sowie{' '}
-      <a href="https://raceweek.io">raceweek.io</a> für IMSA.
+      <a href="https://raceweek.io">raceweek.io</a> für IMSA. Weitere Veranstaltungspläne: die offiziellen Seiten von{' '}
+      <a href="https://1000kmnuerburgring.de/besucher/">ADAC 1000 km Nürburgring</a> und{' '}
+      <a href="https://www.goodwood.com/motorsport/festival-of-speed/">Goodwood Festival of Speed</a>.
     </p>
   );
 }

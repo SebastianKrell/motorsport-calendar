@@ -214,3 +214,22 @@ super_gt:
         type: free-stream
         url: https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA
     verifiedAt: "2026-08-29"
+
+adac_1000km_nuerburgring:
+  default:
+    broadcasters:
+      - name: "YouTube (@1000kmnuerburgring)"
+        type: free-stream
+        url: https://www.youtube.com/@1000kmnuerburgring/featured
+    verifiedAt: "2026-09-18"
+
+goodwood_festival_of_speed:
+  default:
+    broadcasters:
+      - name: "YouTube (Goodwood)"
+        type: free-stream
+      - name: discovery+
+        type: streaming-paid
+        url: https://www.discoveryplus.com/de/
+    verifiedAt: "2026-09-18"
+    unverified: true

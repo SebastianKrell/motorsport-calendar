@@ -24,7 +24,9 @@ export type SeriesId =
   | 'gt_gt4_america'
   | 'elms'
   | 'asian_le_mans'
-  | 'michelin_le_mans_cup';
+  | 'michelin_le_mans_cup'
+  | 'adac_1000km_nuerburgring'
+  | 'goodwood_festival_of_speed';
 
 export interface Broadcaster {
   name: string;
@@ -32,7 +34,7 @@ export interface Broadcaster {
   url?: string;
 }
 
-export type SessionType = 'fp' | 'sprint_quali' | 'quali' | 'sprint' | 'race';
+export type SessionType = 'fp' | 'sprint_quali' | 'quali' | 'sprint' | 'race' | 'event';
 
 export interface Session {
   series: SeriesId;

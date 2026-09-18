@@ -31,6 +31,8 @@ export const SERIES_LABELS: Record<Language, Record<SeriesId, string>> = {
     elms: 'ELMS',
     asian_le_mans: 'Asian Le Mans Series',
     michelin_le_mans_cup: 'Michelin Le Mans Cup',
+    adac_1000km_nuerburgring: 'ADAC 1000 km Nürburgring',
+    goodwood_festival_of_speed: 'Goodwood Festival of Speed',
   },
   en: {
     f1: 'Formula 1',
@@ -55,12 +57,28 @@ export const SERIES_LABELS: Record<Language, Record<SeriesId, string>> = {
     elms: 'ELMS',
     asian_le_mans: 'Asian Le Mans Series',
     michelin_le_mans_cup: 'Michelin Le Mans Cup',
+    adac_1000km_nuerburgring: 'ADAC 1000 km Nürburgring',
+    goodwood_festival_of_speed: 'Goodwood Festival of Speed',
   },
 };
 
 export const SESSION_TYPE_LABELS: Record<Language, Record<SessionType, string>> = {
-  de: { fp: 'Training', sprint_quali: 'Sprint-Qualifying', quali: 'Qualifying', sprint: 'Sprint', race: 'Rennen' },
-  en: { fp: 'Practice', sprint_quali: 'Sprint Qualifying', quali: 'Qualifying', sprint: 'Sprint', race: 'Race' },
+  de: {
+    fp: 'Training',
+    sprint_quali: 'Sprint-Qualifying',
+    quali: 'Qualifying',
+    sprint: 'Sprint',
+    race: 'Rennen',
+    event: 'Veranstaltung',
+  },
+  en: {
+    fp: 'Practice',
+    sprint_quali: 'Sprint Qualifying',
+    quali: 'Qualifying',
+    sprint: 'Sprint',
+    race: 'Race',
+    event: 'Event',
+  },
 };
 
 export const UI_TEXT = {
