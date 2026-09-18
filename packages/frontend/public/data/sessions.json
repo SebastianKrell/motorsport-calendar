@@ -1,6 +1,1273 @@
 {
-  "generatedAt": "2026-09-18T08:06:32.577Z",
+  "generatedAt": "2026-09-18T08:08:48.493Z",
   "sessions": [
+    {
+      "series": "f1",
+      "eventName": "Azerbaijan Grand Prix",
+      "circuit": "Baku",
+      "round": 15,
+      "sessionType": "fp",
+      "startUtc": "2026-09-24T08:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Azerbaijan Grand Prix",
+      "circuit": "Baku",
+      "round": 15,
+      "sessionType": "fp",
+      "startUtc": "2026-09-24T12:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Azerbaijan Grand Prix",
+      "circuit": "Baku",
+      "round": 15,
+      "sessionType": "fp",
+      "startUtc": "2026-09-25T08:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Azerbaijan Grand Prix",
+      "circuit": "Baku",
+      "round": 15,
+      "sessionType": "quali",
+      "startUtc": "2026-09-25T12:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Azerbaijan Grand Prix",
+      "circuit": "Baku",
+      "round": 15,
+      "sessionType": "race",
+      "startUtc": "2026-09-26T11:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Bahrain Grand Prix (Malaysia)",
+      "circuit": "Sepang",
+      "round": 16,
+      "sessionType": "fp",
+      "startUtc": "2026-10-02T04:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Bahrain Grand Prix (Malaysia)",
+      "circuit": "Sepang",
+      "round": 16,
+      "sessionType": "fp",
+      "startUtc": "2026-10-02T08:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Bahrain Grand Prix (Malaysia)",
+      "circuit": "Sepang",
+      "round": 16,
+      "sessionType": "fp",
+      "startUtc": "2026-10-03T04:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Bahrain Grand Prix (Malaysia)",
+      "circuit": "Sepang",
+      "round": 16,
+      "sessionType": "quali",
+      "startUtc": "2026-10-03T08:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Bahrain Grand Prix (Malaysia)",
+      "circuit": "Sepang",
+      "round": 16,
+      "sessionType": "race",
+      "startUtc": "2026-10-04T07:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Singapore Grand Prix",
+      "circuit": "Singapore",
+      "round": 17,
+      "sessionType": "fp",
+      "startUtc": "2026-10-09T08:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Singapore Grand Prix",
+      "circuit": "Singapore",
+      "round": 17,
+      "sessionType": "sprint_quali",
+      "startUtc": "2026-10-09T12:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Singapore Grand Prix",
+      "circuit": "Singapore",
+      "round": 17,
+      "sessionType": "sprint",
+      "startUtc": "2026-10-10T09:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Singapore Grand Prix",
+      "circuit": "Singapore",
+      "round": 17,
+      "sessionType": "quali",
+      "startUtc": "2026-10-10T13:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Singapore Grand Prix",
+      "circuit": "Singapore",
+      "round": 17,
+      "sessionType": "race",
+      "startUtc": "2026-10-11T12:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "United States Grand Prix",
+      "circuit": "Austin",
+      "round": 18,
+      "sessionType": "fp",
+      "startUtc": "2026-10-23T17:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "United States Grand Prix",
+      "circuit": "Austin",
+      "round": 18,
+      "sessionType": "fp",
+      "startUtc": "2026-10-23T21:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "United States Grand Prix",
+      "circuit": "Austin",
+      "round": 18,
+      "sessionType": "fp",
+      "startUtc": "2026-10-24T17:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "United States Grand Prix",
+      "circuit": "Austin",
+      "round": 18,
+      "sessionType": "quali",
+      "startUtc": "2026-10-24T21:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "United States Grand Prix",
+      "circuit": "Austin",
+      "round": 18,
+      "sessionType": "race",
+      "startUtc": "2026-10-25T20:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Mexican Grand Prix",
+      "circuit": "Mexico City",
+      "round": 19,
+      "sessionType": "fp",
+      "startUtc": "2026-10-30T18:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Mexican Grand Prix",
+      "circuit": "Mexico City",
+      "round": 19,
+      "sessionType": "fp",
+      "startUtc": "2026-10-30T22:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Mexican Grand Prix",
+      "circuit": "Mexico City",
+      "round": 19,
+      "sessionType": "fp",
+      "startUtc": "2026-10-31T17:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Mexican Grand Prix",
+      "circuit": "Mexico City",
+      "round": 19,
+      "sessionType": "quali",
+      "startUtc": "2026-10-31T21:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Mexican Grand Prix",
+      "circuit": "Mexico City",
+      "round": 19,
+      "sessionType": "race",
+      "startUtc": "2026-11-01T20:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Brazilian Grand Prix",
+      "circuit": "Sao Paulo",
+      "round": 20,
+      "sessionType": "fp",
+      "startUtc": "2026-11-06T15:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Brazilian Grand Prix",
+      "circuit": "Sao Paulo",
+      "round": 20,
+      "sessionType": "fp",
+      "startUtc": "2026-11-06T19:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Brazilian Grand Prix",
+      "circuit": "Sao Paulo",
+      "round": 20,
+      "sessionType": "fp",
+      "startUtc": "2026-11-07T14:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Brazilian Grand Prix",
+      "circuit": "Sao Paulo",
+      "round": 20,
+      "sessionType": "quali",
+      "startUtc": "2026-11-07T18:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Brazilian Grand Prix",
+      "circuit": "Sao Paulo",
+      "round": 20,
+      "sessionType": "race",
+      "startUtc": "2026-11-08T17:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Las Vegas Grand Prix",
+      "circuit": "Las Vegas",
+      "round": 21,
+      "sessionType": "fp",
+      "startUtc": "2026-11-20T00:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Las Vegas Grand Prix",
+      "circuit": "Las Vegas",
+      "round": 21,
+      "sessionType": "fp",
+      "startUtc": "2026-11-20T04:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Las Vegas Grand Prix",
+      "circuit": "Las Vegas",
+      "round": 21,
+      "sessionType": "fp",
+      "startUtc": "2026-11-21T00:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Las Vegas Grand Prix",
+      "circuit": "Las Vegas",
+      "round": 21,
+      "sessionType": "quali",
+      "startUtc": "2026-11-21T04:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Las Vegas Grand Prix",
+      "circuit": "Las Vegas",
+      "round": 21,
+      "sessionType": "race",
+      "startUtc": "2026-11-22T04:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Qatar Grand Prix",
+      "circuit": "Doha",
+      "round": 22,
+      "sessionType": "fp",
+      "startUtc": "2026-11-27T13:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Qatar Grand Prix",
+      "circuit": "Doha",
+      "round": 22,
+      "sessionType": "fp",
+      "startUtc": "2026-11-27T17:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Qatar Grand Prix",
+      "circuit": "Doha",
+      "round": 22,
+      "sessionType": "fp",
+      "startUtc": "2026-11-28T14:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Qatar Grand Prix",
+      "circuit": "Doha",
+      "round": 22,
+      "sessionType": "quali",
+      "startUtc": "2026-11-28T18:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Qatar Grand Prix",
+      "circuit": "Doha",
+      "round": 22,
+      "sessionType": "race",
+      "startUtc": "2026-11-29T16:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Abu Dhabi Grand Prix",
+      "circuit": "Yas Marina",
+      "round": 23,
+      "sessionType": "fp",
+      "startUtc": "2026-12-04T09:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Abu Dhabi Grand Prix",
+      "circuit": "Yas Marina",
+      "round": 23,
+      "sessionType": "fp",
+      "startUtc": "2026-12-04T13:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Abu Dhabi Grand Prix",
+      "circuit": "Yas Marina",
+      "round": 23,
+      "sessionType": "fp",
+      "startUtc": "2026-12-05T10:30:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Abu Dhabi Grand Prix",
+      "circuit": "Yas Marina",
+      "round": 23,
+      "sessionType": "quali",
+      "startUtc": "2026-12-05T14:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "f1",
+      "eventName": "Abu Dhabi Grand Prix",
+      "circuit": "Yas Marina",
+      "round": 23,
+      "sessionType": "race",
+      "startUtc": "2026-12-06T13:00:00Z",
+      "endUtc": null,
+      "source": "api",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Sky Sport F1",
+          "type": "pay-tv",
+          "url": "https://www.sky.de/sport/formel1"
+        },
+        {
+          "name": "F1 TV Pro",
+          "type": "streaming-paid",
+          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-12"
+    },
+    {
+      "series": "adac_1000km_nuerburgring",
+      "eventName": "DHLM – Lauf 3",
+      "circuit": "Nürburgring Gesamtstrecke",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-09-19T06:30:00.000Z",
+      "endUtc": "2026-09-19T08:00:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube (@1000kmnuerburgring)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-18"
+    },
+    {
+      "series": "adac_1000km_nuerburgring",
+      "eventName": "Tourenwagen Golden Ära",
+      "circuit": "Nürburgring Gesamtstrecke",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-09-19T08:30:00.000Z",
+      "endUtc": "2026-09-19T09:30:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube (@1000kmnuerburgring)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-18"
+    },
+    {
+      "series": "adac_1000km_nuerburgring",
+      "eventName": "DHLM – Lauf 3",
+      "circuit": "Nürburgring Gesamtstrecke",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-19T12:00:00.000Z",
+      "endUtc": "2026-09-19T15:00:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube (@1000kmnuerburgring)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-18"
+    },
+    {
+      "series": "adac_1000km_nuerburgring",
+      "eventName": "DHLM – Lauf 4",
+      "circuit": "Nürburgring Gesamtstrecke",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-09-20T06:30:00.000Z",
+      "endUtc": "2026-09-20T08:00:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube (@1000kmnuerburgring)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-18"
+    },
+    {
+      "series": "adac_1000km_nuerburgring",
+      "eventName": "Tourenwagen Golden Ära",
+      "circuit": "Nürburgring Gesamtstrecke",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-09-20T09:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube (@1000kmnuerburgring)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-18"
+    },
+    {
+      "series": "goodwood_festival_of_speed",
+      "eventName": "Goodwood Festival of Speed",
+      "circuit": "Goodwood House",
+      "round": null,
+      "sessionType": "event",
+      "startUtc": "2027-07-15T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "YouTube (Goodwood)",
+          "type": "free-stream"
+        },
+        {
+          "name": "discovery+",
+          "type": "streaming-paid",
+          "url": "https://www.discoveryplus.com/de/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-18"
+    },
+    {
+      "series": "goodwood_festival_of_speed",
+      "eventName": "Goodwood Festival of Speed",
+      "circuit": "Goodwood House",
+      "round": null,
+      "sessionType": "event",
+      "startUtc": "2027-07-16T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "YouTube (Goodwood)",
+          "type": "free-stream"
+        },
+        {
+          "name": "discovery+",
+          "type": "streaming-paid",
+          "url": "https://www.discoveryplus.com/de/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-18"
+    },
+    {
+      "series": "goodwood_festival_of_speed",
+      "eventName": "Goodwood Festival of Speed",
+      "circuit": "Goodwood House",
+      "round": null,
+      "sessionType": "event",
+      "startUtc": "2027-07-17T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "YouTube (Goodwood)",
+          "type": "free-stream"
+        },
+        {
+          "name": "discovery+",
+          "type": "streaming-paid",
+          "url": "https://www.discoveryplus.com/de/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-18"
+    },
+    {
+      "series": "goodwood_festival_of_speed",
+      "eventName": "Goodwood Festival of Speed",
+      "circuit": "Goodwood House",
+      "round": null,
+      "sessionType": "event",
+      "startUtc": "2027-07-18T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "YouTube (Goodwood)",
+          "type": "free-stream"
+        },
+        {
+          "name": "discovery+",
+          "type": "streaming-paid",
+          "url": "https://www.discoveryplus.com/de/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-09-18"
+    },
     {
       "series": "nls",
       "eventName": "2. NLS Sportwarte-Trophy",
@@ -2086,6 +3353,158 @@
       "broadcastersVerifiedAt": "2026-08-29"
     },
     {
+      "series": "british_gt",
+      "eventName": "Brands Hatch",
+      "circuit": "Brands Hatch Circuit",
+      "round": 8,
+      "sessionType": "fp",
+      "startUtc": "2026-09-26T08:25:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Brands Hatch",
+      "circuit": "Brands Hatch Circuit",
+      "round": 8,
+      "sessionType": "quali",
+      "startUtc": "2026-09-26T10:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Brands Hatch",
+      "circuit": "Brands Hatch Circuit",
+      "round": 8,
+      "sessionType": "quali",
+      "startUtc": "2026-09-26T15:15:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Brands Hatch",
+      "circuit": "Brands Hatch Circuit",
+      "round": 8,
+      "sessionType": "quali",
+      "startUtc": "2026-09-26T15:29:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Brands Hatch",
+      "circuit": "Brands Hatch Circuit",
+      "round": 8,
+      "sessionType": "quali",
+      "startUtc": "2026-09-26T15:43:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Brands Hatch",
+      "circuit": "Brands Hatch Circuit",
+      "round": 8,
+      "sessionType": "quali",
+      "startUtc": "2026-09-26T15:58:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Brands Hatch",
+      "circuit": "Brands Hatch Circuit",
+      "round": 8,
+      "sessionType": "fp",
+      "startUtc": "2026-09-27T09:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "british_gt",
+      "eventName": "Brands Hatch",
+      "circuit": "Brands Hatch Circuit",
+      "round": 8,
+      "sessionType": "race",
+      "startUtc": "2026-09-27T12:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube) / britishgt.com",
+          "type": "free-stream",
+          "url": "https://www.britishgt.com/live"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
       "series": "igtc",
       "eventName": "Indianapolis 8 Hour",
       "circuit": "Indianapolis Motor Speedway",
@@ -2212,329 +3631,6 @@
       "broadcasters": [
         {
           "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "fp",
-      "startUtc": "2026-09-18T07:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "fp",
-      "startUtc": "2026-09-18T11:50:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-19T07:50:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-19T08:05:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-19T08:15:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "race",
-      "startUtc": "2026-09-19T12:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-20T08:35:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-20T08:50:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-20T09:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "race",
-      "startUtc": "2026-09-20T12:15:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "fp",
-      "startUtc": "2026-10-02T07:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "fp",
-      "startUtc": "2026-10-02T11:55:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "race",
-      "startUtc": "2026-10-03T12:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "race",
-      "startUtc": "2026-10-04T14:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Portimao",
-      "circuit": "Portimao Circuit",
-      "round": 10,
-      "sessionType": "fp",
-      "startUtc": "2026-10-16T07:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Portimao",
-      "circuit": "Portimao Circuit",
-      "round": 10,
-      "sessionType": "quali",
-      "startUtc": "2026-10-16T16:55:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Portimao",
-      "circuit": "Portimao Circuit",
-      "round": 10,
-      "sessionType": "race",
-      "startUtc": "2026-10-17T16:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@GTWorld"
         }
@@ -2811,1425 +3907,6 @@
         {
           "name": "ServusTV On",
           "type": "free-stream"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "f1",
-      "eventName": "Azerbaijan Grand Prix",
-      "circuit": "Baku",
-      "round": 15,
-      "sessionType": "fp",
-      "startUtc": "2026-09-24T08:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Azerbaijan Grand Prix",
-      "circuit": "Baku",
-      "round": 15,
-      "sessionType": "fp",
-      "startUtc": "2026-09-24T12:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Azerbaijan Grand Prix",
-      "circuit": "Baku",
-      "round": 15,
-      "sessionType": "fp",
-      "startUtc": "2026-09-25T08:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Azerbaijan Grand Prix",
-      "circuit": "Baku",
-      "round": 15,
-      "sessionType": "quali",
-      "startUtc": "2026-09-25T12:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Azerbaijan Grand Prix",
-      "circuit": "Baku",
-      "round": 15,
-      "sessionType": "race",
-      "startUtc": "2026-09-26T11:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "fp",
-      "startUtc": "2026-10-02T04:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "fp",
-      "startUtc": "2026-10-02T08:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "fp",
-      "startUtc": "2026-10-03T04:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "quali",
-      "startUtc": "2026-10-03T08:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "race",
-      "startUtc": "2026-10-04T07:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Singapore Grand Prix",
-      "circuit": "Singapore",
-      "round": 17,
-      "sessionType": "fp",
-      "startUtc": "2026-10-09T08:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Singapore Grand Prix",
-      "circuit": "Singapore",
-      "round": 17,
-      "sessionType": "sprint_quali",
-      "startUtc": "2026-10-09T12:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Singapore Grand Prix",
-      "circuit": "Singapore",
-      "round": 17,
-      "sessionType": "sprint",
-      "startUtc": "2026-10-10T09:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Singapore Grand Prix",
-      "circuit": "Singapore",
-      "round": 17,
-      "sessionType": "quali",
-      "startUtc": "2026-10-10T13:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Singapore Grand Prix",
-      "circuit": "Singapore",
-      "round": 17,
-      "sessionType": "race",
-      "startUtc": "2026-10-11T12:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "fp",
-      "startUtc": "2026-10-23T17:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "fp",
-      "startUtc": "2026-10-23T21:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "fp",
-      "startUtc": "2026-10-24T17:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "quali",
-      "startUtc": "2026-10-24T21:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "race",
-      "startUtc": "2026-10-25T20:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Mexican Grand Prix",
-      "circuit": "Mexico City",
-      "round": 19,
-      "sessionType": "fp",
-      "startUtc": "2026-10-30T18:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Mexican Grand Prix",
-      "circuit": "Mexico City",
-      "round": 19,
-      "sessionType": "fp",
-      "startUtc": "2026-10-30T22:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Mexican Grand Prix",
-      "circuit": "Mexico City",
-      "round": 19,
-      "sessionType": "fp",
-      "startUtc": "2026-10-31T17:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Mexican Grand Prix",
-      "circuit": "Mexico City",
-      "round": 19,
-      "sessionType": "quali",
-      "startUtc": "2026-10-31T21:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Mexican Grand Prix",
-      "circuit": "Mexico City",
-      "round": 19,
-      "sessionType": "race",
-      "startUtc": "2026-11-01T20:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Brazilian Grand Prix",
-      "circuit": "Sao Paulo",
-      "round": 20,
-      "sessionType": "fp",
-      "startUtc": "2026-11-06T15:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Brazilian Grand Prix",
-      "circuit": "Sao Paulo",
-      "round": 20,
-      "sessionType": "fp",
-      "startUtc": "2026-11-06T19:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Brazilian Grand Prix",
-      "circuit": "Sao Paulo",
-      "round": 20,
-      "sessionType": "fp",
-      "startUtc": "2026-11-07T14:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Brazilian Grand Prix",
-      "circuit": "Sao Paulo",
-      "round": 20,
-      "sessionType": "quali",
-      "startUtc": "2026-11-07T18:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Brazilian Grand Prix",
-      "circuit": "Sao Paulo",
-      "round": 20,
-      "sessionType": "race",
-      "startUtc": "2026-11-08T17:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Las Vegas Grand Prix",
-      "circuit": "Las Vegas",
-      "round": 21,
-      "sessionType": "fp",
-      "startUtc": "2026-11-20T00:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Las Vegas Grand Prix",
-      "circuit": "Las Vegas",
-      "round": 21,
-      "sessionType": "fp",
-      "startUtc": "2026-11-20T04:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Las Vegas Grand Prix",
-      "circuit": "Las Vegas",
-      "round": 21,
-      "sessionType": "fp",
-      "startUtc": "2026-11-21T00:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Las Vegas Grand Prix",
-      "circuit": "Las Vegas",
-      "round": 21,
-      "sessionType": "quali",
-      "startUtc": "2026-11-21T04:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Las Vegas Grand Prix",
-      "circuit": "Las Vegas",
-      "round": 21,
-      "sessionType": "race",
-      "startUtc": "2026-11-22T04:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Qatar Grand Prix",
-      "circuit": "Doha",
-      "round": 22,
-      "sessionType": "fp",
-      "startUtc": "2026-11-27T13:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Qatar Grand Prix",
-      "circuit": "Doha",
-      "round": 22,
-      "sessionType": "fp",
-      "startUtc": "2026-11-27T17:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Qatar Grand Prix",
-      "circuit": "Doha",
-      "round": 22,
-      "sessionType": "fp",
-      "startUtc": "2026-11-28T14:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Qatar Grand Prix",
-      "circuit": "Doha",
-      "round": 22,
-      "sessionType": "quali",
-      "startUtc": "2026-11-28T18:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Qatar Grand Prix",
-      "circuit": "Doha",
-      "round": 22,
-      "sessionType": "race",
-      "startUtc": "2026-11-29T16:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Abu Dhabi Grand Prix",
-      "circuit": "Yas Marina",
-      "round": 23,
-      "sessionType": "fp",
-      "startUtc": "2026-12-04T09:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Abu Dhabi Grand Prix",
-      "circuit": "Yas Marina",
-      "round": 23,
-      "sessionType": "fp",
-      "startUtc": "2026-12-04T13:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Abu Dhabi Grand Prix",
-      "circuit": "Yas Marina",
-      "round": 23,
-      "sessionType": "fp",
-      "startUtc": "2026-12-05T10:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Abu Dhabi Grand Prix",
-      "circuit": "Yas Marina",
-      "round": 23,
-      "sessionType": "quali",
-      "startUtc": "2026-12-05T14:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Abu Dhabi Grand Prix",
-      "circuit": "Yas Marina",
-      "round": 23,
-      "sessionType": "race",
-      "startUtc": "2026-12-06T13:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "adac_1000km_nuerburgring",
-      "eventName": "DHLM – Lauf 3",
-      "circuit": "Nürburgring Gesamtstrecke",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-19T06:30:00.000Z",
-      "endUtc": "2026-09-19T08:00:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@1000kmnuerburgring)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "adac_1000km_nuerburgring",
-      "eventName": "Tourenwagen Golden Ära",
-      "circuit": "Nürburgring Gesamtstrecke",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-19T08:30:00.000Z",
-      "endUtc": "2026-09-19T09:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@1000kmnuerburgring)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "adac_1000km_nuerburgring",
-      "eventName": "DHLM – Lauf 3",
-      "circuit": "Nürburgring Gesamtstrecke",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-19T12:00:00.000Z",
-      "endUtc": "2026-09-19T15:00:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@1000kmnuerburgring)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "adac_1000km_nuerburgring",
-      "eventName": "DHLM – Lauf 4",
-      "circuit": "Nürburgring Gesamtstrecke",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-20T06:30:00.000Z",
-      "endUtc": "2026-09-20T08:00:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@1000kmnuerburgring)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "adac_1000km_nuerburgring",
-      "eventName": "Tourenwagen Golden Ära",
-      "circuit": "Nürburgring Gesamtstrecke",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-20T09:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@1000kmnuerburgring)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@1000kmnuerburgring/featured"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "goodwood_festival_of_speed",
-      "eventName": "Goodwood Festival of Speed",
-      "circuit": "Goodwood House",
-      "round": null,
-      "sessionType": "event",
-      "startUtc": "2027-07-15T00:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "YouTube (Goodwood)",
-          "type": "free-stream"
-        },
-        {
-          "name": "discovery+",
-          "type": "streaming-paid",
-          "url": "https://www.discoveryplus.com/de/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "goodwood_festival_of_speed",
-      "eventName": "Goodwood Festival of Speed",
-      "circuit": "Goodwood House",
-      "round": null,
-      "sessionType": "event",
-      "startUtc": "2027-07-16T00:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "YouTube (Goodwood)",
-          "type": "free-stream"
-        },
-        {
-          "name": "discovery+",
-          "type": "streaming-paid",
-          "url": "https://www.discoveryplus.com/de/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "goodwood_festival_of_speed",
-      "eventName": "Goodwood Festival of Speed",
-      "circuit": "Goodwood House",
-      "round": null,
-      "sessionType": "event",
-      "startUtc": "2027-07-17T00:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "YouTube (Goodwood)",
-          "type": "free-stream"
-        },
-        {
-          "name": "discovery+",
-          "type": "streaming-paid",
-          "url": "https://www.discoveryplus.com/de/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "goodwood_festival_of_speed",
-      "eventName": "Goodwood Festival of Speed",
-      "circuit": "Goodwood House",
-      "round": null,
-      "sessionType": "event",
-      "startUtc": "2027-07-18T00:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "date-only",
-      "broadcasters": [
-        {
-          "name": "YouTube (Goodwood)",
-          "type": "free-stream"
-        },
-        {
-          "name": "discovery+",
-          "type": "streaming-paid",
-          "url": "https://www.discoveryplus.com/de/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "fp",
-      "startUtc": "2026-09-26T08:25:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T10:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T15:15:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T15:29:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T15:43:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T15:58:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "fp",
-      "startUtc": "2026-09-27T09:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "race",
-      "startUtc": "2026-09-27T12:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
         }
       ],
       "broadcastersVerifiedAt": "2026-08-22"
