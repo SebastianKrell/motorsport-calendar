@@ -162,6 +162,8 @@ export function App() {
             labels={SESSION_TYPE_LABELS[language]}
             selected={selectedSessionTypes}
             onToggle={toggleSessionType}
+            onSelectAll={() => setSelectedSessionTypes(new Set(availableSessionTypes))}
+            onSelectNone={() => setSelectedSessionTypes(new Set())}
             allLabel={text.all}
             noneLabel={text.none}
           />
