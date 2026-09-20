@@ -1,5 +1,6 @@
 import type { Adapter, SeriesId } from '../types.js';
 import { adacGtMastersAdapter, dtmAdapter, porscheCarreraCupAdapter } from './dtm.js';
+import { creventic24hAdapter } from './creventic.js';
 import { elmsAdapter } from './elms.js';
 import { formelEAdapter } from './formel-e.js';
 import { formula1Adapter } from './formula-1.js';
@@ -23,7 +24,6 @@ import { adac1000KmNuerburgringAdapter, goodwoodFestivalOfSpeedAdapter } from '.
 // laufen komplett, ADAC GT Masters teilweise über die echte dtm.com-API
 // (s. dtm.ts).
 const ICS_SERIES: [SeriesId, string][] = [
-  ['creventic_24h', '6rddivl20t6526fknlbhmhf6ps'],
   ['asian_le_mans', 'lilnartmo4uglqdpatsve4pido'],
 ];
 
@@ -41,6 +41,7 @@ const GTWC_SITES: [SeriesId, string][] = [
 export const adapters: Adapter[] = [
   formula1Adapter,
   formelEAdapter,
+  creventic24hAdapter,
   adac1000KmNuerburgringAdapter,
   goodwoodFestivalOfSpeedAdapter,
   nlsAdapter,

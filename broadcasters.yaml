@@ -200,7 +200,7 @@ creventic_24h:
     broadcasters:
       - name: "24H SERIES (YouTube)"
         type: free-stream
-        url: https://www.youtube.com/@24HSeries
+        url: https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw
       - name: Sportdeutschland.tv
         type: free-stream
       - name: ServusTV On
