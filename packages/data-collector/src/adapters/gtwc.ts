@@ -57,20 +57,33 @@ function fallbackCircuit(eventName: string): string {
 // "2026 End of Year Gala") haben keine Rundennummer und werden anhand
 // dessen ausgelassen, da sie keine Meisterschaftspunkte geben.
 function extractEventInfo(html: string): EventInfo | null {
-  const scriptMatch = html.match(
-    /<script type="application\/ld\+json">\s*\{\s*"@context":\s*"https?:\/\/schema\.org",?\s*"@type":\s*"Event"[\s\S]*?\}\s*<\/script>/,
-  );
-  if (!scriptMatch) return null;
+  const structuredEvent = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+    .map((match) => {
+      try {
+        return JSON.parse(match[1]) as Record<string, unknown>;
+      } catch {
+        return null;
+      }
+    })
+    .find(
+      (value): value is Record<string, unknown> =>
+        value !== null &&
+        (value['@type'] === 'Event' || value['@type'] === 'SportsEvent') &&
+        typeof value.name === 'string' &&
+        typeof value.startDate === 'string',
+    );
+  if (!structuredEvent) return null;
 
-  const nameMatch = scriptMatch[0].match(/"name":\s*"([^"]*)"/);
-  const startDateMatch = scriptMatch[0].match(/"startDate":\s*"(\d{4})-(\d{2})-(\d{2})"/);
-  const endDateMatch = scriptMatch[0].match(/"endDate":\s*"(\d{4}-\d{2}-\d{2})"/);
-  const descriptionMatch = scriptMatch[0].match(/"description":\s*"([^"]*)"/);
-  const locationNameMatch = scriptMatch[0].match(/"location":\s*\{[^}]*?"name":\s*"([^"]*)"/);
-  if (!nameMatch || !startDateMatch) return null;
-
-  const roundMatch = descriptionMatch?.[1].match(/Round (\d+)/);
-  const name = decodeHtmlEntities(nameMatch[1]).trim();
+  const startDate = structuredEvent.startDate as string;
+  const eventName = structuredEvent.name as string;
+  const startDateMatch = startDate.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!startDateMatch) return null;
+  const endDate = typeof structuredEvent.endDate === 'string' ? structuredEvent.endDate : null;
+  const description = typeof structuredEvent.description === 'string' ? structuredEvent.description : '';
+  const location = structuredEvent.location as Record<string, unknown> | undefined;
+  const locationName = typeof location?.name === 'string' ? location.name : '';
+  const roundMatch = description.match(/Round (\d+)/);
+  const name = decodeHtmlEntities(eventName).trim();
   // "location.name" ist meist "<Circuit>, <Land>" (z.B. "Spa-Francorchamps,
   // Belgium") -- wichtig für den branded Event-Namen "CrowdStrike 24 Hours
   // of Spa", damit die Cross-Series-Dedup mit IGTC (die denselben Circuit-
@@ -78,13 +91,13 @@ function extractEventInfo(html: string): EventInfo | null {
   // Feld datenseitig leer (nur ", Land") -- dann auf den Eventnamen selbst
   // zurückfallen, der bei unbranded Events (z.B. "Nürburgring", "Sepang
   // International Circuit") ohnehin schon der Circuit-Name ist.
-  const locationCircuit = decodeHtmlEntities(locationNameMatch?.[1] ?? '').split(',')[0]?.trim();
+  const locationCircuit = decodeHtmlEntities(locationName).split(',')[0]?.trim();
 
   return {
     name,
     circuit: locationCircuit || fallbackCircuit(name),
     round: roundMatch ? Number(roundMatch[1]) : null,
-    raceDate: endDateMatch?.[1] ?? `${startDateMatch[1]}-${startDateMatch[2]}-${startDateMatch[3]}`,
+    raceDate: endDate?.match(/^\d{4}-\d{2}-\d{2}/)?.[0] ?? `${startDateMatch[1]}-${startDateMatch[2]}-${startDateMatch[3]}`,
     startYear: Number(startDateMatch[1]),
     startMonth: Number(startDateMatch[2]),
   };
