@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T10:27:47.647Z",
+  "generatedAt": "2026-09-22T09:41:02.379Z",
   "sessions": [
     {
       "series": "f1",
@@ -1847,25 +1847,6 @@
     },
     {
       "series": "imsa",
-      "eventName": "Battle on the Bricks",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-20T19:10:00.000Z",
-      "endUtc": "2026-09-20T21:50:00.000Z",
-      "source": "ics",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
-          "type": "free-stream",
-          "url": "https://www.imsa.com/tvlive/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "imsa",
       "eventName": "Petit Le Mans",
       "circuit": "Michelin Raceway Road Atlanta",
       "round": null,
@@ -3232,25 +3213,6 @@
       "broadcasters": [
         {
           "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Zandvoort",
-      "circuit": "Circuit Park Zandvoort",
-      "round": 8,
-      "sessionType": "race",
-      "startUtc": "2026-09-20T12:15:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@GTWorld"
         }
