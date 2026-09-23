@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T09:41:02.379Z",
+  "generatedAt": "2026-09-23T09:48:30.390Z",
   "sessions": [
     {
       "series": "f1",
@@ -3492,6 +3492,120 @@
       "round": 6,
       "sessionType": "race",
       "startUtc": "2026-09-27T17:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_asia",
+      "eventName": "Beijing Street Circuit",
+      "circuit": "Beijing Street Circuit",
+      "round": 9,
+      "sessionType": "fp",
+      "startUtc": "2026-10-02T07:55:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_asia",
+      "eventName": "Beijing Street Circuit",
+      "circuit": "Beijing Street Circuit",
+      "round": 9,
+      "sessionType": "quali",
+      "startUtc": "2026-10-03T00:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_asia",
+      "eventName": "Beijing Street Circuit",
+      "circuit": "Beijing Street Circuit",
+      "round": 9,
+      "sessionType": "quali",
+      "startUtc": "2026-10-03T03:50:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_asia",
+      "eventName": "Beijing Street Circuit",
+      "circuit": "Beijing Street Circuit",
+      "round": 9,
+      "sessionType": "quali",
+      "startUtc": "2026-10-03T04:12:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_asia",
+      "eventName": "Beijing Street Circuit",
+      "circuit": "Beijing Street Circuit",
+      "round": 9,
+      "sessionType": "race",
+      "startUtc": "2026-10-03T07:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_asia",
+      "eventName": "Beijing Street Circuit",
+      "circuit": "Beijing Street Circuit",
+      "round": 9,
+      "sessionType": "race",
+      "startUtc": "2026-10-04T05:00:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
