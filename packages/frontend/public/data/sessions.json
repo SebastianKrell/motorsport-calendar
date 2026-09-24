@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:48:30.390Z",
+  "generatedAt": "2026-09-24T09:45:51.471Z",
   "sessions": [
     {
       "series": "f1",
@@ -3617,6 +3617,303 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-01-08T08:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2027-01-08T12:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2027-01-08T13:07:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2027-01-08T13:29:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2027-01-08T13:55:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2027-01-08T14:15:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2027-01-08T14:35:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2027-01-08T15:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2027-01-08T15:20:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2027-01-08T15:40:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-01-08T17:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
     }
   ]
 }
