@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-09-24T09:45:51.471Z",
+  "generatedAt": "2026-09-25T10:03:09.372Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Azerbaijan Grand Prix",
-      "circuit": "Baku",
-      "round": 15,
-      "sessionType": "fp",
-      "startUtc": "2026-09-24T08:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Azerbaijan Grand Prix",
