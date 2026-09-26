@@ -1,54 +1,6 @@
 {
-  "generatedAt": "2026-09-25T10:03:09.372Z",
+  "generatedAt": "2026-09-26T09:45:30.892Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Azerbaijan Grand Prix",
-      "circuit": "Baku",
-      "round": 15,
-      "sessionType": "fp",
-      "startUtc": "2026-09-24T12:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Azerbaijan Grand Prix",
-      "circuit": "Baku",
-      "round": 15,
-      "sessionType": "fp",
-      "startUtc": "2026-09-25T08:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Azerbaijan Grand Prix",
@@ -1196,58 +1148,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Fuji",
-      "circuit": "Fuji Speedway",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-09-25T01:15:00.000Z",
-      "endUtc": "2026-09-25T02:45:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Fuji",
-      "circuit": "Fuji Speedway",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-09-25T05:30:00.000Z",
-      "endUtc": "2026-09-25T07:00:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
     },
     {
       "series": "wec",
@@ -2670,44 +2570,6 @@
       "round": 13,
       "sessionType": "race",
       "startUtc": "2026-10-11T15:40:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT4 America)",
-      "circuit": "Barber Motorsports Park",
-      "round": 10,
-      "sessionType": "fp",
-      "startUtc": "2026-09-24T15:10:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT4 America)",
-      "circuit": "Barber Motorsports Park",
-      "round": 10,
-      "sessionType": "fp",
-      "startUtc": "2026-09-25T06:45:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
