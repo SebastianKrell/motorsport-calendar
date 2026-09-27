@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-09-26T09:45:30.892Z",
+  "generatedAt": "2026-09-27T10:25:15.826Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Azerbaijan Grand Prix",
-      "circuit": "Baku",
-      "round": 15,
-      "sessionType": "quali",
-      "startUtc": "2026-09-25T12:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Azerbaijan Grand Prix",
@@ -1154,136 +1130,6 @@
       "eventName": "6 Hours of Fuji",
       "circuit": "Fuji Speedway",
       "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-09-26T00:30:00.000Z",
-      "endUtc": "2026-09-26T01:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Fuji (LMGT3)",
-      "circuit": "Fuji Speedway",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T05:00:00.000Z",
-      "endUtc": "2026-09-26T05:12:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Fuji (LMGT3)",
-      "circuit": "Fuji Speedway",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T05:20:00.000Z",
-      "endUtc": "2026-09-26T05:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Fuji (HYPERCAR)",
-      "circuit": "Fuji Speedway",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T05:40:00.000Z",
-      "endUtc": "2026-09-26T05:52:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Fuji (HYPERCAR)",
-      "circuit": "Fuji Speedway",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T06:00:00.000Z",
-      "endUtc": "2026-09-26T06:10:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Fuji",
-      "circuit": "Fuji Speedway",
-      "round": null,
       "sessionType": "race",
       "startUtc": "2026-09-27T02:00:00.000Z",
       "endUtc": "2026-09-27T08:00:00.000Z",
@@ -1437,12 +1283,12 @@
     },
     {
       "series": "wec",
-      "eventName": "6 Hours of Barcelona (HYPERCAR)",
+      "eventName": "6 Hours of Barcelona",
       "circuit": "Barcelona",
       "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-10-17T10:30:00.000Z",
-      "endUtc": "2026-10-17T10:42:00.000Z",
+      "sessionType": "fp",
+      "startUtc": "2026-10-17T10:40:00.000Z",
+      "endUtc": "2026-10-17T11:40:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -1467,8 +1313,34 @@
       "circuit": "Barcelona",
       "round": null,
       "sessionType": "quali",
-      "startUtc": "2026-10-17T10:50:00.000Z",
-      "endUtc": "2026-10-17T11:00:00.000Z",
+      "startUtc": "2026-10-17T13:40:00.000Z",
+      "endUtc": "2026-10-17T13:52:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "Eurosport",
+          "type": "pay-tv"
+        },
+        {
+          "name": "HBO Max / discovery+",
+          "type": "streaming"
+        },
+        {
+          "name": "FIAWEC+",
+          "type": "streaming-paid"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "wec",
+      "eventName": "6 Hours of Barcelona (HYPERCAR)",
+      "circuit": "Barcelona",
+      "round": null,
+      "sessionType": "quali",
+      "startUtc": "2026-10-17T14:00:00.000Z",
+      "endUtc": "2026-10-17T14:10:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -2394,101 +2266,6 @@
     },
     {
       "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT America)",
-      "circuit": "Barber Motorsports Park",
-      "round": 11,
-      "sessionType": "fp",
-      "startUtc": "2026-09-25T19:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT America)",
-      "circuit": "Barber Motorsports Park",
-      "round": 11,
-      "sessionType": "fp",
-      "startUtc": "2026-09-26T13:05:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT America)",
-      "circuit": "Barber Motorsports Park",
-      "round": 11,
-      "sessionType": "quali",
-      "startUtc": "2026-09-26T13:55:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT America)",
-      "circuit": "Barber Motorsports Park",
-      "round": 11,
-      "sessionType": "race",
-      "startUtc": "2026-09-26T17:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT America)",
-      "circuit": "Barber Motorsports Park",
-      "round": 11,
-      "sessionType": "race",
-      "startUtc": "2026-09-27T14:25:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
       "eventName": "Indianapolis Motor Speedway (GT America)",
       "circuit": "Indianapolis Motor Speedway",
       "round": 13,
@@ -2584,11 +2361,30 @@
     },
     {
       "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT4 America)",
+      "eventName": "Barber Motorsports Park (GT America)",
       "circuit": "Barber Motorsports Park",
-      "round": 10,
+      "round": 11,
+      "sessionType": "fp",
+      "startUtc": "2026-09-26T13:05:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 11,
       "sessionType": "quali",
-      "startUtc": "2026-09-25T11:05:00.000Z",
+      "startUtc": "2026-09-26T13:55:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2603,30 +2399,11 @@
     },
     {
       "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT4 America)",
+      "eventName": "Barber Motorsports Park (GT America)",
       "circuit": "Barber Motorsports Park",
-      "round": 10,
-      "sessionType": "quali",
-      "startUtc": "2026-09-25T11:25:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT4 America)",
-      "circuit": "Barber Motorsports Park",
-      "round": 10,
+      "round": 11,
       "sessionType": "race",
-      "startUtc": "2026-09-25T14:30:00.000Z",
+      "startUtc": "2026-09-26T17:00:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2641,11 +2418,11 @@
     },
     {
       "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT4 America)",
+      "eventName": "Barber Motorsports Park (GT America)",
       "circuit": "Barber Motorsports Park",
-      "round": 10,
+      "round": 11,
       "sessionType": "race",
-      "startUtc": "2026-09-26T12:35:00.000Z",
+      "startUtc": "2026-09-27T14:25:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2773,23 +2550,23 @@
       "broadcastersVerifiedAt": "2026-08-29"
     },
     {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "fp",
-      "startUtc": "2026-09-26T08:25:00.000Z",
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT4 America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 10,
+      "sessionType": "race",
+      "startUtc": "2026-09-26T12:35:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
         {
-          "name": "GT World (YouTube) / britishgt.com",
+          "name": "GT World (YouTube)",
           "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
+          "url": "https://www.youtube.com/@GTWorld"
         }
       ],
-      "broadcastersVerifiedAt": "2026-08-22"
+      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "british_gt",
@@ -3222,25 +2999,6 @@
       "broadcasters": [
         {
           "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_america",
-      "eventName": "Barber Motorsports Park",
-      "circuit": "Barber Motorsports Park",
-      "round": 6,
-      "sessionType": "fp",
-      "startUtc": "2026-09-25T21:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@GTWorld"
         }
