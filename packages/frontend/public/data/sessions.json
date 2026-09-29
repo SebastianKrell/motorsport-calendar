@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T11:30:14.098Z",
+  "generatedAt": "2026-09-29T11:11:33.440Z",
   "sessions": [
     {
       "series": "f1",
@@ -1944,25 +1944,6 @@
     },
     {
       "series": "gt_open",
-      "eventName": "Monza",
-      "circuit": "Monza",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-09-27T16:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "International GT Open (YouTube, @GTOPENseries)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTOPENseries"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
-      "series": "gt_open",
       "eventName": "Barcelona",
       "circuit": "Barcelona",
       "round": null,
@@ -2311,25 +2292,6 @@
     },
     {
       "series": "gt_gt4_america",
-      "eventName": "Barber Motorsports Park (GT America)",
-      "circuit": "Barber Motorsports Park",
-      "round": 11,
-      "sessionType": "race",
-      "startUtc": "2026-09-27T14:25:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
       "eventName": "Indianapolis Motor Speedway (GT4 America)",
       "circuit": "Indianapolis Motor Speedway",
       "round": 12,
@@ -2441,25 +2403,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "british_gt",
-      "eventName": "Brands Hatch",
-      "circuit": "Brands Hatch Circuit",
-      "round": 8,
-      "sessionType": "race",
-      "startUtc": "2026-09-27T12:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube) / britishgt.com",
-          "type": "free-stream",
-          "url": "https://www.britishgt.com/live"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
     },
     {
       "series": "igtc",
@@ -2759,63 +2702,6 @@
       "broadcasters": [
         {
           "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_america",
-      "eventName": "Barber Motorsports Park",
-      "circuit": "Barber Motorsports Park",
-      "round": 6,
-      "sessionType": "quali",
-      "startUtc": "2026-09-27T13:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_america",
-      "eventName": "Barber Motorsports Park",
-      "circuit": "Barber Motorsports Park",
-      "round": 6,
-      "sessionType": "quali",
-      "startUtc": "2026-09-27T13:50:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_america",
-      "eventName": "Barber Motorsports Park",
-      "circuit": "Barber Motorsports Park",
-      "round": 6,
-      "sessionType": "race",
-      "startUtc": "2026-09-27T17:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@GTWorld"
         }
