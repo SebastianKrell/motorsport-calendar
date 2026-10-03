@@ -1,54 +1,6 @@
 {
-  "generatedAt": "2026-10-02T10:55:43.229Z",
+  "generatedAt": "2026-10-03T10:15:56.479Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "fp",
-      "startUtc": "2026-10-02T04:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "fp",
-      "startUtc": "2026-10-02T08:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Bahrain Grand Prix (Malaysia)",
@@ -1548,63 +1500,6 @@
       "eventName": "Petit Le Mans",
       "circuit": "Michelin Raceway Road Atlanta",
       "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-10-01T14:40:00.000Z",
-      "endUtc": "2026-10-01T16:10:00.000Z",
-      "source": "ics",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
-          "type": "free-stream",
-          "url": "https://www.imsa.com/tvlive/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "imsa",
-      "eventName": "Petit Le Mans",
-      "circuit": "Michelin Raceway Road Atlanta",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-10-01T19:20:00.000Z",
-      "endUtc": "2026-10-01T21:05:00.000Z",
-      "source": "ics",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
-          "type": "free-stream",
-          "url": "https://www.imsa.com/tvlive/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "imsa",
-      "eventName": "Petit Le Mans",
-      "circuit": "Michelin Raceway Road Atlanta",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-10-01T23:30:00.000Z",
-      "endUtc": "2026-10-02T01:00:00.000Z",
-      "source": "ics",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
-          "type": "free-stream",
-          "url": "https://www.imsa.com/tvlive/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "imsa",
-      "eventName": "Petit Le Mans",
-      "circuit": "Michelin Raceway Road Atlanta",
-      "round": null,
       "sessionType": "quali",
       "startUtc": "2026-10-02T18:20:00.000Z",
       "endUtc": "2026-10-02T19:35:00.000Z",
@@ -1967,8 +1862,8 @@
       "circuit": "Hockenheimring",
       "round": 8,
       "sessionType": "fp",
-      "startUtc": "2026-10-09T09:05:00.000Z",
-      "endUtc": "2026-10-09T09:50:00.000Z",
+      "startUtc": "2026-10-09T10:05:00.000Z",
+      "endUtc": "2026-10-09T10:50:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -2043,8 +1938,8 @@
       "circuit": "Hockenheimring",
       "round": 8,
       "sessionType": "quali",
-      "startUtc": "2026-10-11T07:30:00.000Z",
-      "endUtc": "2026-10-11T07:50:00.000Z",
+      "startUtc": "2026-10-11T07:35:00.000Z",
+      "endUtc": "2026-10-11T07:55:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -2062,8 +1957,8 @@
       "circuit": "Hockenheimring",
       "round": 8,
       "sessionType": "race",
-      "startUtc": "2026-10-11T11:30:00.000Z",
-      "endUtc": "2026-10-11T12:30:00.000Z",
+      "startUtc": "2026-10-11T14:30:00.000Z",
+      "endUtc": "2026-10-11T15:30:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -2081,7 +1976,25 @@
       "circuit": "Hockenheimring Baden-Württemberg",
       "round": 6,
       "sessionType": "fp",
-      "startUtc": "2026-10-09T12:20:00.000Z",
+      "startUtc": "2026-10-09T08:05:00.000Z",
+      "endUtc": "2026-10-09T09:05:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
+      "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
+      "circuit": "Hockenheimring Baden-Württemberg",
+      "round": 6,
+      "sessionType": "fp",
+      "startUtc": "2026-10-09T12:35:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2098,9 +2011,63 @@
       "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
       "circuit": "Hockenheimring Baden-Württemberg",
       "round": 6,
+      "sessionType": "quali",
+      "startUtc": "2026-10-10T07:00:00.000Z",
+      "endUtc": "2026-10-10T07:20:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
+      "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
+      "circuit": "Hockenheimring Baden-Württemberg",
+      "round": 6,
       "sessionType": "race",
-      "startUtc": "2026-10-11T13:10:00.000Z",
-      "endUtc": null,
+      "startUtc": "2026-10-10T13:05:00.000Z",
+      "endUtc": "2026-10-10T14:05:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
+      "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
+      "circuit": "Hockenheimring Baden-Württemberg",
+      "round": 6,
+      "sessionType": "quali",
+      "startUtc": "2026-10-11T07:00:00.000Z",
+      "endUtc": "2026-10-11T07:20:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "ProSieben / ran.de",
+          "type": "free-tv"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-21"
+    },
+    {
+      "series": "adac_gt_masters",
+      "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
+      "circuit": "Hockenheimring Baden-Württemberg",
+      "round": 6,
+      "sessionType": "race",
+      "startUtc": "2026-10-11T12:30:00.000Z",
+      "endUtc": "2026-10-11T13:30:00.000Z",
       "source": "scrape",
       "confidence": "exact",
       "broadcasters": [
@@ -2117,7 +2084,7 @@
       "circuit": "Hockenheimring",
       "round": 8,
       "sessionType": "race",
-      "startUtc": "2026-10-10T09:10:00.000Z",
+      "startUtc": "2026-10-10T08:50:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2140,7 +2107,7 @@
       "circuit": "Hockenheimring",
       "round": 8,
       "sessionType": "race",
-      "startUtc": "2026-10-11T09:15:00.000Z",
+      "startUtc": "2026-10-11T10:30:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2543,25 +2510,6 @@
       "circuit": "Circuit de Barcelona - Catalunya",
       "round": 9,
       "sessionType": "fp",
-      "startUtc": "2026-10-02T07:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "fp",
       "startUtc": "2026-10-02T11:55:00.000Z",
       "endUtc": null,
       "source": "scrape",
@@ -2582,6 +2530,44 @@
       "round": 9,
       "sessionType": "quali",
       "startUtc": "2026-10-03T07:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Barcelona",
+      "circuit": "Circuit de Barcelona - Catalunya",
+      "round": 9,
+      "sessionType": "quali",
+      "startUtc": "2026-10-03T07:50:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Barcelona",
+      "circuit": "Circuit de Barcelona - Catalunya",
+      "round": 9,
+      "sessionType": "quali",
+      "startUtc": "2026-10-03T08:05:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2620,6 +2606,44 @@
       "round": 9,
       "sessionType": "quali",
       "startUtc": "2026-10-04T09:10:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Barcelona",
+      "circuit": "Circuit de Barcelona - Catalunya",
+      "round": 9,
+      "sessionType": "quali",
+      "startUtc": "2026-10-04T09:15:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Barcelona",
+      "circuit": "Circuit de Barcelona - Catalunya",
+      "round": 9,
+      "sessionType": "quali",
+      "startUtc": "2026-10-04T09:30:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2702,25 +2726,6 @@
       "broadcasters": [
         {
           "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_asia",
-      "eventName": "Beijing Street Circuit",
-      "circuit": "Beijing Street Circuit",
-      "round": 9,
-      "sessionType": "fp",
-      "startUtc": "2026-10-02T07:55:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@GTWorld"
         }
