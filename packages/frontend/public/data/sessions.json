@@ -1,54 +1,6 @@
 {
-  "generatedAt": "2026-10-03T10:15:56.479Z",
+  "generatedAt": "2026-10-04T10:57:54.289Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "fp",
-      "startUtc": "2026-10-03T04:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "quali",
-      "startUtc": "2026-10-03T08:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Bahrain Grand Prix (Malaysia)",
@@ -1500,25 +1452,6 @@
       "eventName": "Petit Le Mans",
       "circuit": "Michelin Raceway Road Atlanta",
       "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-10-02T18:20:00.000Z",
-      "endUtc": "2026-10-02T19:35:00.000Z",
-      "source": "ics",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
-          "type": "free-stream",
-          "url": "https://www.imsa.com/tvlive/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "imsa",
-      "eventName": "Petit Le Mans",
-      "circuit": "Michelin Raceway Road Atlanta",
-      "round": null,
       "sessionType": "race",
       "startUtc": "2026-10-03T16:10:00.000Z",
       "endUtc": "2026-10-04T02:10:00.000Z",
@@ -2509,82 +2442,6 @@
       "eventName": "Barcelona",
       "circuit": "Circuit de Barcelona - Catalunya",
       "round": 9,
-      "sessionType": "fp",
-      "startUtc": "2026-10-02T11:55:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-10-03T07:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-10-03T07:50:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-10-03T08:05:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
       "sessionType": "race",
       "startUtc": "2026-10-03T12:00:00.000Z",
       "endUtc": null,
@@ -2726,82 +2583,6 @@
       "broadcasters": [
         {
           "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_asia",
-      "eventName": "Beijing Street Circuit",
-      "circuit": "Beijing Street Circuit",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-10-03T00:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_asia",
-      "eventName": "Beijing Street Circuit",
-      "circuit": "Beijing Street Circuit",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-10-03T03:50:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_asia",
-      "eventName": "Beijing Street Circuit",
-      "circuit": "Beijing Street Circuit",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-10-03T04:12:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_asia",
-      "eventName": "Beijing Street Circuit",
-      "circuit": "Beijing Street Circuit",
-      "round": 9,
-      "sessionType": "race",
-      "startUtc": "2026-10-03T07:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@GTWorld"
         }
