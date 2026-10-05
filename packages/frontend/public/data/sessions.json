@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-10-04T10:57:54.289Z",
+  "generatedAt": "2026-10-05T12:06:55.195Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Bahrain Grand Prix (Malaysia)",
-      "circuit": "Sepang",
-      "round": 16,
-      "sessionType": "race",
-      "startUtc": "2026-10-04T07:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Singapore Grand Prix",
@@ -1448,25 +1424,6 @@
       "broadcastersVerifiedAt": "2026-08-21"
     },
     {
-      "series": "imsa",
-      "eventName": "Petit Le Mans",
-      "circuit": "Michelin Raceway Road Atlanta",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-03T16:10:00.000Z",
-      "endUtc": "2026-10-04T02:10:00.000Z",
-      "source": "ics",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
-          "type": "free-stream",
-          "url": "https://www.imsa.com/tvlive/"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
       "series": "elms",
       "eventName": "4 Hours of Portimão",
       "circuit": "Autódromo Internacional do Algarve",
@@ -1718,11 +1675,87 @@
       "eventName": "AUTOPOLIS",
       "circuit": "AUTOPOLIS",
       "round": 7,
-      "sessionType": "race",
-      "startUtc": "2026-10-18T00:00:00.000Z",
-      "endUtc": null,
+      "sessionType": "fp",
+      "startUtc": "2026-10-17T01:30:00.000Z",
+      "endUtc": "2026-10-17T03:05:00.000Z",
       "source": "scrape",
-      "confidence": "date-only",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "AUTOPOLIS",
+      "circuit": "AUTOPOLIS",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-10-17T05:30:00.000Z",
+      "endUtc": "2026-10-17T06:13:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "AUTOPOLIS",
+      "circuit": "AUTOPOLIS",
+      "round": 7,
+      "sessionType": "quali",
+      "startUtc": "2026-10-17T06:23:00.000Z",
+      "endUtc": "2026-10-17T06:51:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "AUTOPOLIS",
+      "circuit": "AUTOPOLIS",
+      "round": 7,
+      "sessionType": "fp",
+      "startUtc": "2026-10-18T02:40:00.000Z",
+      "endUtc": "2026-10-18T03:00:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "AUTOPOLIS",
+      "circuit": "AUTOPOLIS",
+      "round": 7,
+      "sessionType": "race",
+      "startUtc": "2026-10-18T04:10:00.000Z",
+      "endUtc": "2026-10-18T07:10:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
       "broadcasters": [
         {
           "name": "SUPER GT Official (YouTube, zeitversetzt)",
@@ -2443,83 +2476,7 @@
       "circuit": "Circuit de Barcelona - Catalunya",
       "round": 9,
       "sessionType": "race",
-      "startUtc": "2026-10-03T12:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-10-04T09:10:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-10-04T09:15:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "quali",
-      "startUtc": "2026-10-04T09:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Barcelona",
-      "circuit": "Circuit de Barcelona - Catalunya",
-      "round": 9,
-      "sessionType": "race",
-      "startUtc": "2026-10-04T14:00:00.000Z",
+      "startUtc": "2026-10-04T16:20:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2583,25 +2540,6 @@
       "broadcasters": [
         {
           "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_asia",
-      "eventName": "Beijing Street Circuit",
-      "circuit": "Beijing Street Circuit",
-      "round": 9,
-      "sessionType": "race",
-      "startUtc": "2026-10-04T05:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@GTWorld"
         }
