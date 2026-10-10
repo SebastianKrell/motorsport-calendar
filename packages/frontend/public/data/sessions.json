@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-10-09T11:42:18.906Z",
+  "generatedAt": "2026-10-10T10:59:53.488Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Singapore Grand Prix",
-      "circuit": "Singapore",
-      "round": 17,
-      "sessionType": "fp",
-      "startUtc": "2026-10-09T08:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Singapore Grand Prix",
@@ -1425,25 +1401,6 @@
     },
     {
       "series": "elms",
-      "eventName": "4 Hours of Portimão",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-10-09T08:15:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "elms",
       "eventName": "4 Hours of Portimão (LMGT3)",
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
@@ -1533,82 +1490,6 @@
           "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
           "type": "free-stream",
           "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "michelin_le_mans_cup",
-      "eventName": "Portimão Round",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-10-08T14:05:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@LeMansCup)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@LeMansCup"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "michelin_le_mans_cup",
-      "eventName": "Portimão Round (GT3)",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-10-09T09:55:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@LeMansCup)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@LeMansCup"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "michelin_le_mans_cup",
-      "eventName": "Portimão Round (LMP3 PRO/AM)",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-10-09T10:20:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@LeMansCup)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@LeMansCup"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "michelin_le_mans_cup",
-      "eventName": "Portimão Round (LMP3)",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-10-09T10:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@LeMansCup)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@LeMansCup"
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
@@ -1790,25 +1671,6 @@
       "circuit": "Hockenheimring",
       "round": 8,
       "sessionType": "fp",
-      "startUtc": "2026-10-09T10:05:00.000Z",
-      "endUtc": "2026-10-09T10:50:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv",
-          "url": "https://www.ran.de/sports/motorsport/dtm"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "dtm",
-      "eventName": "Hockenheimring",
-      "circuit": "Hockenheimring",
-      "round": 8,
-      "sessionType": "fp",
       "startUtc": "2026-10-09T13:30:00.000Z",
       "endUtc": "2026-10-09T14:00:00.000Z",
       "source": "scrape",
@@ -1897,24 +1759,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "adac_gt_masters",
-      "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
-      "circuit": "Hockenheimring Baden-Württemberg",
-      "round": 6,
-      "sessionType": "fp",
-      "startUtc": "2026-10-09T08:05:00.000Z",
-      "endUtc": "2026-10-09T09:05:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
     },
     {
       "series": "adac_gt_masters",
@@ -2285,44 +2129,6 @@
       "eventName": "Indianapolis Motor Speedway (GT America)",
       "circuit": "Indianapolis Motor Speedway",
       "round": 13,
-      "sessionType": "fp",
-      "startUtc": "2026-10-08T17:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Indianapolis Motor Speedway (GT America)",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": 13,
-      "sessionType": "fp",
-      "startUtc": "2026-10-08T19:15:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Indianapolis Motor Speedway (GT America)",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": 13,
       "sessionType": "quali",
       "startUtc": "2026-10-09T13:20:00.000Z",
       "endUtc": null,
@@ -2363,25 +2169,6 @@
       "round": 13,
       "sessionType": "race",
       "startUtc": "2026-10-11T15:40:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Indianapolis Motor Speedway (GT4 America)",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": 12,
-      "sessionType": "fp",
-      "startUtc": "2026-10-08T20:00:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -2488,25 +2275,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "igtc",
-      "eventName": "Indianapolis 8 Hour",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": 5,
-      "sessionType": "fp",
-      "startUtc": "2026-10-08T23:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
     },
     {
       "series": "igtc",
