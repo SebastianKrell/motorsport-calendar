@@ -1,54 +1,6 @@
 {
-  "generatedAt": "2026-10-11T11:17:43.317Z",
+  "generatedAt": "2026-10-12T12:50:54.515Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Singapore Grand Prix",
-      "circuit": "Singapore",
-      "round": 17,
-      "sessionType": "quali",
-      "startUtc": "2026-10-10T13:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Singapore Grand Prix",
-      "circuit": "Singapore",
-      "round": 17,
-      "sessionType": "race",
-      "startUtc": "2026-10-11T12:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "United States Grand Prix",
@@ -862,30 +814,6 @@
       "broadcastersVerifiedAt": "2026-09-18"
     },
     {
-      "series": "nls",
-      "eventName": "2. NLS Sportwarte-Trophy",
-      "circuit": "Nürburgring",
-      "round": 10,
-      "sessionType": "race",
-      "startUtc": "2026-10-10T10:00:00.000Z",
-      "endUtc": "2026-10-10T14:00:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "vln.de",
-          "type": "free-stream",
-          "url": "https://www.vln.de"
-        },
-        {
-          "name": "YouTube (@VLNOFFICIAL)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@VLNOFFICIAL"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
       "series": "wec",
       "eventName": "6 Hours of Barcelona",
       "circuit": "Barcelona",
@@ -1328,25 +1256,6 @@
       "broadcastersVerifiedAt": "2026-08-21"
     },
     {
-      "series": "elms",
-      "eventName": "4 Hours of Portimão",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-10T12:30:00.000Z",
-      "endUtc": "2026-10-10T16:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@EuropeanLeMansSeriesOfficial)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@EuropeanLeMansSeriesOfficial"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
       "series": "super_gt",
       "eventName": "AUTOPOLIS",
       "circuit": "AUTOPOLIS",
@@ -1504,44 +1413,6 @@
       "circuit": "Hockenheimring",
       "round": 8,
       "sessionType": "race",
-      "startUtc": "2026-10-10T11:30:00.000Z",
-      "endUtc": "2026-10-10T12:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv",
-          "url": "https://www.ran.de/sports/motorsport/dtm"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "dtm",
-      "eventName": "Hockenheimring",
-      "circuit": "Hockenheimring",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-10-11T07:35:00.000Z",
-      "endUtc": "2026-10-11T07:55:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv",
-          "url": "https://www.ran.de/sports/motorsport/dtm"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "dtm",
-      "eventName": "Hockenheimring",
-      "circuit": "Hockenheimring",
-      "round": 8,
-      "sessionType": "race",
       "startUtc": "2026-10-11T14:30:00.000Z",
       "endUtc": "2026-10-11T15:30:00.000Z",
       "source": "scrape",
@@ -1561,42 +1432,6 @@
       "circuit": "Hockenheimring Baden-Württemberg",
       "round": 6,
       "sessionType": "race",
-      "startUtc": "2026-10-10T13:05:00.000Z",
-      "endUtc": "2026-10-10T14:05:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "adac_gt_masters",
-      "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
-      "circuit": "Hockenheimring Baden-Württemberg",
-      "round": 6,
-      "sessionType": "quali",
-      "startUtc": "2026-10-11T07:00:00.000Z",
-      "endUtc": "2026-10-11T07:20:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "adac_gt_masters",
-      "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
-      "circuit": "Hockenheimring Baden-Württemberg",
-      "round": 6,
-      "sessionType": "race",
       "startUtc": "2026-10-11T12:30:00.000Z",
       "endUtc": "2026-10-11T13:30:00.000Z",
       "source": "scrape",
@@ -1608,29 +1443,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "porsche_carrera_cup_de",
-      "eventName": "Hockenheimring (Porsche Carrera Cup)",
-      "circuit": "Hockenheimring",
-      "round": 8,
-      "sessionType": "race",
-      "startUtc": "2026-10-11T10:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "YouTube (@PorscheCarreraCupDeutschland)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@PorscheCarreraCupDeutschland"
-        },
-        {
-          "name": "Joyn",
-          "type": "free-stream"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
     },
     {
       "series": "gt2_gt4_europe",
@@ -1866,45 +1678,7 @@
       "circuit": "Indianapolis Motor Speedway",
       "round": 13,
       "sessionType": "race",
-      "startUtc": "2026-10-10T12:05:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Indianapolis Motor Speedway (GT America)",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": 13,
-      "sessionType": "race",
       "startUtc": "2026-10-11T15:40:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Indianapolis Motor Speedway (GT4 America)",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": 12,
-      "sessionType": "race",
-      "startUtc": "2026-10-10T14:00:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
@@ -1935,25 +1709,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "igtc",
-      "eventName": "Indianapolis 8 Hour",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": 5,
-      "sessionType": "race",
-      "startUtc": "2026-10-10T16:30:00.000Z",
-      "endUtc": "2026-10-11T00:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
     },
     {
       "series": "gtwc_europe",
