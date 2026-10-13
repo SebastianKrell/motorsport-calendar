@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T12:50:54.515Z",
+  "generatedAt": "2026-10-13T12:31:11.687Z",
   "sessions": [
     {
       "series": "f1",
@@ -1408,43 +1408,6 @@
       "broadcastersVerifiedAt": "2026-08-22"
     },
     {
-      "series": "dtm",
-      "eventName": "Hockenheimring",
-      "circuit": "Hockenheimring",
-      "round": 8,
-      "sessionType": "race",
-      "startUtc": "2026-10-11T14:30:00.000Z",
-      "endUtc": "2026-10-11T15:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv",
-          "url": "https://www.ran.de/sports/motorsport/dtm"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "adac_gt_masters",
-      "eventName": "Hockenheimring Baden-Württemberg (ADAC GT Masters)",
-      "circuit": "Hockenheimring Baden-Württemberg",
-      "round": 6,
-      "sessionType": "race",
-      "startUtc": "2026-10-11T12:30:00.000Z",
-      "endUtc": "2026-10-11T13:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "ProSieben / ran.de",
-          "type": "free-tv"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
       "series": "gt2_gt4_europe",
       "eventName": "Portimão (GT2 Europe)",
       "circuit": "Portimão",
@@ -1660,44 +1623,6 @@
       "round": 6,
       "sessionType": "race",
       "startUtc": "2026-10-18T10:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Indianapolis Motor Speedway (GT America)",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": 13,
-      "sessionType": "race",
-      "startUtc": "2026-10-11T15:40:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gt_gt4_america",
-      "eventName": "Indianapolis Motor Speedway (GT4 America)",
-      "circuit": "Indianapolis Motor Speedway",
-      "round": 12,
-      "sessionType": "race",
-      "startUtc": "2026-10-11T14:25:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
