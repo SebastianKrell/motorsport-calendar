@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T09:59:01.426Z",
+  "generatedAt": "2026-10-15T09:40:21.822Z",
   "sessions": [
     {
       "series": "f1",
@@ -1659,8 +1659,141 @@
       "eventName": "Portimao",
       "circuit": "Portimao Circuit",
       "round": 10,
+      "sessionType": "fp",
+      "startUtc": "2026-10-16T11:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Portimao",
+      "circuit": "Portimao Circuit",
+      "round": 10,
       "sessionType": "quali",
       "startUtc": "2026-10-16T16:55:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Portimao",
+      "circuit": "Portimao Circuit",
+      "round": 10,
+      "sessionType": "quali",
+      "startUtc": "2026-10-16T16:55:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Portimao",
+      "circuit": "Portimao Circuit",
+      "round": 10,
+      "sessionType": "quali",
+      "startUtc": "2026-10-16T17:05:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Portimao",
+      "circuit": "Portimao Circuit",
+      "round": 10,
+      "sessionType": "quali",
+      "startUtc": "2026-10-16T17:20:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Portimao",
+      "circuit": "Portimao Circuit",
+      "round": 10,
+      "sessionType": "quali",
+      "startUtc": "2026-10-16T17:30:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Portimao",
+      "circuit": "Portimao Circuit",
+      "round": 10,
+      "sessionType": "quali",
+      "startUtc": "2026-10-16T17:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube, deutscher Kommentar)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_europe",
+      "eventName": "Portimao",
+      "circuit": "Portimao Circuit",
+      "round": 10,
+      "sessionType": "quali",
+      "startUtc": "2026-10-16T17:55:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
