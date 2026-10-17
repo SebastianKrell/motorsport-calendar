@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T09:33:22.416Z",
+  "generatedAt": "2026-10-17T09:04:10.890Z",
   "sessions": [
     {
       "series": "f1",
@@ -1641,25 +1641,6 @@
       "circuit": "Portimao Circuit",
       "round": 10,
       "sessionType": "fp",
-      "startUtc": "2026-10-16T07:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Portimao",
-      "circuit": "Portimao Circuit",
-      "round": 10,
-      "sessionType": "fp",
       "startUtc": "2026-10-16T11:45:00.000Z",
       "endUtc": null,
       "source": "scrape",
@@ -1717,25 +1698,6 @@
       "circuit": "Portimao Circuit",
       "round": 10,
       "sessionType": "quali",
-      "startUtc": "2026-10-16T17:05:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Portimao",
-      "circuit": "Portimao Circuit",
-      "round": 10,
-      "sessionType": "quali",
       "startUtc": "2026-10-16T17:20:00.000Z",
       "endUtc": null,
       "source": "scrape",
@@ -1755,45 +1717,7 @@
       "circuit": "Portimao Circuit",
       "round": 10,
       "sessionType": "quali",
-      "startUtc": "2026-10-16T17:30:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Portimao",
-      "circuit": "Portimao Circuit",
-      "round": 10,
-      "sessionType": "quali",
       "startUtc": "2026-10-16T17:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube, deutscher Kommentar)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_europe",
-      "eventName": "Portimao",
-      "circuit": "Portimao Circuit",
-      "round": 10,
-      "sessionType": "quali",
-      "startUtc": "2026-10-16T17:55:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
