@@ -1,54 +1,6 @@
 {
-  "generatedAt": "2026-10-24T09:20:59.689Z",
+  "generatedAt": "2026-10-25T09:37:47.584Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "fp",
-      "startUtc": "2026-10-23T17:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "fp",
-      "startUtc": "2026-10-23T21:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "United States Grand Prix",
@@ -1488,6 +1440,84 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Portimão | Race 1",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-02-20T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Jerez | Race 1",
+      "circuit": "Circuito de Jerez",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-01-16T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Jerez | Race 2",
+      "circuit": "Circuito de Jerez",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-01-17T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Le Castellet | Race 2",
+      "circuit": "Circuit Paul Ricard",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-11-15T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Le Castellet | Race 1",
+      "circuit": "Circuit Paul Ricard",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-11-14T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Portimão | Race 2",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-02-21T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
     }
   ]
 }
