@@ -1,54 +1,6 @@
 {
-  "generatedAt": "2026-10-25T09:37:47.584Z",
+  "generatedAt": "2026-10-26T10:49:47.645Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "fp",
-      "startUtc": "2026-10-24T17:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "quali",
-      "startUtc": "2026-10-24T21:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "United States Grand Prix",
@@ -978,11 +930,87 @@
       "eventName": "MOBILITY RESORT MOTEGI",
       "circuit": "MOBILITY RESORT MOTEGI",
       "round": 3,
-      "sessionType": "race",
+      "sessionType": "quali",
       "startUtc": "2026-11-07T00:00:00.000Z",
+      "endUtc": "2026-11-07T00:45:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "MOBILITY RESORT MOTEGI",
+      "circuit": "MOBILITY RESORT MOTEGI",
+      "round": 3,
+      "sessionType": "fp",
+      "startUtc": "2026-11-07T03:30:00.000Z",
+      "endUtc": "2026-11-07T03:50:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "MOBILITY RESORT MOTEGI",
+      "circuit": "MOBILITY RESORT MOTEGI",
+      "round": 3,
+      "sessionType": "race",
+      "startUtc": "2026-11-07T05:00:00.000Z",
       "endUtc": null,
       "source": "scrape",
-      "confidence": "date-only",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "MOBILITY RESORT MOTEGI",
+      "circuit": "MOBILITY RESORT MOTEGI",
+      "round": 8,
+      "sessionType": "quali",
+      "startUtc": "2026-11-08T00:45:00.000Z",
+      "endUtc": "2026-11-08T01:30:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "SUPER GT Official (YouTube, zeitversetzt)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "super_gt",
+      "eventName": "MOBILITY RESORT MOTEGI",
+      "circuit": "MOBILITY RESORT MOTEGI",
+      "round": 8,
+      "sessionType": "fp",
+      "startUtc": "2026-11-08T03:30:00.000Z",
+      "endUtc": "2026-11-08T03:50:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
       "broadcasters": [
         {
           "name": "SUPER GT Official (YouTube, zeitversetzt)",
@@ -998,10 +1026,10 @@
       "circuit": "MOBILITY RESORT MOTEGI",
       "round": 8,
       "sessionType": "race",
-      "startUtc": "2026-11-08T00:00:00.000Z",
+      "startUtc": "2026-11-08T05:00:00.000Z",
       "endUtc": null,
       "source": "scrape",
-      "confidence": "date-only",
+      "confidence": "exact",
       "broadcasters": [
         {
           "name": "SUPER GT Official (YouTube, zeitversetzt)",
@@ -1443,32 +1471,6 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 1",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2027-02-20T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 1",
-      "circuit": "Circuito de Jerez",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2027-01-16T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
       "eventName": "4 Hours of Jerez | Race 2",
       "circuit": "Circuito de Jerez",
       "round": null,
@@ -1500,6 +1502,32 @@
       "round": null,
       "sessionType": "race",
       "startUtc": "2026-11-14T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Jerez | Race 1",
+      "circuit": "Circuito de Jerez",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-01-16T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Portimão | Race 1",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-02-20T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
