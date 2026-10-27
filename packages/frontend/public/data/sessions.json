@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-10-26T10:49:47.645Z",
+  "generatedAt": "2026-10-27T10:16:09.825Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "United States Grand Prix",
-      "circuit": "Austin",
-      "round": 18,
-      "sessionType": "race",
-      "startUtc": "2026-10-25T20:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Mexican Grand Prix",
@@ -1040,25 +1016,6 @@
       "broadcastersVerifiedAt": "2026-08-29"
     },
     {
-      "series": "gt_open",
-      "eventName": "Barcelona",
-      "circuit": "Barcelona",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-10-25T17:00:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "International GT Open (YouTube, @GTOPENseries)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTOPENseries"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-22"
-    },
-    {
       "series": "creventic_24h",
       "eventName": "Michelin 24H KYALAMI",
       "circuit": "Michelin 24H KYALAMI",
@@ -1471,37 +1428,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 2",
-      "circuit": "Circuito de Jerez",
+      "eventName": "4 Hours of Portimão | Race 2",
+      "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-17T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 2",
-      "circuit": "Circuit Paul Ricard",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-11-15T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 1",
-      "circuit": "Circuit Paul Ricard",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-11-14T00:00:00.000Z",
+      "startUtc": "2027-02-21T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1523,6 +1454,32 @@
     },
     {
       "series": "asian_le_mans",
+      "eventName": "4 Hours of Le Castellet | Race 1",
+      "circuit": "Circuit Paul Ricard",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-11-14T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Le Castellet | Race 2",
+      "circuit": "Circuit Paul Ricard",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-11-15T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
       "eventName": "4 Hours of Portimão | Race 1",
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
@@ -1536,11 +1493,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 2",
-      "circuit": "Autódromo Internacional do Algarve",
+      "eventName": "4 Hours of Jerez | Race 2",
+      "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-02-21T00:00:00.000Z",
+      "startUtc": "2027-01-17T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
