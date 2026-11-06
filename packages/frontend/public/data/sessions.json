@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T13:00:00.037Z",
+  "generatedAt": "2026-11-06T12:46:40.728Z",
   "sessions": [
     {
       "series": "f1",
@@ -1220,19 +1220,6 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 1",
-      "circuit": "Circuit Paul Ricard",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-11-14T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
       "eventName": "4 Hours of Le Castellet | Race 2",
       "circuit": "Circuit Paul Ricard",
       "round": null,
@@ -1246,11 +1233,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 1",
+      "eventName": "4 Hours of Jerez | Race 2",
       "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-16T00:00:00.000Z",
+      "startUtc": "2027-01-17T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1259,11 +1246,24 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 2",
+      "eventName": "4 Hours of Le Castellet | Race 1",
+      "circuit": "Circuit Paul Ricard",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-11-14T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Jerez | Race 1",
       "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-17T00:00:00.000Z",
+      "startUtc": "2027-01-16T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
