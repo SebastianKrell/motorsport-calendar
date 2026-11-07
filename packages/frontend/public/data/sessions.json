@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T12:46:40.728Z",
+  "generatedAt": "2026-11-07T11:34:22.329Z",
   "sessions": [
     {
       "series": "f1",
@@ -572,32 +572,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-09-18"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Monza",
-      "circuit": "Monza",
-      "round": null,
-      "sessionType": "fp",
-      "startUtc": "2026-11-06T09:30:00.000Z",
-      "endUtc": "2026-11-06T11:00:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
     },
     {
       "series": "wec",
@@ -1220,19 +1194,6 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 2",
-      "circuit": "Circuit Paul Ricard",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-11-15T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
       "eventName": "4 Hours of Jerez | Race 2",
       "circuit": "Circuito de Jerez",
       "round": null,
@@ -1264,6 +1225,19 @@
       "round": null,
       "sessionType": "race",
       "startUtc": "2027-01-16T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Le Castellet | Race 2",
+      "circuit": "Circuit Paul Ricard",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-11-15T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
