@@ -1,54 +1,6 @@
 {
-  "generatedAt": "2026-11-08T11:51:26.250Z",
+  "generatedAt": "2026-11-09T13:41:16.554Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Brazilian Grand Prix",
-      "circuit": "Sao Paulo",
-      "round": 20,
-      "sessionType": "fp",
-      "startUtc": "2026-11-07T14:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Brazilian Grand Prix",
-      "circuit": "Sao Paulo",
-      "round": 20,
-      "sessionType": "quali",
-      "startUtc": "2026-11-07T18:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Brazilian Grand Prix",
@@ -527,110 +479,6 @@
     },
     {
       "series": "wec",
-      "eventName": "6 Hours of Monza (LMGT3)",
-      "circuit": "Monza",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-11-07T13:20:00.000Z",
-      "endUtc": "2026-11-07T13:32:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Monza (LMGT3)",
-      "circuit": "Monza",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-11-07T13:40:00.000Z",
-      "endUtc": "2026-11-07T13:50:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Monza (HYPERCAR)",
-      "circuit": "Monza",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-11-07T14:00:00.000Z",
-      "endUtc": "2026-11-07T14:12:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
-      "eventName": "6 Hours of Monza (HYPERCAR)",
-      "circuit": "Monza",
-      "round": null,
-      "sessionType": "quali",
-      "startUtc": "2026-11-07T14:20:00.000Z",
-      "endUtc": "2026-11-07T14:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Eurosport",
-          "type": "pay-tv"
-        },
-        {
-          "name": "HBO Max / discovery+",
-          "type": "streaming"
-        },
-        {
-          "name": "FIAWEC+",
-          "type": "streaming-paid"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "wec",
       "eventName": "6 Hours of Monza",
       "circuit": "Monza",
       "round": null,
@@ -654,63 +502,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-21"
-    },
-    {
-      "series": "super_gt",
-      "eventName": "MOBILITY RESORT MOTEGI",
-      "circuit": "MOBILITY RESORT MOTEGI",
-      "round": 8,
-      "sessionType": "quali",
-      "startUtc": "2026-11-08T00:45:00.000Z",
-      "endUtc": "2026-11-08T01:30:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "SUPER GT Official (YouTube, zeitversetzt)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "super_gt",
-      "eventName": "MOBILITY RESORT MOTEGI",
-      "circuit": "MOBILITY RESORT MOTEGI",
-      "round": 8,
-      "sessionType": "fp",
-      "startUtc": "2026-11-08T03:30:00.000Z",
-      "endUtc": "2026-11-08T03:50:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "SUPER GT Official (YouTube, zeitversetzt)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "super_gt",
-      "eventName": "MOBILITY RESORT MOTEGI",
-      "circuit": "MOBILITY RESORT MOTEGI",
-      "round": 8,
-      "sessionType": "race",
-      "startUtc": "2026-11-08T05:00:00.000Z",
-      "endUtc": "2026-11-08T06:45:00.000Z",
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "SUPER GT Official (YouTube, zeitversetzt)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/channel/UCy-v0TWgjklAlOq-chcI4GA"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-29"
     },
     {
       "series": "creventic_24h",
@@ -1011,11 +802,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 2",
+      "eventName": "4 Hours of Le Castellet | Race 1",
       "circuit": "Circuit Paul Ricard",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-11-15T00:00:00.000Z",
+      "startUtc": "2026-11-14T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1037,11 +828,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 2",
-      "circuit": "Circuito de Jerez",
+      "eventName": "4 Hours of Le Castellet | Race 2",
+      "circuit": "Circuit Paul Ricard",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-17T00:00:00.000Z",
+      "startUtc": "2026-11-15T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1050,11 +841,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 1",
-      "circuit": "Circuit Paul Ricard",
+      "eventName": "4 Hours of Jerez | Race 1",
+      "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-11-14T00:00:00.000Z",
+      "startUtc": "2027-01-16T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1076,11 +867,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 1",
+      "eventName": "4 Hours of Jerez | Race 2",
       "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-16T00:00:00.000Z",
+      "startUtc": "2027-01-17T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
