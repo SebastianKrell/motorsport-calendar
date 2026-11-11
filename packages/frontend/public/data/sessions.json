@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:17:44.630Z",
+  "generatedAt": "2026-11-11T12:29:52.651Z",
   "sessions": [
     {
       "series": "f1",
@@ -752,11 +752,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 2",
-      "circuit": "Circuit Paul Ricard",
+      "eventName": "4 Hours of Portimão | Race 2",
+      "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-11-15T00:00:00.000Z",
+      "startUtc": "2027-02-21T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -765,11 +765,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 1",
+      "eventName": "4 Hours of Le Castellet | Race 2",
       "circuit": "Circuit Paul Ricard",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-11-14T00:00:00.000Z",
+      "startUtc": "2026-11-15T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -817,16 +817,491 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 2",
-      "circuit": "Autódromo Internacional do Algarve",
+      "eventName": "4 Hours of Le Castellet | Race 1",
+      "circuit": "Circuit Paul Ricard",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-02-21T00:00:00.000Z",
+      "startUtc": "2026-11-14T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
       "broadcasters": [],
       "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "imsa",
+      "eventName": "Roar Before the Rolex 24",
+      "circuit": "Daytona International Speedway",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-01-22T00:00:00.000Z",
+      "endUtc": "2027-01-23T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Roar Before the Rolex 24",
+      "circuit": "Daytona International Speedway",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-01-23T00:00:00.000Z",
+      "endUtc": "2027-01-24T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Roar Before the Rolex 24",
+      "circuit": "Daytona International Speedway",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-01-24T00:00:00.000Z",
+      "endUtc": "2027-01-25T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Rolex 24 at Daytona",
+      "circuit": "Daytona International Speedway",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-01-28T00:00:00.000Z",
+      "endUtc": "2027-01-29T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Rolex 24 at Daytona",
+      "circuit": "Daytona International Speedway",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-01-30T00:00:00.000Z",
+      "endUtc": "2027-01-31T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Mobil 1 Twelve Hours of Sebring",
+      "circuit": "Sebring International Raceway",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-03-17T00:00:00.000Z",
+      "endUtc": "2027-03-18T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Mobil 1 Twelve Hours of Sebring",
+      "circuit": "Sebring International Raceway",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-03-20T00:00:00.000Z",
+      "endUtc": "2027-03-21T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Acura Grand Prix of Long Beach",
+      "circuit": "Long Beach Street Circuit",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-04-16T00:00:00.000Z",
+      "endUtc": "2027-04-17T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Acura Grand Prix of Long Beach",
+      "circuit": "Long Beach Street Circuit",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-04-17T00:00:00.000Z",
+      "endUtc": "2027-04-18T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Laguna Seca",
+      "circuit": "WeatherTech Raceway Laguna Seca",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-04-30T00:00:00.000Z",
+      "endUtc": "2027-05-01T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Laguna Seca",
+      "circuit": "WeatherTech Raceway Laguna Seca",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-05-02T00:00:00.000Z",
+      "endUtc": "2027-05-03T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Chevrolet Detroit Sports Car Classic",
+      "circuit": "Detroit Street Circuit",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-06-04T00:00:00.000Z",
+      "endUtc": "2027-06-05T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Chevrolet Detroit Sports Car Classic",
+      "circuit": "Detroit Street Circuit",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-06-05T00:00:00.000Z",
+      "endUtc": "2027-06-06T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Sahlen's Six Hours of The Glen",
+      "circuit": "Watkins Glen International",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-06-24T00:00:00.000Z",
+      "endUtc": "2027-06-25T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Sahlen's Six Hours of The Glen",
+      "circuit": "Watkins Glen International",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-06-27T00:00:00.000Z",
+      "endUtc": "2027-06-28T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Chevrolet Grand Prix",
+      "circuit": "Canadian Tire Motorsport Park",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-07-09T00:00:00.000Z",
+      "endUtc": "2027-07-10T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Chevrolet Grand Prix",
+      "circuit": "Canadian Tire Motorsport Park",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-07-11T00:00:00.000Z",
+      "endUtc": "2027-07-12T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Motul SportsCar Endurance Grand Prix",
+      "circuit": "Road America",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-08-05T00:00:00.000Z",
+      "endUtc": "2027-08-06T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Motul SportsCar Endurance Grand Prix",
+      "circuit": "Road America",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-08-08T00:00:00.000Z",
+      "endUtc": "2027-08-09T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Michelin GT Challenge at VIR",
+      "circuit": "VIRginia International Raceway",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-08-20T00:00:00.000Z",
+      "endUtc": "2027-08-21T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Michelin GT Challenge at VIR",
+      "circuit": "VIRginia International Raceway",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-08-22T00:00:00.000Z",
+      "endUtc": "2027-08-23T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "TireRack.com Battle on the Bricks",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-09-17T00:00:00.000Z",
+      "endUtc": "2027-09-18T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "TireRack.com Battle on the Bricks",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-09-19T00:00:00.000Z",
+      "endUtc": "2027-09-20T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Motul Petit Le Mans",
+      "circuit": "Michelin Raceway Road Atlanta",
+      "round": null,
+      "sessionType": "fp",
+      "startUtc": "2027-10-06T00:00:00.000Z",
+      "endUtc": "2027-10-07T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "imsa",
+      "eventName": "Motul Petit Le Mans",
+      "circuit": "Michelin Raceway Road Atlanta",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-10-09T00:00:00.000Z",
+      "endUtc": "2027-10-10T00:00:00.000Z",
+      "source": "ics",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
+          "type": "free-stream",
+          "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
     }
   ]
 }
