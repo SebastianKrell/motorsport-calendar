@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T12:56:31.963Z",
+  "generatedAt": "2026-11-14T11:58:55.978Z",
   "sessions": [
     {
       "series": "f1",
@@ -752,19 +752,6 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 1",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2027-02-20T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
       "eventName": "4 Hours of Le Castellet | Race 1",
       "circuit": "Circuit Paul Ricard",
       "round": null,
@@ -778,11 +765,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 2",
-      "circuit": "Circuito de Jerez",
+      "eventName": "4 Hours of Portimão | Race 2",
+      "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-17T00:00:00.000Z",
+      "startUtc": "2027-02-21T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -817,11 +804,24 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 2",
+      "eventName": "4 Hours of Jerez | Race 2",
+      "circuit": "Circuito de Jerez",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-01-17T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Portimão | Race 1",
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-02-21T00:00:00.000Z",
+      "startUtc": "2027-02-20T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1299,6 +1299,272 @@
           "name": "YouTube / IMSA TV (nur 'Available Globally'-Sessions)",
           "type": "free-stream",
           "url": "https://www.imsa.com/tvlive/"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Sonoma Raceway (GT America)",
+      "circuit": "Sonoma Raceway",
+      "round": 1,
+      "sessionType": "race",
+      "startUtc": "2027-04-04T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Circuit of The Americas (GT America)",
+      "circuit": "Circuit of the Americas",
+      "round": 3,
+      "sessionType": "race",
+      "startUtc": "2027-05-09T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Watkins Glen International (GT America)",
+      "circuit": "Watkins Glen",
+      "round": 5,
+      "sessionType": "race",
+      "startUtc": "2027-05-23T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Michelin Raceway Road Atlanta (GT America)",
+      "circuit": "Michelin Raceway Road Atlanta",
+      "round": 7,
+      "sessionType": "race",
+      "startUtc": "2027-06-20T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Road America (GT America)",
+      "circuit": "Road America",
+      "round": 9,
+      "sessionType": "race",
+      "startUtc": "2027-08-29T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 11,
+      "sessionType": "race",
+      "startUtc": "2027-09-12T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 13,
+      "sessionType": "race",
+      "startUtc": "2027-10-03T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Sonoma Raceway (GT4 America)",
+      "circuit": "Sonoma Raceway",
+      "round": 1,
+      "sessionType": "race",
+      "startUtc": "2027-04-04T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Circuit of The Americas (GT4 America)",
+      "circuit": "Circuit of the Americas",
+      "round": 3,
+      "sessionType": "race",
+      "startUtc": "2027-05-09T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Watkins Glen International (GT4 America)",
+      "circuit": "Watkins Glen",
+      "round": 5,
+      "sessionType": "race",
+      "startUtc": "2027-05-23T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Michelin Raceway Road Atlanta (GT4 America)",
+      "circuit": "Michelin Raceway Road Atlanta",
+      "round": 7,
+      "sessionType": "race",
+      "startUtc": "2027-06-20T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Road America (GT4 America)",
+      "circuit": "Road America",
+      "round": 9,
+      "sessionType": "race",
+      "startUtc": "2027-08-29T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Barber Motorsports Park (GT4 America)",
+      "circuit": "Barber Motorsports Park",
+      "round": 11,
+      "sessionType": "race",
+      "startUtc": "2027-09-12T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gt_gt4_america",
+      "eventName": "Indianapolis Motor Speedway (GT4 America)",
+      "circuit": "Indianapolis Motor Speedway",
+      "round": 13,
+      "sessionType": "race",
+      "startUtc": "2027-10-03T00:00:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "date-only",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
