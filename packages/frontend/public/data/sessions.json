@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T11:58:55.978Z",
+  "generatedAt": "2026-11-15T12:33:40.118Z",
   "sessions": [
     {
       "series": "f1",
@@ -752,50 +752,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 1",
-      "circuit": "Circuit Paul Ricard",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-11-14T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 2",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2027-02-21T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
       "eventName": "4 Hours of Jerez | Race 1",
       "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
       "startUtc": "2027-01-16T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 2",
-      "circuit": "Circuit Paul Ricard",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2026-11-15T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -817,11 +778,37 @@
     },
     {
       "series": "asian_le_mans",
+      "eventName": "4 Hours of Le Castellet | Race 2",
+      "circuit": "Circuit Paul Ricard",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2026-11-15T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
       "eventName": "4 Hours of Portimão | Race 1",
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
       "startUtc": "2027-02-20T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Portimão | Race 2",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-02-21T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1568,6 +1555,101 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
+    },
+    {
+      "series": "gtwc_australia",
+      "eventName": "Adelaide Grand Final",
+      "circuit": "Adelaide Parklands Circuit",
+      "round": 11,
+      "sessionType": "fp",
+      "startUtc": "2026-11-25T21:50:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_australia",
+      "eventName": "Adelaide Grand Final",
+      "circuit": "Adelaide Parklands Circuit",
+      "round": 11,
+      "sessionType": "fp",
+      "startUtc": "2026-11-26T01:55:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_australia",
+      "eventName": "Adelaide Grand Final",
+      "circuit": "Adelaide Parklands Circuit",
+      "round": 11,
+      "sessionType": "quali",
+      "startUtc": "2026-11-27T00:45:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_australia",
+      "eventName": "Adelaide Grand Final",
+      "circuit": "Adelaide Parklands Circuit",
+      "round": 11,
+      "sessionType": "race",
+      "startUtc": "2026-11-27T22:40:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
+    },
+    {
+      "series": "gtwc_australia",
+      "eventName": "Adelaide Grand Final",
+      "circuit": "Adelaide Parklands Circuit",
+      "round": 11,
+      "sessionType": "race",
+      "startUtc": "2026-11-28T23:10:00.000Z",
+      "endUtc": null,
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "GT World (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/@GTWorld"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-28"
     }
   ]
 }
