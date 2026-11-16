@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:33:40.118Z",
+  "generatedAt": "2026-11-16T13:26:00.026Z",
   "sessions": [
     {
       "series": "f1",
@@ -752,19 +752,6 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 1",
-      "circuit": "Circuito de Jerez",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2027-01-16T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
       "eventName": "4 Hours of Jerez | Race 2",
       "circuit": "Circuito de Jerez",
       "round": null,
@@ -778,11 +765,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Le Castellet | Race 2",
-      "circuit": "Circuit Paul Ricard",
+      "eventName": "4 Hours of Portimão | Race 1",
+      "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2026-11-15T00:00:00.000Z",
+      "startUtc": "2027-02-20T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -791,11 +778,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 1",
-      "circuit": "Autódromo Internacional do Algarve",
+      "eventName": "4 Hours of Jerez | Race 1",
+      "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-02-20T00:00:00.000Z",
+      "startUtc": "2027-01-16T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
