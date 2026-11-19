@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T13:42:49.060Z",
+  "generatedAt": "2026-11-19T14:11:00.255Z",
   "sessions": [
     {
       "series": "f1",
@@ -752,11 +752,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 1",
-      "circuit": "Circuito de Jerez",
+      "eventName": "4 Hours of Portimão | Race 1",
+      "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-16T00:00:00.000Z",
+      "startUtc": "2027-02-20T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -778,11 +778,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 1",
+      "eventName": "4 Hours of Portimão | Race 2",
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-02-20T00:00:00.000Z",
+      "startUtc": "2027-02-21T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -791,11 +791,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 2",
-      "circuit": "Autódromo Internacional do Algarve",
+      "eventName": "4 Hours of Jerez | Race 1",
+      "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-02-21T00:00:00.000Z",
+      "startUtc": "2027-01-16T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
