@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T14:11:00.255Z",
+  "generatedAt": "2026-11-20T13:53:04.640Z",
   "sessions": [
     {
       "series": "f1",
@@ -765,11 +765,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 2",
+      "eventName": "4 Hours of Jerez | Race 1",
       "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-17T00:00:00.000Z",
+      "startUtc": "2027-01-16T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -791,11 +791,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 1",
+      "eventName": "4 Hours of Jerez | Race 2",
       "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-16T00:00:00.000Z",
+      "startUtc": "2027-01-17T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1625,26 +1625,7 @@
       "circuit": "Adelaide Parklands Circuit",
       "round": 11,
       "sessionType": "race",
-      "startUtc": "2026-11-28T23:10:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_asia",
-      "eventName": "Greater Bay Area GT Cup (SRO GT Cup)",
-      "circuit": "Greater Bay Area GT Cup (SRO GT Cup)",
-      "round": 13,
-      "sessionType": "fp",
-      "startUtc": "2026-11-19T05:45:00.000Z",
+      "startUtc": "2026-11-28T22:40:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
