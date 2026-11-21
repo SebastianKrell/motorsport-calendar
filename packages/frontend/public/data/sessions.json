@@ -1,54 +1,6 @@
 {
-  "generatedAt": "2026-11-20T13:53:04.640Z",
+  "generatedAt": "2026-11-21T13:18:07.777Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Las Vegas Grand Prix",
-      "circuit": "Las Vegas",
-      "round": 21,
-      "sessionType": "fp",
-      "startUtc": "2026-11-20T00:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
-    {
-      "series": "f1",
-      "eventName": "Las Vegas Grand Prix",
-      "circuit": "Las Vegas",
-      "round": 21,
-      "sessionType": "fp",
-      "startUtc": "2026-11-20T04:00:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Las Vegas Grand Prix",
@@ -752,11 +704,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 1",
-      "circuit": "Autódromo Internacional do Algarve",
+      "eventName": "4 Hours of Jerez | Race 2",
+      "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-02-20T00:00:00.000Z",
+      "startUtc": "2027-01-17T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -778,11 +730,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 2",
+      "eventName": "4 Hours of Portimão | Race 1",
       "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-02-21T00:00:00.000Z",
+      "startUtc": "2027-02-20T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -791,11 +743,11 @@
     },
     {
       "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 2",
-      "circuit": "Circuito de Jerez",
+      "eventName": "4 Hours of Portimão | Race 2",
+      "circuit": "Autódromo Internacional do Algarve",
       "round": null,
       "sessionType": "race",
-      "startUtc": "2027-01-17T00:00:00.000Z",
+      "startUtc": "2027-02-21T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1626,25 +1578,6 @@
       "round": 11,
       "sessionType": "race",
       "startUtc": "2026-11-28T22:40:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_asia",
-      "eventName": "Greater Bay Area GT Cup (SRO GT Cup)",
-      "circuit": "Greater Bay Area GT Cup (SRO GT Cup)",
-      "round": 13,
-      "sessionType": "quali",
-      "startUtc": "2026-11-20T03:20:00.000Z",
       "endUtc": null,
       "source": "scrape",
       "confidence": "exact",
