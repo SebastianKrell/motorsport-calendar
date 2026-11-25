@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T15:35:13.266Z",
+  "generatedAt": "2026-11-25T15:20:41.634Z",
   "sessions": [
     {
       "series": "f1",
@@ -631,12 +631,52 @@
       "broadcastersVerifiedAt": "2026-08-22"
     },
     {
+      "series": "creventic_24h",
+      "eventName": "Michelin 24H KYALAMI",
+      "circuit": "Michelin 24H KYALAMI",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-01-09T11:00:00.000Z",
+      "endUtc": "2027-01-10T11:00:00.000Z",
+      "source": "scrape",
+      "confidence": "exact",
+      "broadcasters": [
+        {
+          "name": "24H SERIES (YouTube)",
+          "type": "free-stream",
+          "url": "https://www.youtube.com/channel/UCpqnEegB2uM0QFkI82vB3zw"
+        },
+        {
+          "name": "Sportdeutschland.tv",
+          "type": "free-stream"
+        },
+        {
+          "name": "ServusTV On",
+          "type": "free-stream"
+        }
+      ],
+      "broadcastersVerifiedAt": "2026-08-22"
+    },
+    {
       "series": "asian_le_mans",
       "eventName": "4 Hours of Jerez | Race 2",
       "circuit": "Circuito de Jerez",
       "round": null,
       "sessionType": "race",
       "startUtc": "2027-01-17T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
+      "eventName": "4 Hours of Portimão | Race 2",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-02-21T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -663,19 +703,6 @@
       "round": null,
       "sessionType": "race",
       "startUtc": "2027-02-20T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 2",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2027-02-21T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
