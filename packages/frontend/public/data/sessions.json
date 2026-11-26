@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T15:20:41.634Z",
+  "generatedAt": "2026-11-26T14:46:45.980Z",
   "sessions": [
     {
       "series": "f1",
@@ -659,6 +659,19 @@
     },
     {
       "series": "asian_le_mans",
+      "eventName": "4 Hours of Jerez | Race 1",
+      "circuit": "Circuito de Jerez",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-01-16T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
       "eventName": "4 Hours of Jerez | Race 2",
       "circuit": "Circuito de Jerez",
       "round": null,
@@ -677,19 +690,6 @@
       "round": null,
       "sessionType": "race",
       "startUtc": "2027-02-21T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
-      "eventName": "4 Hours of Jerez | Race 1",
-      "circuit": "Circuito de Jerez",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2027-01-16T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
