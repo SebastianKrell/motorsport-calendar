@@ -1,30 +1,6 @@
 {
-  "generatedAt": "2026-11-27T14:45:06.844Z",
+  "generatedAt": "2026-11-28T13:56:46.726Z",
   "sessions": [
-    {
-      "series": "f1",
-      "eventName": "Qatar Grand Prix",
-      "circuit": "Doha",
-      "round": 22,
-      "sessionType": "fp",
-      "startUtc": "2026-11-27T13:30:00Z",
-      "endUtc": null,
-      "source": "api",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "Sky Sport F1",
-          "type": "pay-tv",
-          "url": "https://www.sky.de/sport/formel1"
-        },
-        {
-          "name": "F1 TV Pro",
-          "type": "streaming-paid",
-          "url": "https://www.formula1.com/en/subscribe-to-f1-tv.html"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-09-12"
-    },
     {
       "series": "f1",
       "eventName": "Qatar Grand Prix",
@@ -659,6 +635,19 @@
     },
     {
       "series": "asian_le_mans",
+      "eventName": "4 Hours of Portimão | Race 1",
+      "circuit": "Autódromo Internacional do Algarve",
+      "round": null,
+      "sessionType": "race",
+      "startUtc": "2027-02-20T00:00:00.000Z",
+      "endUtc": null,
+      "source": "ics",
+      "confidence": "date-only",
+      "broadcasters": [],
+      "broadcastersVerifiedAt": null
+    },
+    {
+      "series": "asian_le_mans",
       "eventName": "4 Hours of Jerez | Race 1",
       "circuit": "Circuito de Jerez",
       "round": null,
@@ -690,19 +679,6 @@
       "round": null,
       "sessionType": "race",
       "startUtc": "2027-02-21T00:00:00.000Z",
-      "endUtc": null,
-      "source": "ics",
-      "confidence": "date-only",
-      "broadcasters": [],
-      "broadcastersVerifiedAt": null
-    },
-    {
-      "series": "asian_le_mans",
-      "eventName": "4 Hours of Portimão | Race 1",
-      "circuit": "Autódromo Internacional do Algarve",
-      "round": null,
-      "sessionType": "race",
-      "startUtc": "2027-02-20T00:00:00.000Z",
       "endUtc": null,
       "source": "ics",
       "confidence": "date-only",
@@ -1449,44 +1425,6 @@
         }
       ],
       "broadcastersVerifiedAt": "2026-08-29"
-    },
-    {
-      "series": "gtwc_australia",
-      "eventName": "Adelaide Grand Final",
-      "circuit": "Adelaide Parklands Circuit",
-      "round": 11,
-      "sessionType": "quali",
-      "startUtc": "2026-11-27T00:45:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
-    },
-    {
-      "series": "gtwc_australia",
-      "eventName": "Adelaide Grand Final",
-      "circuit": "Adelaide Parklands Circuit",
-      "round": 11,
-      "sessionType": "quali",
-      "startUtc": "2026-11-27T01:05:00.000Z",
-      "endUtc": null,
-      "source": "scrape",
-      "confidence": "exact",
-      "broadcasters": [
-        {
-          "name": "GT World (YouTube)",
-          "type": "free-stream",
-          "url": "https://www.youtube.com/@GTWorld"
-        }
-      ],
-      "broadcastersVerifiedAt": "2026-08-28"
     },
     {
       "series": "gtwc_australia",
