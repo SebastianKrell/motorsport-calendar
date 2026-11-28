@@ -1,8 +1,7 @@
 import { DateTime } from 'luxon';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { assignLanes, computeEventSpans } from '../calendarLanes';
 import { SERIES_COLORS } from '../colors';
-import { eventKeyFor, groupSessionsByEvent, isGroupPast } from '../eventGroups';
+import { groupSessionsByEvent, isGroupPast } from '../eventGroups';
 import { displayStart, formatWhen } from '../formatSessionTime';
 import { localeFor, SERIES_LABELS, UI_TEXT, type Language } from '../i18n';
 import { isLive, isToday } from '../sessionStatus';
@@ -13,7 +12,7 @@ const WEEKDAY_LABELS: Record<Language, string[]> = {
   de: ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'],
   en: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
 };
-const MAX_BARS_PER_DAY = 4;
+const MAX_DOTS_PER_DAY = 4;
 
 interface MonthKey {
   year: number;
@@ -87,20 +86,15 @@ export function MonthCalendar({
     return map;
   }, [monthSessions, timeZone]);
 
-  // Verbindende Wochenend-Balken: jede Veranstaltung (Serie+Event) bekommt
-  // eine feste Lane, in der sie über alle ihre Tage hinweg gerendert wird --
-  // so wirken z.B. FP/Quali/Rennen eines Wochenendes als ein zusammen-
-  // hängender Balken statt als lose Punkte pro Tag.
-  const { lanes, spansByKey } = useMemo(() => {
-    const occurrences = monthSessions.map((session) => ({
-      key: eventKeyFor(session),
-      color: SERIES_COLORS[session.series],
-      day: displayStart(session, timeZone).day,
-    }));
-    const spans = computeEventSpans(occurrences);
-    const laneMap = assignLanes(spans);
-    const spanMap = new Map(spans.map((span) => [span.key, span]));
-    return { lanes: laneMap, spansByKey: spanMap };
+  const seriesByDay = useMemo(() => {
+    const map = new Map<number, Set<SeriesId>>();
+    for (const session of monthSessions) {
+      const day = displayStart(session, timeZone).day;
+      const set = map.get(day) ?? new Set<SeriesId>();
+      set.add(session.series);
+      map.set(day, set);
+    }
+    return map;
   }, [monthSessions, timeZone]);
 
   if (!visibleMonth) {
@@ -135,7 +129,6 @@ export function MonthCalendar({
   const usedSeries = [...new Set(monthSessions.map((s) => s.series))].sort();
   const zonedNow = now.setZone(timeZone);
   const isCurrentMonth = visibleMonth.year === zonedNow.year && visibleMonth.month === zonedNow.month;
-  const maxLane = Math.min(MAX_BARS_PER_DAY, Math.max(1, Math.max(0, ...[...lanes.values()]) + 1));
 
   return (
     <div className="calendar-layout">
@@ -169,33 +162,22 @@ export function MonthCalendar({
         </div>
         <div className="calendar-days">
           {cells.map((day, index) => {
+            const daySeries = day !== null ? [...(seriesByDay.get(day) ?? [])] : [];
             const daySessions = day !== null ? sessionsByDay.get(day) ?? [] : [];
-            const dayEventKeys = [...new Set(daySessions.map((s) => eventKeyFor(s)))];
             const isTodayCell = day !== null && isCurrentMonth && day === zonedNow.day;
-            const overflowCount = dayEventKeys.filter((key) => (lanes.get(key) ?? 0) >= MAX_BARS_PER_DAY).length;
             return (
               <div className={`calendar-day${day === null ? ' is-blank' : ''}${isTodayCell ? ' is-today' : ''}`} key={index}>
                 {day !== null && (
                   <>
                     <span className="calendar-day-number">{day}</span>
-                    <span className="calendar-day-bars" style={{ height: `${maxLane * 6}px` }}>
-                      {Array.from({ length: maxLane }, (_, laneIndex) => {
-                        const key = dayEventKeys.find((k) => lanes.get(k) === laneIndex);
-                        const span = key ? spansByKey.get(key) : undefined;
-                        if (!key || !span) return <span className="calendar-bar is-empty" key={laneIndex} />;
-                        const isStart = day === span.startDay;
-                        const isEnd = day === span.endDay;
-                        const color = daySessions.find((s) => eventKeyFor(s) === key)?.series;
-                        return (
-                          <span
-                            className={`calendar-bar${isStart ? ' is-start' : ''}${isEnd ? ' is-end' : ''}`}
-                            style={{ background: color ? SERIES_COLORS[color] : undefined }}
-                            key={laneIndex}
-                          />
-                        );
-                      })}
+                    <span className="calendar-day-dots">
+                      {daySeries.slice(0, MAX_DOTS_PER_DAY).map((series) => (
+                        <span className="calendar-dot" style={{ background: SERIES_COLORS[series] }} key={series} />
+                      ))}
+                      {daySeries.length > MAX_DOTS_PER_DAY && (
+                        <span className="calendar-dot-more">+{daySeries.length - MAX_DOTS_PER_DAY}</span>
+                      )}
                     </span>
-                    {overflowCount > 0 && <span className="calendar-dot-more">+{overflowCount}</span>}
                     {daySessions.length > 0 && (
                       <div className="calendar-day-tooltip">
                         {daySessions.map((session, sessionIndex) => (

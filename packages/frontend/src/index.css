@@ -734,48 +734,12 @@ main {
   color: var(--text-muted);
 }
 
-.calendar-day-bars {
+.calendar-day-dots {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 1px;
+  gap: 2px;
   margin-top: 3px;
-  padding: 0 3px;
-}
-
-.calendar-bar {
-  display: block;
-  height: 5px;
-  border-radius: 3px;
-  margin: 0 2px;
-}
-
-.calendar-bar.is-empty {
-  background: transparent;
-}
-
-.calendar-bar.is-start {
-  margin-left: 2px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.calendar-bar.is-end {
-  margin-right: 2px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.calendar-bar:not(.is-start):not(.is-empty) {
-  margin-left: -3px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.calendar-bar:not(.is-end):not(.is-empty) {
-  margin-right: -3px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  flex-wrap: wrap;
 }
 
 .calendar-dot {
@@ -786,7 +750,6 @@ main {
 }
 
 .calendar-dot-more {
-  display: block;
   font-size: 0.6rem;
   color: var(--text-muted);
 }
