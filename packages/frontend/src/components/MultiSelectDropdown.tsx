@@ -10,6 +10,9 @@ export function MultiSelectDropdown<T extends string>({
   onSelectNone,
   allLabel,
   noneLabel,
+  favorites,
+  onToggleFavorite,
+  favoriteLabels,
 }: {
   label: string;
   options: T[];
@@ -20,6 +23,10 @@ export function MultiSelectDropdown<T extends string>({
   onSelectNone?: () => void;
   allLabel: string;
   noneLabel: string;
+  /** Optional: zeigt pro Option einen Stern-Button zum Favorisieren (z.B. für Serien). */
+  favorites?: Set<T>;
+  onToggleFavorite?: (value: T) => void;
+  favoriteLabels?: { add: string; remove: string };
 }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -56,7 +63,22 @@ export function MultiSelectDropdown<T extends string>({
           {options.map((option) => (
             <label className="dropdown-option" key={option}>
               <input type="checkbox" checked={selected.has(option)} onChange={() => onToggle(option)} />
-              {labels[option]}
+              <span className="dropdown-option-label">{labels[option]}</span>
+              {onToggleFavorite && favoriteLabels && (
+                <button
+                  type="button"
+                  className={`dropdown-favorite${favorites?.has(option) ? ' is-favorite' : ''}`}
+                  aria-label={favorites?.has(option) ? favoriteLabels.remove : favoriteLabels.add}
+                  title={favorites?.has(option) ? favoriteLabels.remove : favoriteLabels.add}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    onToggleFavorite(option);
+                  }}
+                >
+                  {favorites?.has(option) ? '★' : '☆'}
+                </button>
+              )}
             </label>
           ))}
         </div>

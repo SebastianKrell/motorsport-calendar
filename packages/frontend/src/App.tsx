@@ -1,21 +1,26 @@
 import { DateTime } from 'luxon';
 import { useEffect, useMemo, useState } from 'react';
+import { AgendaView } from './components/AgendaView';
 import { MonthCalendar } from './components/MonthCalendar';
 import { MultiSelectDropdown } from './components/MultiSelectDropdown';
-import { NextSession } from './components/NextSession';
 import { SiteHeader } from './components/SiteHeader';
 import { SourceAttribution } from './components/SourceAttribution';
+import { UpcomingRail } from './components/UpcomingRail';
+import { WeekendSpotlight } from './components/WeekendSpotlight';
+import { loadFavoriteSeries, saveFavoriteSeries } from './favorites';
 import { localeFor, SERIES_LABELS, SESSION_TYPE_LABELS, UI_TEXT, type Language } from './i18n';
 import { DEFAULT_TIME_ZONE, isSupportedTimeZone } from './timeZones';
 import type { Session, SessionsFile, SessionType, SeriesId } from './types';
 
 const SESSION_TYPE_ORDER: SessionType[] = ['fp', 'sprint_quali', 'quali', 'sprint', 'race', 'event'];
 const TIME_ZONE_STORAGE_KEY = 'timeZone-v2';
+const VIEW_MODE_STORAGE_KEY = 'viewMode-v1';
 // Standardmäßig nur Rennen anzeigen -- Trainings/Qualifyings sind für die
 // Sender-Frage meist irrelevant und würden die Tabelle unnötig aufblähen.
 const DEFAULT_SESSION_TYPES: SessionType[] = ['race', 'event'];
 
 type Theme = 'light' | 'dark';
+type ViewMode = 'calendar' | 'agenda';
 
 // index.html setzt data-theme schon vor dem React-Mount (verhindert Flackern
 // beim Laden) -- hier nur den bereits gesetzten Wert übernehmen.
@@ -30,6 +35,10 @@ function getInitialLanguage(): Language {
 function getInitialTimeZone(): string {
   const stored = localStorage.getItem(TIME_ZONE_STORAGE_KEY);
   return isSupportedTimeZone(stored) ? stored : DEFAULT_TIME_ZONE;
+}
+
+function getInitialViewMode(): ViewMode {
+  return localStorage.getItem(VIEW_MODE_STORAGE_KEY) === 'agenda' ? 'agenda' : 'calendar';
 }
 
 function formatGeneratedAt(value: string | null, timeZone: string, language: Language): string | null {
@@ -52,6 +61,8 @@ export function App() {
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const [language, setLanguage] = useState<Language>(getInitialLanguage);
   const [timeZone, setTimeZone] = useState<string>(getInitialTimeZone);
+  const [viewMode, setViewMode] = useState<ViewMode>(getInitialViewMode);
+  const [favoriteSeries, setFavoriteSeries] = useState<Set<SeriesId>>(loadFavoriteSeries);
   const text = UI_TEXT[language];
 
   useEffect(() => {
@@ -81,6 +92,14 @@ export function App() {
   useEffect(() => {
     localStorage.setItem(TIME_ZONE_STORAGE_KEY, timeZone);
   }, [timeZone]);
+
+  useEffect(() => {
+    localStorage.setItem(VIEW_MODE_STORAGE_KEY, viewMode);
+  }, [viewMode]);
+
+  useEffect(() => {
+    saveFavoriteSeries(favoriteSeries);
+  }, [favoriteSeries]);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/sessions.json`, { cache: 'no-store' })
@@ -132,6 +151,15 @@ export function App() {
     });
   }
 
+  function toggleFavoriteSeries(series: SeriesId) {
+    setFavoriteSeries((prev) => {
+      const next = new Set(prev);
+      if (next.has(series)) next.delete(series);
+      else next.add(series);
+      return next;
+    });
+  }
+
   return (
     <>
       <SiteHeader
@@ -155,6 +183,9 @@ export function App() {
             onSelectNone={() => setSelectedSeries(new Set())}
             allLabel={text.all}
             noneLabel={text.none}
+            favorites={favoriteSeries}
+            onToggleFavorite={toggleFavoriteSeries}
+            favoriteLabels={{ add: text.addFavorite, remove: text.removeFavorite }}
           />
           <MultiSelectDropdown
             label={text.session}
@@ -167,9 +198,35 @@ export function App() {
             allLabel={text.all}
             noneLabel={text.none}
           />
+          {favoriteSeries.size > 0 && (
+            <button
+              type="button"
+              className={`favorites-filter-button${
+                favoriteSeries.size > 0 && [...favoriteSeries].every((s) => selectedSeries.has(s)) && selectedSeries.size === favoriteSeries.size
+                  ? ' is-active'
+                  : ''
+              }`}
+              onClick={() => setSelectedSeries(new Set(favoriteSeries))}
+            >
+              ★ {text.favoritesOnly}
+            </button>
+          )}
+          <div className="theme-toggle view-mode-toggle" aria-label={text.viewMode}>
+            <button type="button" className={viewMode === 'calendar' ? 'is-active' : ''} onClick={() => setViewMode('calendar')}>
+              {text.viewCalendar}
+            </button>
+            <button type="button" className={viewMode === 'agenda' ? 'is-active' : ''} onClick={() => setViewMode('agenda')}>
+              {text.viewAgenda}
+            </button>
+          </div>
         </div>
-        <NextSession sessions={filtered} language={language} timeZone={timeZone} />
-        <MonthCalendar sessions={filtered} language={language} timeZone={timeZone} />
+        <WeekendSpotlight sessions={filtered} language={language} timeZone={timeZone} />
+        <UpcomingRail sessions={filtered} language={language} timeZone={timeZone} />
+        {viewMode === 'calendar' ? (
+          <MonthCalendar sessions={filtered} language={language} timeZone={timeZone} />
+        ) : (
+          <AgendaView sessions={filtered} language={language} timeZone={timeZone} />
+        )}
         <footer>
           {formattedGeneratedAt && <p>{text.dataAsOf}: {formattedGeneratedAt}</p>}
           <SourceAttribution language={language} />
