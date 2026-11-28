@@ -1,24 +1,19 @@
 import { DateTime } from 'luxon';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { assignLanes, computeEventSpans } from '../calendarLanes';
 import { SERIES_COLORS } from '../colors';
+import { eventKeyFor, groupSessionsByEvent, isGroupPast } from '../eventGroups';
 import { displayStart, formatWhen } from '../formatSessionTime';
-import {
-  broadcasterLabel,
-  localeFor,
-  SERIES_LABELS,
-  SESSION_TYPE_LABELS,
-  UI_TEXT,
-  type Language,
-} from '../i18n';
-import { isLive, isPast } from '../sessionStatus';
+import { localeFor, SERIES_LABELS, UI_TEXT, type Language } from '../i18n';
+import { isLive, isToday } from '../sessionStatus';
 import type { Session, SeriesId } from '../types';
+import { EventGroupCard } from './EventGroupCard';
 
 const WEEKDAY_LABELS: Record<Language, string[]> = {
   de: ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'],
   en: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
 };
-const VERIFIED_STALE_AFTER_DAYS = 60;
-const MAX_DOTS_PER_DAY = 4;
+const MAX_BARS_PER_DAY = 4;
 
 interface MonthKey {
   year: number;
@@ -34,20 +29,9 @@ function sameMonth(a: MonthKey, b: MonthKey): boolean {
   return a.year === b.year && a.month === b.month;
 }
 
-function isToday(session: Session, now: DateTime, timeZone: string): boolean {
-  const start = displayStart(session, timeZone);
-  const zonedNow = now.setZone(timeZone);
-  return start.year === zonedNow.year && start.month === zonedNow.month && start.day === zonedNow.day;
-}
-
 function shiftMonth(key: MonthKey, delta: number): MonthKey {
   const dt = DateTime.fromObject({ year: key.year, month: key.month, day: 1 }).plus({ months: delta });
   return { year: dt.year, month: dt.month };
-}
-
-function isStale(verifiedAt: string | null): boolean {
-  if (!verifiedAt) return true;
-  return DateTime.now().diff(DateTime.fromISO(verifiedAt), 'days').days > VERIFIED_STALE_AFTER_DAYS;
 }
 
 export function MonthCalendar({
@@ -86,16 +70,11 @@ export function MonthCalendar({
       .sort((a, b) => a.startUtc.localeCompare(b.startUtc));
   }, [sessions, visibleMonth, timeZone]);
 
-  const seriesByDay = useMemo(() => {
-    const map = new Map<number, Set<SeriesId>>();
-    for (const session of monthSessions) {
-      const day = displayStart(session, timeZone).day;
-      const set = map.get(day) ?? new Set<SeriesId>();
-      set.add(session.series);
-      map.set(day, set);
-    }
-    return map;
-  }, [monthSessions, timeZone]);
+  const monthGroups = useMemo(() => {
+    return groupSessionsByEvent(monthSessions).sort((a, b) =>
+      a.sessions[0].startUtc.localeCompare(b.sessions[0].startUtc),
+    );
+  }, [monthSessions]);
 
   const sessionsByDay = useMemo(() => {
     const map = new Map<number, Session[]>();
@@ -108,8 +87,43 @@ export function MonthCalendar({
     return map;
   }, [monthSessions, timeZone]);
 
+  // Verbindende Wochenend-Balken: jede Veranstaltung (Serie+Event) bekommt
+  // eine feste Lane, in der sie über alle ihre Tage hinweg gerendert wird --
+  // so wirken z.B. FP/Quali/Rennen eines Wochenendes als ein zusammen-
+  // hängender Balken statt als lose Punkte pro Tag.
+  const { lanes, spansByKey } = useMemo(() => {
+    const occurrences = monthSessions.map((session) => ({
+      key: eventKeyFor(session),
+      color: SERIES_COLORS[session.series],
+      day: displayStart(session, timeZone).day,
+    }));
+    const spans = computeEventSpans(occurrences);
+    const laneMap = assignLanes(spans);
+    const spanMap = new Map(spans.map((span) => [span.key, span]));
+    return { lanes: laneMap, spansByKey: spanMap };
+  }, [monthSessions, timeZone]);
+
   if (!visibleMonth) {
-    return <p className="empty-state">{UI_TEXT[language].loading}</p>;
+    return (
+      <div className="calendar-layout">
+        <div className="calendar-grid-panel skeleton-panel" aria-hidden="true">
+          <div className="skeleton skeleton-nav" />
+          <div className="skeleton-grid">
+            {Array.from({ length: 35 }, (_, i) => (
+              <div className="skeleton skeleton-day" key={i} />
+            ))}
+          </div>
+        </div>
+        <div className="calendar-entries skeleton-entries" aria-hidden="true">
+          {Array.from({ length: 4 }, (_, i) => (
+            <div className="skeleton skeleton-entry" key={i} />
+          ))}
+        </div>
+        <span className="visually-hidden" role="status">
+          {UI_TEXT[language].loading}
+        </span>
+      </div>
+    );
   }
 
   const monthStart = DateTime.fromObject({ year: visibleMonth.year, month: visibleMonth.month, day: 1 });
@@ -121,6 +135,7 @@ export function MonthCalendar({
   const usedSeries = [...new Set(monthSessions.map((s) => s.series))].sort();
   const zonedNow = now.setZone(timeZone);
   const isCurrentMonth = visibleMonth.year === zonedNow.year && visibleMonth.month === zonedNow.month;
+  const maxLane = Math.min(MAX_BARS_PER_DAY, Math.max(1, Math.max(0, ...[...lanes.values()]) + 1));
 
   return (
     <div className="calendar-layout">
@@ -154,25 +169,33 @@ export function MonthCalendar({
         </div>
         <div className="calendar-days">
           {cells.map((day, index) => {
-            const daySeries = day !== null ? [...(seriesByDay.get(day) ?? [])] : [];
             const daySessions = day !== null ? sessionsByDay.get(day) ?? [] : [];
-            const isTodayCell =
-              day !== null &&
-              isCurrentMonth &&
-              day === zonedNow.day;
+            const dayEventKeys = [...new Set(daySessions.map((s) => eventKeyFor(s)))];
+            const isTodayCell = day !== null && isCurrentMonth && day === zonedNow.day;
+            const overflowCount = dayEventKeys.filter((key) => (lanes.get(key) ?? 0) >= MAX_BARS_PER_DAY).length;
             return (
               <div className={`calendar-day${day === null ? ' is-blank' : ''}${isTodayCell ? ' is-today' : ''}`} key={index}>
                 {day !== null && (
                   <>
                     <span className="calendar-day-number">{day}</span>
-                    <span className="calendar-day-dots">
-                      {daySeries.slice(0, MAX_DOTS_PER_DAY).map((series) => (
-                        <span className="calendar-dot" style={{ background: SERIES_COLORS[series] }} key={series} />
-                      ))}
-                      {daySeries.length > MAX_DOTS_PER_DAY && (
-                        <span className="calendar-dot-more">+{daySeries.length - MAX_DOTS_PER_DAY}</span>
-                      )}
+                    <span className="calendar-day-bars" style={{ height: `${maxLane * 6}px` }}>
+                      {Array.from({ length: maxLane }, (_, laneIndex) => {
+                        const key = dayEventKeys.find((k) => lanes.get(k) === laneIndex);
+                        const span = key ? spansByKey.get(key) : undefined;
+                        if (!key || !span) return <span className="calendar-bar is-empty" key={laneIndex} />;
+                        const isStart = day === span.startDay;
+                        const isEnd = day === span.endDay;
+                        const color = daySessions.find((s) => eventKeyFor(s) === key)?.series;
+                        return (
+                          <span
+                            className={`calendar-bar${isStart ? ' is-start' : ''}${isEnd ? ' is-end' : ''}`}
+                            style={{ background: color ? SERIES_COLORS[color] : undefined }}
+                            key={laneIndex}
+                          />
+                        );
+                      })}
                     </span>
+                    {overflowCount > 0 && <span className="calendar-dot-more">+{overflowCount}</span>}
                     {daySessions.length > 0 && (
                       <div className="calendar-day-tooltip">
                         {daySessions.map((session, sessionIndex) => (
@@ -196,7 +219,7 @@ export function MonthCalendar({
         </div>
         {usedSeries.length > 0 && (
           <div className="calendar-legend">
-            {usedSeries.map((series) => (
+            {usedSeries.map((series: SeriesId) => (
               <span key={series}>
                 <span className="calendar-dot" style={{ background: SERIES_COLORS[series] }} /> {SERIES_LABELS[language][series]}
               </span>
@@ -206,43 +229,18 @@ export function MonthCalendar({
       </div>
 
       <div className="calendar-entries">
-        {monthSessions.length === 0 ? (
+        {monthGroups.length === 0 ? (
           <p className="calendar-entries-empty">{UI_TEXT[language].noEvents}</p>
         ) : (
-          monthSessions.map((session, index) => (
-            <div
-            className={`calendar-entry${isToday(session, now, timeZone) ? ' calendar-entry-today' : ''}${isLive(session, now) ? ' calendar-entry-live' : ''}${isPast(session, now) ? ' calendar-entry-past' : ''}`}
-              key={`${session.series}-${session.eventName}-${session.sessionType}-${index}`}
-            >
-              <div className="calendar-entry-when">{formatWhen(session, timeZone, language)}</div>
-              <div className="calendar-entry-title">
-                {SERIES_LABELS[language][session.series]} — {session.eventName}
-              </div>
-              <div className="calendar-entry-meta">
-                {isLive(session, now) && <span className="calendar-chip calendar-chip-live">{UI_TEXT[language].live}</span>}
-                <span className="calendar-chip calendar-chip-type">{SESSION_TYPE_LABELS[language][session.sessionType]}</span>
-                {session.broadcasters.map((b) =>
-                  b.url && !isPast(session, now) ? (
-                    <a
-                      className="calendar-chip calendar-chip-link"
-                      href={b.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      key={b.name}
-                    >
-                      {broadcasterLabel(b.name, language)}
-                    </a>
-                  ) : (
-                    <span className="calendar-chip" key={b.name}>
-                      {broadcasterLabel(b.name, language)}
-                    </span>
-                  ),
-                )}
-                {session.broadcasters.length > 0 && isStale(session.broadcastersVerifiedAt) && (
-                  <span className="calendar-chip calendar-chip-stale">{UI_TEXT[language].unverified}</span>
-                )}
-              </div>
-            </div>
+          monthGroups.map((group) => (
+            <EventGroupCard
+              key={group.key}
+              group={group}
+              now={now}
+              language={language}
+              timeZone={timeZone}
+              defaultExpanded={!isGroupPast(group, now) && group.sessions.some((s) => isToday(s, now, timeZone))}
+            />
           ))
         )}
       </div>
